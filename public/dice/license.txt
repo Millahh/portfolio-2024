@@ -1,0 +1,11 @@
+Model Information:
+* title:	Dice
+* source:	https://sketchfab.com/3d-models/dice-fe79e88a59244d27b075344e9a3db842
+* author:	Rosa studio (https://sketchfab.com/Rosastudio)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Dice" (https://sketchfab.com/3d-models/dice-fe79e88a59244d27b075344e9a3db842) by Rosa studio (https://sketchfab.com/Rosastudio) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
