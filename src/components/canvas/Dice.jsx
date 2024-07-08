@@ -15,7 +15,7 @@ const Dice = ({ position }) => {
     })
     return (
         <mesh position={position} ref={ref}>
-            <directionalLight position={[0, 10, 5]} intensity={7}/>
+            <directionalLight position={[30, 0, -200]} intensity={7}/>
             <primitive 
                 object={dice.scene} 
                 scale={500} 
@@ -32,14 +32,14 @@ const DiceCanvas = () => {
             <Canvas 
                 frameloop="demand"
                 shadows
-                camera={{ position: [150, 40, -150], fov: 8}}
+                camera={{ position: [200, 40, 50], fov: 8}}
                 gl={{ preserveDrawingBuffer: true}}
                 >
                 <Suspense fallback={<CanvasLoader />}>
                     <Physics>
                         <OrbitControls enableZoom={false}/>
                         <RigidBody gravityScale={10}>
-                            <Dice position={[25, 10, -10]}/>
+                            <Dice position={[25, 17, 20]}/>
                         </RigidBody>
                         <RigidBody type="fixed">
                             <ambientLight intensity={10}/>
