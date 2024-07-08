@@ -34,7 +34,7 @@ const DiceCanvas = () => {
                     <Physics>
                         <OrbitControls enableZoom={false} enableRotate={false}/>
                         <RigidBody gravityScale={10}>
-                            <Dice position={[25, 17, 20]}/>
+                            <Dice position={[30, 17, 20]}/>
                         </RigidBody>
                         <RigidBody type="fixed">
                             <ambientLight intensity={10}/>
