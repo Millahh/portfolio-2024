@@ -1,12 +1,13 @@
 import { BrowserRouter } from "react-router-dom";
-import { Dice } from "./components/canvas";
 import { Intro, AutoLoad } from "./components";
+import { DiceIntro } from "./components/canvas";
 
 function App() {
   return (
     <BrowserRouter>
-      <AutoLoad />
+      {/* <AutoLoad /> */}
       {/* <Intro/> */}
+      <DiceIntro/>
     </BrowserRouter>
   )
 }
