@@ -5,8 +5,8 @@ import { Intro, AutoLoad } from "./components";
 function App() {
   return (
     <BrowserRouter>
-      {/* <DiceCanvas/> */}
       <AutoLoad />
+      {/* <Intro/> */}
     </BrowserRouter>
   )
 }

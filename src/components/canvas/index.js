@@ -1,3 +1,4 @@
 import DiceCanvas from "./Dice";
+import DiceIntro from "./DiceIntro";
 
-export { DiceCanvas };
+export { DiceCanvas, DiceIntro };

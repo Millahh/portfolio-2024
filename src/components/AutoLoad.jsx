@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unknown-property */
 import { useState, useEffect } from 'react';
-import { DiceCanvas } from "./canvas";
+import { DiceIntro } from "./canvas";
 import Intro from "./Intro";
 
 const AutoLoad = () => {
@@ -18,7 +18,7 @@ const AutoLoad = () => {
 
 
     if(!isFinish) {
-        return <DiceCanvas/>;
+        return <DiceIntro/>;
     } else {
         return <Intro/>
     }
