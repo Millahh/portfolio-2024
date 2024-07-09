@@ -4,7 +4,7 @@ import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Physics, RigidBody } from "@react-three/rapier";
 import { Box, OrbitControls} from "@react-three/drei";
-import DiceCanvas from "./Dice";
+import Dice from "./Dice";
 import CanvasLoader from '../LoaderProgressBar';
 
 const DiceIntro = () => {
@@ -20,7 +20,7 @@ const DiceIntro = () => {
                     <Physics>
                         <OrbitControls enableZoom={false} enableRotate={false}/>
                         <RigidBody gravityScale={10}>
-                            <DiceCanvas position={[30, 17, 20]}/>
+                            <Dice position={[30, 17, 20]}/>
                         </RigidBody>
                         <RigidBody type="fixed">
                             <ambientLight intensity={10}/>

@@ -1,4 +1,4 @@
-import DiceCanvas from "./Dice";
+import Dice from "./Dice";
 import DiceIntro from "./DiceIntro";
 
-export { DiceCanvas, DiceIntro };
+export { Dice, DiceIntro };
