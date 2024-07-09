@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 
 const Intro = () => {
     return (
-        <motion.div className="bg-custom bg-cover min-h-screen w-screen"
+        <div className="bg-custom bg-cover min-h-screen w-screen transition-all ease-in-out duration-75"
             // initial={{ opacity: 0.7, backgroundColor: '#000000' }}
             // animate={{ opacity: 1, scale: 1 }}
             // transition={{
@@ -22,7 +22,7 @@ const Intro = () => {
         >
             <div style={{ width: "100vw", height: "100vh"}}
               >
-                {/* <Canvas 
+                <Canvas 
                     frameloop="demand"
                     shadows
                     camera={{ position: [200, 40, 50], fov: 6.7}}
@@ -33,9 +33,9 @@ const Intro = () => {
                     <OrbitControls enableZoom={false} enableRotate={false}/>
                     <Dice position={[-3, -0.2, 0]} rotation={[3.1, 0.1, 4.7]}/>
                     </Suspense>
-                </Canvas> */}
+                </Canvas>
             </div>
-        </motion.div>
+        </div>
     )
 }
 export default Intro;
