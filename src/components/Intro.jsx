@@ -1,30 +1,14 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
-/* eslint-disable react/no-unknown-property */
-import { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
-import { Physics, RigidBody } from "@react-three/rapier";
-import { Box, OrbitControls} from "@react-three/drei";
-import { Dice } from "./canvas";
-import Loader from "./LoaderProgressBar";
-import { motion } from "framer-motion";
+import T from "./texts/Title";
 import P from "./texts/Paragraph";
 
-const Intro = () => {
-    return (
-        <div className="bg-custom bg-cover min-h-screen w-screen transition-all ease-in-out duration-75"
-            // initial={{ opacity: 0.7, backgroundColor: '#000000' }}
-            // animate={{ opacity: 1, scale: 1 }}
-            // transition={{
-            //     duration: 5,
-            //     delay: 0,
-            //     ease: [0, 0.1, 0.1, 0.1]
-            // }}
-        >
-            <div style={{ width: "100vw", height: "100vh"}}>
-            <p>tes aku adalah <P>anak</P> yang baik sekali yhh <P>ok hihi</P></p>
-            </div>
+const About = () => {
+    return(
+        <div className="container">
+            <h1><T>Hi there</T>, i’m Millah 👋</h1>
+            <h2>Web Developer</h2>
+            <p>I <P>build websites</P> both <P>front-end</P> and <P>back-end</P>. I love to use <P>Frameworks</P> and <P>libraries</P>, they provide best practices that allow me to <P>focus</P> on <P>creativity</P> and <P>innovation</P> more, yet reliable and secure. <P>Laravel</P> is my favorite one, but I’m also strongly interested in learning <P>various frameworks and libraries</P>.  You can <P>swipe right to find it there!</P></p>
         </div>
     )
 }
-export default Intro;
+
+export default About;
