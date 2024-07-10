@@ -16,14 +16,17 @@ const Bg = () => {
 }
 
 const ThrowDice = () => {
+    var w = window.innerWidth;
+    var h = window.innerHeight;
     const [scope, animate] = useAnimate();
+    const isMobile = h>w ? true : false;
 
     useEffect(() => {
         // Use setTimeout to update the message after 2000 milliseconds (2 seconds)
         const timeoutId = setTimeout(() => {
             const handleAnimate = async () => {
                 await animate(scope.current, {scale : 0.4})
-                await animate(scope.current, {x:100})
+                await animate(scope.current, {x:isMobile? (w/2 - 75) : (w/2 - 50), y:isMobile? (h/2 - 80) : (h/2 - 50)})
 
             }
             handleAnimate()    
@@ -46,7 +49,7 @@ const ThrowDice = () => {
                         <OrbitControls enableZoom={false} enableRotate={false}/>
                         <directionalLight position={[100, 10, 200]} intensity={6}/>
                         <RigidBody gravityScale={10}>
-                            <Dice position={[30, 17, 20]} rotation={[1, -5, 4]}/>
+                            <Dice position={isMobile ? [30, 12, 15] : [30, 17, 20]} rotation={[1, -5, 4]} isMobile={isMobile}/>
                         </RigidBody>
                         <RigidBody type="fixed">
                             <Box position={[-10,1,-5]} args={[500,0.1,500]}>

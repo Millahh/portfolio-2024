@@ -2,7 +2,7 @@
 /* eslint-disable react/no-unknown-property */
 import { useGLTF } from "@react-three/drei";
 
-const Dice = ({ position, rotation}) => {
+const Dice = ({ position, rotation, isMobile }) => {
     const dice = useGLTF('./dice/scene.gltf')
 
     return (
@@ -10,7 +10,7 @@ const Dice = ({ position, rotation}) => {
             {/* <directionalLight position={[30, 0, -200]} intensity={7}/> */}
             <primitive 
                 object={dice.scene} 
-                scale={500} 
+                scale={isMobile? 400 : 500} 
                 position={[0, 0, 0]} 
                 rotation={rotation}
                 /> 
