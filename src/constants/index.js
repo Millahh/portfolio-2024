@@ -1,0 +1,7 @@
+
+
+const example = [
+
+]
+
+export { example };

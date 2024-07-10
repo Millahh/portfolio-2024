@@ -6,8 +6,8 @@ function App() {
   return (
     <BrowserRouter>
       {/* <AutoLoad /> */}
-      {/* <Intro/> */}
-      <DiceIntro/>
+      <Intro/>
+      {/* <DiceIntro/> */}
     </BrowserRouter>
   )
 }

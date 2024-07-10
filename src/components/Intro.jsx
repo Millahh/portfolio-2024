@@ -8,6 +8,7 @@ import { Box, OrbitControls} from "@react-three/drei";
 import { Dice } from "./canvas";
 import Loader from "./LoaderProgressBar";
 import { motion } from "framer-motion";
+import P from "./texts/Paragraph";
 
 const Intro = () => {
     return (
@@ -20,19 +21,8 @@ const Intro = () => {
             //     ease: [0, 0.1, 0.1, 0.1]
             // }}
         >
-            <div style={{ width: "100vw", height: "100vh"}}
-              >
-                <Canvas 
-                    frameloop="always"
-                    shadows
-                    camera={{ position: [200, 40, 50], fov: 6.7}}
-                    gl={{ preserveDrawingBuffer: true}}
-                    >
-                    <Suspense fallback={<Loader all/>}>
-                    <directionalLight position={[200, 30, 200]} intensity={6}/>
-                    <Dice position={[-3, -0.2, 0]} rotation={[3.1, 0.1, 4.7]}/>
-                    </Suspense>
-                </Canvas>
+            <div style={{ width: "100vw", height: "100vh"}}>
+            <p>tes aku adalah <P>anak</P> yang baik sekali yhh <P>ok hihi</P></p>
             </div>
         </div>
     )
