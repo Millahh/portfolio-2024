@@ -9,14 +9,26 @@ import CanvasLoader from '../LoaderProgressBar';
 
 const Bg = () => {
     return(
-        <div className=" h-screen w-screen bg-custom bg-cover transition-transform duration-1000">
+        <div className=" h-screen w-screen bg-custom bg-cover">
         </div>
-    )
+    ) 
 }
 
 const ThrowDice = () => {
+    const [isThrowed, setThrowed] = useState(false);
+
+    useEffect(() => {
+        // Use setTimeout to update the message after 2000 milliseconds (2 seconds)
+        const timeoutId = setTimeout(() => {
+          setThrowed(true);
+        }, 2700);
+    
+        // Cleanup function to clear the timeout if the component unmounts
+        return () => clearTimeout(timeoutId);
+    }, []);
+
     return(
-        <div className=" h-screen w-screen bg-custom bg-cover transition-transform duration-1000">
+        <div className=" h-screen w-screen bg-custom bg-cover">
             <Canvas 
                 frameloop="demand"
                 shadows
@@ -28,7 +40,7 @@ const ThrowDice = () => {
                         <OrbitControls enableZoom={false} enableRotate={false}/>
                         <directionalLight position={[100, 10, 200]} intensity={6}/>
                         <RigidBody gravityScale={10}>
-                            <Dice position={[30, 17, 20]} rotation={[1, -5, 4]}/>
+                            <Dice position={[30, 17, 20]} rotation={[1, -5, 4]} isThrowed={isThrowed}/>
                         </RigidBody>
                         <RigidBody type="fixed">
                             <Box position={[-10,1,-5]} args={[500,0.1,500]}>
