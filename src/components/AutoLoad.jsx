@@ -10,7 +10,7 @@ const AutoLoad = () => {
     // Use setTimeout to update the message after 2000 milliseconds (2 seconds)
     const timeoutId = setTimeout(() => {
       setFinish(true);
-    }, 3500);
+    }, 7000);
 
     // Cleanup function to clear the timeout if the component unmounts
     return () => clearTimeout(timeoutId);

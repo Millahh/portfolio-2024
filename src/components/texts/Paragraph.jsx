@@ -2,7 +2,7 @@
 const Paragraph = (props) => {
     return (
         <>
-            <p className="text-primary inline font-bold">{props.children} </p>
+            <p className="text-primary inline font-bold">{props.children}</p>
         </>
     )
 }

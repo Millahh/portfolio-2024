@@ -8,6 +8,7 @@ import { useAnimate, usePresence } from "framer-motion";
 import Dice from "./Dice";
 import CanvasLoader from '../LoaderProgressBar';
 
+
 const ThrowDice = () => {
     var w = window.innerWidth;
     var h = window.innerHeight;
@@ -19,7 +20,7 @@ const ThrowDice = () => {
         const timeoutId = setTimeout(() => {
             const handleAnimate = async () => {
                 await animate(scope.current, {scale : 0.4})
-                await animate(scope.current, {x:isMobile? (w/2 - 75) : (w/2 - 50), y:isMobile? (h/2 - 80) : (h/2 - 50), duration: 4})
+                await animate(scope.current, {x:isMobile? (w/2 - 75) : (w/2 - 50), y:isMobile? (h/2 - 88) : (h/2 - 58), duration: 4})
 
             }
             handleAnimate()    
@@ -29,7 +30,7 @@ const ThrowDice = () => {
     }, []);
 
     return(
-        <div className="h-screen w-screen">
+        <div className="h-screen w-screen absolute my-auto -z-2">
             <Canvas 
                 frameloop="always"
                 shadows
