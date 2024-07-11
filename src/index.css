@@ -73,3 +73,11 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.hard-skills{
+  position: static;
+}
+.hard-skills p{
+  position:absolute;
+}
+

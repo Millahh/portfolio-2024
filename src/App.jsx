@@ -6,9 +6,9 @@ function App() {
   return (
     <BrowserRouter>
       {/* <AutoLoad /> */}
-      <Intro/>
+      {/* <Intro/> */}
       {/* <DiceIntro/> */}
-      {/* <About/> */}
+      <About/>
       {/* <FunFacts/> */}
     </BrowserRouter>
   )
