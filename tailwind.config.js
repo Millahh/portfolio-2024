@@ -24,6 +24,9 @@ export default {
       backgroundImage: {
         "custom": "url('/bg.png')",
       },
+      letterSpacing: {
+        widest: ".25em"
+      }
     },
   },
   plugins: [],

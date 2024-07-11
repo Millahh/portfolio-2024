@@ -6,10 +6,10 @@ function App() {
   return (
     <BrowserRouter>
       {/* <AutoLoad /> */}
-      {/* <Intro/> */}
+      <Intro/>
       {/* <DiceIntro/> */}
       {/* <About/> */}
-      <FunFacts/>
+      {/* <FunFacts/> */}
     </BrowserRouter>
   )
 }
