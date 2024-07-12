@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import { Intro, AutoLoad, About, FunFacts } from "./components";
-import { DiceIntro } from "./components/canvas";
+import { DiceIntro, Hobbies } from "./components/canvas";
 
 function App() {
   return (
@@ -8,8 +8,9 @@ function App() {
       {/* <AutoLoad /> */}
       {/* <Intro/> */}
       {/* <DiceIntro/> */}
-      <About/>
+      {/* <About/> */}
       {/* <FunFacts/> */}
+      <Hobbies/>
     </BrowserRouter>
   )
 }

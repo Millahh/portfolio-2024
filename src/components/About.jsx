@@ -3,7 +3,7 @@ import T from "./texts/Title";
 import { AdminLTE, Bootstrap, CSS, Figma, HTML, JavaScript, Laravel, PHP, phpMyAdmin, PostgreSQL, React, Tailwind, Threejs, Github } from "../assets";
 import { motion } from "framer-motion";
 
-const HardSkills = () => {
+const Animation = () => {
     const animation1 = {
         visible:{
             x: [0, 3, 0],  
@@ -48,34 +48,31 @@ const HardSkills = () => {
     )
 }
 
-const Logos = ({ logos }) => {
+const HardSkills = ({ logos, desc }) => {
     return (
         <div className="inline">
             {logos.map((logos) => (
-                <img key={logos.logo} src={logos.logo} width={logos.width} className="inline"/>
+                <img key={logos.logo} src={logos.logo} width={logos.width} className="inline mr-2 mt-3"/>
             ))}
+            <p>{desc}</p>
         </div>
     )
 }
 
 const About = () => {
     return(
-        <div className="container pl-10 min-w-full h-full">
-            <HardSkills/>
+        <div className="container pl-10 pr-5 py-10 min-w-full h-full">
+            <Animation/>
             <div className="flex flex-row">
                 <div className=" basis-2/5"></div>
-                <div className=" basis-3/5 py-10 px-10 h-screen overflow-y-auto">
+                <div className=" basis-3/5 px-10 h-screen overflow-y-auto">
                     <h1 className=" font-bold"><T>Get to</T> know me</h1>
-                    <Logos logos={[{logo: Laravel, width:20},{logo: Bootstrap, width:20}]}/>
-                    <p>I started learning Laravel and Bootstrap since 2021 and have built some applications with it. Tracker, youRnoteS, MenITi, To-Gather (link)</p>
-                    <Logos logos={[{logo: Tailwind, width:20},{logo: React, width:20}]}/>
-                    <p>I’ve recently been interested built front-end web using Tailwind and React. (Tracker, youRnoteS)</p>
-                    <Logos logos={[{logo: Threejs, width:20}]}/>
-                    <p>I recently fell in love with learning Three.js. I implemented Three.js as well as React and Tailwind on this portfolio based on what I've learned so far.</p>
-                    <Logos logos={[{logo: PostgreSQL, width:23},{logo: phpMyAdmin, width:30}]}/>
-                    <p>I use PostgreSQL and phpMyAdmin for database management, i prefer PostgreSQL for interface, familiarity, performance and scalability.</p>
-                    <Logos logos={[{logo: JavaScript, width:25},{logo: PHP, width:25}, {logo: Figma, width:20},{logo: AdminLTE, width:20}, {logo: HTML, width:25},{logo: CSS, width:25}]}/>
-                    <p>Those are languages, frameworks, and tools that I’m familiar, confident, and have worked with.</p>
+                    <HardSkills logos={[{logo: Laravel, width:20}, {logo: Bootstrap, width:20}]} desc={"I started learning Laravel and Bootstrap since 2021 and have built some applications with it. Tracker, youRnoteS, MenITi, To-Gather (link)"}/>
+                    <HardSkills logos={[{logo: Tailwind, width:20}, {logo: React, width:20}]} desc={"I’ve recently been interested built front-end web using Tailwind and React. (Tracker, youRnoteS)"}/>
+                    <HardSkills logos={[{logo: Threejs, width:20}]} desc={"I recently fell in love with learning Three.js. I implemented Three.js as well as React and Tailwind on this portfolio based on what I've learned so far."}/>
+                    <HardSkills logos={[{logo: PostgreSQL, width:23}, {logo: phpMyAdmin, width:30}]} desc={"I use PostgreSQL and phpMyAdmin for database management, i prefer PostgreSQL for interface, familiarity, performance and scalability."}/>
+                    <HardSkills logos={[{logo: JavaScript, width:25}, {logo: PHP, width:25}, {logo: Figma, width:20}, {logo: AdminLTE, width:20}, {logo: HTML, width:25}, {logo: CSS, width:25}]} desc={"Those are languages, frameworks, and tools that I’m familiar, confident, and have worked with."}/>
+                    <div className=" h-16"/>
                 </div>
             </div>
         </div>

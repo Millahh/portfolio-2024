@@ -16,6 +16,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+div::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
+}
+div::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+  height: 10px;
+}
+div::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #E661D9;
+}
+
 .italic{
   font-style: italic;
 }
