@@ -27,7 +27,7 @@ div::-webkit-scrollbar {
 }
 div::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #E661D9;
+  background-color: #e661d940;
 }
 
 .italic{

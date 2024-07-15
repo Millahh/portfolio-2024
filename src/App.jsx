@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-import { Intro, AutoLoad, About, FunFacts } from "./components";
+import { Intro, AutoLoad, About, FunFacts, Experiences } from "./components";
 import { DiceIntro, Hobbies } from "./components/canvas";
 
 function App() {
@@ -9,8 +9,9 @@ function App() {
       {/* <Intro/> */}
       {/* <DiceIntro/> */}
       {/* <About/> */}
-      <FunFacts/>
+      {/* <FunFacts/> */}
       {/* <Hobbies/> */}
+      <Experiences />
     </BrowserRouter>
   )
 }

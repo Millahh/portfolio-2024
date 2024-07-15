@@ -35,10 +35,10 @@ const Hobbies = () => {
                 gl={{ preserveDrawingBuffer: true}}
                 >
                     <Suspense fallback={<CanvasLoader all/>}>
-                        <Objects position={[-6.5, 2.2, -0.2]} rotation={[0, 0, -0.2]} scale={35} light={[0, 0, 0.1]} object={useGLTF('./music.glb')}/>
-                        <Objects position={[-4.2, -2.8, 0.2]} rotation={[0.1, 0.2, -0.5]} scale={0.0013} light={[0.5, -0.5, 0]} object={useGLTF('./mic.glb')}/>
-                        <Objects position={[6.5, -4.5, -3]} rotation={[7, 11.4, -11]} scale={2} light={[0, 50, 0]} object={useGLTF('./coffee.glb')}/>
-                        <Objects position={[8, 2.3, -2.5]} rotation={[5, 3.4, -12]} scale={0.11} light={[100, 100, 10]} object={useGLTF('./dance.glb')}/>
+                        <Objects position={[-6.5, 2.2, -0.2]} rotation={[0, 0, -0.2]} scale={35} light={[0, 0, 0.1]} object={useGLTF('./objects/music.glb')}/>
+                        <Objects position={[-4.2, -2.8, 0.2]} rotation={[0.1, 0.2, -0.5]} scale={0.0013} light={[0.5, -0.5, 0]} object={useGLTF('./objects/mic.glb')}/>
+                        <Objects position={[6.5, -4.5, -3]} rotation={[7, 11.4, -11]} scale={2} light={[0, 50, 0]} object={useGLTF('./objects/coffee.glb')}/>
+                        <Objects position={[8, 2.3, -2.5]} rotation={[5, 3.4, -12]} scale={0.11} light={[100, 100, 10]} object={useGLTF('./objects/dance.glb')}/>
                     </Suspense>
                 </Canvas>
             </div>

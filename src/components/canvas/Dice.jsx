@@ -3,7 +3,7 @@
 import { useGLTF } from "@react-three/drei";
 
 const Dice = ({ position, rotation, isMobile }) => {
-    const dice = useGLTF('./dice/scene.gltf')
+    const dice = useGLTF('./objects/dice/scene.gltf')
 
     return (
         <mesh position={position}>

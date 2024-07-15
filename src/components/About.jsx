@@ -2,6 +2,7 @@
 import T from "./texts/Title";
 import { AdminLTE, Bootstrap, CSS, Figma, HTML, JavaScript, Laravel, PHP, phpMyAdmin, PostgreSQL, React, Tailwind, Threejs, Github } from "../assets";
 import { motion } from "framer-motion";
+import { DiceIntro } from "./canvas";
 
 const Animation = () => {
     const animation1 = {
@@ -61,7 +62,9 @@ const HardSkills = ({ logos, desc }) => {
 
 const About = () => {
     return(
-        <div className="container pl-10 pr-5 py-10 min-w-full h-full">
+        <>
+        {/* <DiceIntro/> */}
+        <div className="container pl-10 pr-5 py-10 min-w-full h-full z-99">
             <Animation/>
             <div className="flex flex-row">
                 <div className=" basis-2/5"></div>
@@ -76,6 +79,7 @@ const About = () => {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 

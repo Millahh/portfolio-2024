@@ -3,6 +3,7 @@
 import T from "./texts/Title";
 import P from "./texts/Paragraph";
 import Hobbies from "./canvas/Hobbies";
+import { DiceIntro } from "./canvas";
 
 
 const FunFacts = () => {
