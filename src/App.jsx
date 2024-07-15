@@ -9,8 +9,8 @@ function App() {
       {/* <Intro/> */}
       {/* <DiceIntro/> */}
       {/* <About/> */}
-      {/* <FunFacts/> */}
-      <Hobbies/>
+      <FunFacts/>
+      {/* <Hobbies/> */}
     </BrowserRouter>
   )
 }
