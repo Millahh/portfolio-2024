@@ -15,7 +15,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.experiences p, .experiences li{
+  font-family: "Josefin Sans", sans-serif;
+}
 div::-webkit-scrollbar-track {
   border-radius: 10px;
   background-color: transparent;
