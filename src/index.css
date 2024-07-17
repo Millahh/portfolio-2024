@@ -104,3 +104,11 @@ button:focus-visible {
   position:absolute;
 }
 
+.desc-hide {
+  display: none;
+} 
+.desc:hover + .desc-hide, .desc-hide:hover {
+  display: block;
+  scale: 1.2;
+}
+
