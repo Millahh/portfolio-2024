@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-import { Intro, AutoLoad, About, FunFacts, Experiences } from "./components";
+import { Intro, AutoLoad, About, FunFacts, Experiences, Projects } from "./components";
 import { DiceIntro, Hobbies } from "./components/canvas";
 
 function App() {
@@ -11,7 +11,8 @@ function App() {
       {/* <About/> */}
       {/* <FunFacts/> */}
       {/* <Hobbies/> */}
-      <Experiences />
+      {/* <Experiences /> */}
+      <Projects />
     </BrowserRouter>
   )
 }

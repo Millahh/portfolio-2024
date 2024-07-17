@@ -1,6 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
 :root {
   font-family: "Inter", sans-serif;
   line-height: 1.5;
@@ -15,7 +22,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.experiences p, .experiences li{
+.experiences p, .experiences li, .projects p, .projects li{
   font-family: "Josefin Sans", sans-serif;
 }
 div::-webkit-scrollbar-track {
