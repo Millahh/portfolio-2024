@@ -43,15 +43,6 @@ div::-webkit-scrollbar-thumb {
   font-style: italic;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
   display: flex;
@@ -63,6 +54,15 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+.navbar a{
+  letter-spacing: 3px;
+  font-size:x-small;
+  font-weight: 600;
+  align-items: center;
+  align-self: center;
+  cursor: pointer;
 }
 
 button {
@@ -109,6 +109,5 @@ button:focus-visible {
 } 
 .desc:hover + .desc-hide, .desc-hide:hover {
   display: block;
-  scale: 1.2;
 }
 
