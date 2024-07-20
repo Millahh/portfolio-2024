@@ -28,6 +28,7 @@
 div::-webkit-scrollbar-track {
   border-radius: 10px;
   background-color: transparent;
+  margin: 1rem 0;
 }
 div::-webkit-scrollbar {
   width: 5px;

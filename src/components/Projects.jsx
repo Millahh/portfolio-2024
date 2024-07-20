@@ -4,28 +4,41 @@ import P from "./texts/Paragraph";
 import { Github } from "../assets";
 import Navbar from "./Navbar";
 
+const Photos = () => {
+    return (
+        <div className="mt-5 mb-10 relative w-4/5 h-44 self-center mx-auto hover:scale-110 transition-all duration-150 cursor-pointer">
+            <img src="./experiences/image.png" className=" object-cover w-full h-full border-4 rounded-xl absolute z-0 desc"/>
+            <div className=" absolute z-1 bg-black bg-opacity-50 w-full h-full border-4 rounded-xl p-3 desc-hide">
+                <div className="github bg-tertiary self-center px-2 text-md rounded-2xl align-middle inline-block">
+                    <p className="align-middle pt-[1.5px] text-[0.7rem]">2024 | Self-project</p>
+                </div>
+                <p className=" text-white font-semibold">Tracker</p>
+                <p className=" text-white text-xs">Task progress tracking application that supports multi role login.</p>
+                <div className="github bg-secondary self-center px-2 text-md rounded-2xl align-middle inline-block">
+                    <p className="align-middle pt-[1.5px] text-[0.7rem]">Laravel | Tailwind</p>
+                </div>
+            </div>
+        </div>
+    )
+}
+
 const Projects = () => {
 
     return (
         <>
             <Navbar/>
-            <div className="projects py-10 px-20 min-w-full h-screen overflow-y-hidden flex flex-row">
-                <div className=" basis-4/12 space-y-10 overflow-y-auto items-center">
-                    <div className="relative w-4/5 h-2/5 self-center mx-auto hover:scale-110 transition-all duration-150">
-                        <img src="./experiences/image.png" className=" object-cover w-full h-full border-4 rounded-xl absolute z-0 desc"/>
-                        <div className=" absolute z-1 bg-black bg-opacity-50 w-full h-full border-4 rounded-xl p-3 desc-hide">
-                            <div className="github bg-tertiary self-center px-2 text-md rounded-2xl align-middle inline-block">
-                                <p className="align-middle pt-[1.5px] text-[0.7rem]">2024 | Self-project</p>
-                            </div>
-                            <p className=" text-white font-semibold">Tracker</p>
-                            <p className=" text-white text-xs">Task progress tracking application that supports multi role login.</p>
-                            <div className="github bg-secondary self-center px-2 text-md rounded-2xl align-middle inline-block">
-                                <p className="align-middle pt-[1.5px] text-[0.7rem]">Laravel | Tailwind</p>
-                            </div>
-                        </div>
-                    </div>
+            <div className="projects pb-20 px-20 min-w-full h-screen overflow-y-hidden flex flex-row">
+                <div className="basis-4/12 overflow-y-auto items-center">
+                    <Photos/>
+                    <Photos/>
+                    <Photos/>
+                    <Photos/>
+                    <Photos/>
+                    <Photos/>
+                    <Photos/>
                 </div>
-                <div className=" basis-4/6 p-5 pl-10 overflow-y-auto">
+                <div className=" basis-4/6 pl-10 h-full overflow-y-auto">
+                    <img src="./tes.gif" className=" w-3/4"/>
                     <div className="flex">
                         <p className="text-3xl font-bold mr-5">Tracker</p>
                         <div className="github bg-secondary self-center px-3 text-md rounded-xl flex align-middle">

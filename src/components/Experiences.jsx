@@ -8,8 +8,8 @@ const Experiences = () => {
         <>
             <Navbar/>
             <div className="experiences py-3 px-20 min-w-full h-screen overflow-y-auto">
-                <section className="h-full mb-auto">
-                    <div className="flex flex-row relative h-1/3">
+                <section className="mb-auto space-y-5">
+                    <div className="flex flex-row relative">
                         <div className="basis-1/4">
                             <AnimatePresence>
                                 <motion.div className="z-0 absolute w-1/4"
@@ -41,7 +41,7 @@ const Experiences = () => {
                             <p className=" text-base">This internship is a part of Program Magang dan Studi Independen<br></br> Bersertifikat (MSIB) Batch 3.</p>
                         </div>
                     </div>
-                    <div className="flex flex-row relative h-2/5">
+                    <div className="flex flex-row relative">
                         <div className="basis-3/4 w-screen p-5 pr-10">
                             <p className=" tracking-widest text-xs opacity-50">HARD SKILLS</p>
                             <li>Built <P>Issue Ticket Website</P> using <P>adminLTE</P>, <P>Laravel</P>, and <P>PostgreSQL</P>.</li>
@@ -75,7 +75,7 @@ const Experiences = () => {
                             </AnimatePresence>
                         </div>
                     </div>
-                    <div className="flex flex-row relative h-1/3">
+                    <div className="flex flex-row relative">
                         <div className="basis-1/4">
                             <AnimatePresence>
                                 <motion.div className="z-0 absolute w-1/4"
@@ -107,9 +107,9 @@ const Experiences = () => {
                         </div>
                     </div>
                 </section>
-                <hr className=" my-14"></hr>
-                <section className="h-full mb-auto">
-                    <div className="flex flex-row relative h-1/3">
+                <hr className=" mt-24 mb-10"></hr>
+                <section className="mb-auto space-y-5">
+                    <div className="flex flex-row relative">
                         <div className="basis-1/4">
                             <AnimatePresence>
                                 <motion.div className="z-0 absolute w-1/4"
@@ -134,7 +134,7 @@ const Experiences = () => {
                             <p className=" text-base">PIT is a part of Student Executive Board (BEM) Divisions of <br></br>Fakultas Ilmu Komputer</p>
                         </div>
                     </div>
-                    <div className="flex flex-row relative h-1/3">
+                    <div className="flex flex-row relative">
                         <div className="basis-3/4 w-screen p-5 pr-10">
                             <p className=" tracking-widest text-xs opacity-50">HARD SKILLS</p>
                             <p><P>Designed</P> the Elaborasi Makna website (<P>bemfilkom.ub.ac.id</P>), creating an engaging interface that effectively showcased the organization's mission, events, and activities.</p>
@@ -165,7 +165,7 @@ const Experiences = () => {
                             </AnimatePresence>
                         </div>
                     </div>
-                    <div className="flex flex-row relative h-1/3">
+                    <div className="flex flex-row relative">
                         <div className="basis-1/4">
                             <AnimatePresence>
                                 <motion.div className="z-0 absolute w-1/4"
@@ -197,9 +197,9 @@ const Experiences = () => {
                         </div>
                     </div>
                 </section>
-                <hr className=" my-10"></hr>
-                <section className="h-full mb-auto">
-                    <div className="flex flex-row relative h-1/3 mt-10">
+                <hr className=" mt-24 mb-10"></hr>
+                <section className="mb-auto space-y-5">
+                    <div className="flex flex-row relative mt-10">
                         <div className="basis-1/4">
                             <AnimatePresence>
                                 <motion.div className="z-0 absolute w-1/4"
@@ -216,7 +216,7 @@ const Experiences = () => {
                             <p className=" text-xl font-bold text-primary bg-white bg-opacity-90 inline-block px-1 pt-1 my-1">Public Relations Staff of Organization of <br></br>Open Source (POROS)</p>
                         </div>
                     </div>
-                    <div className="flex flex-row h-1/4">
+                    <div className="flex flex-row borde pt-10">
                         <div className="basis-1/2 pr-20">
                             <p className=" tracking-widest text-xs opacity-50">HARD SKILLS</p>
                             <p>Created posts design and maintained an official instagram account of POROS  to enhance our online presence(@porosfilkom).</p>
@@ -226,7 +226,7 @@ const Experiences = () => {
                             <p>Took responsibility as Vice Chief Committee and Master of Ceremonies at the 'Cyber Class 2020' event.</p>
                         </div>
                     </div>
-                    <div className="flex flex-row relative h-1/3">
+                    <div className="flex flex-row relative">
                         <div className="basis-3/4 w-screen pr-10 text-right">
                             <p className=" tracking-widest text-xs opacity-50">VOLUNTEER | 2021</p>
                             <p className=" text-xl font-bold text-primary bg-white bg-opacity-90 inline-block px-1 pt-1 my-1">Public Relations Staff of Organization of <br></br>Open Source (POROS)</p>
@@ -247,7 +247,7 @@ const Experiences = () => {
                     </div>
                 </section>
                 <hr className=" my-10"></hr>
-                <section className="mb-auto space-y-8">
+                <section className="mb-auto space-y-5">
                     <div className="text-center">
                         <p className="text-xl font-bold text-primary bg-white bg-opacity-90 inline-block px-1 pt-1 my-1">PK2MABA & STARTUP ACADEMY</p>
                         <p>Annual campus event welcomes new students, introducing and providing essential information to help kickstart their journey.</p>
