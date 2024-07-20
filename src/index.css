@@ -51,6 +51,10 @@ body {
   min-height: 100vh;
 }
 
+hr{
+  opacity: 0.5;
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
