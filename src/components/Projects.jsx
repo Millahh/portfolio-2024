@@ -1,14 +1,14 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-undef */
-import { motion, AnimatePresence } from "framer-motion";
 import P from "./texts/Paragraph";
 import { Github } from "../assets";
 import Navbar from "./Navbar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { Carousel } from "@material-tailwind/react";
 
 const Photos = () => {
     return (
-        <div className="mt-5 mb-10 relative w-4/5 h-44 self-center mx-auto hover:scale-110 transition-all duration-150 cursor-pointer">
+        <div className="mt-5 mb-10 max-md:mb-5 relative w-4/5 h-44 max-[900px]:h-36 max-md:h-28 max-xs:h-24 self-center mx-auto hover:scale-110 transition-all duration-150 cursor-pointer">
             <img src="./experiences/image.png" className=" object-cover w-full h-full border-4 rounded-xl absolute z-0 desc"/>
             <div className=" absolute z-1 bg-black bg-opacity-50 w-full h-full border-4 rounded-xl p-3 desc-hide">
                 <div className="github bg-tertiary self-center px-2 text-md rounded-2xl align-middle inline-block">
@@ -26,12 +26,35 @@ const Photos = () => {
 
 const Projects = () => {
     const [ isFocused, setFocused ] = useState("");
+    const [isMobile, setIsMobile] = useState(false);
+    useEffect(() => {
+        // Add a listener for changes to the screen size
+        const mediaQuery = window.matchMedia("(max-width: 500px)");
+    
+        // Set the initial value of the `isMobile` state variable
+        setIsMobile(mediaQuery.matches);
+    
+        // Define a callback function to handle changes to the media query
+        const handleMediaQueryChange = (event) => {
+          setIsMobile(event.matches);
+        };
+    
+        // Add the callback function as a listener for changes to the media query
+        mediaQuery.addEventListener("change", handleMediaQueryChange);
+    
+        // Remove the listener when the component is unmounted
+        return () => {
+          mediaQuery.removeEventListener("change", handleMediaQueryChange);
+        };
+        }, []);
+    
 
     return (
         <>
             <Navbar/>
-            <div className="projects pb-20 px-20 min-w-full h-screen overflow-y-hidden flex flex-row">
-                <div className="basis-4/12 overflow-y-auto items-center">
+            <div className="projects pb-20 px-20 max-lg:px-10 min-w-full h-screen overflow-y-hidden flex max-xs:block flex-row">
+            {!isMobile && 
+                <div className="basis-4/12 max-[900px]:basis-2/5 xs:basis-1/2 overflow-y-auto max-xs:overflow-y-hidden items-center">
                     <div
                         onFocus={() => {
                         setFocused("Tracker");
@@ -110,7 +133,88 @@ const Projects = () => {
                         <Photos isFocused={isFocused}/>
                     </div>
                 </div>
-                <div className=" basis-4/6 pl-10 h-full overflow-y-auto">
+            }{isMobile && 
+                <Carousel>
+                <div
+                        onFocus={() => {
+                        setFocused("Tracker");
+                        }}
+                        onBlur={() => {
+                        setFocused("");
+                        }}
+                        tabIndex="0"
+                    >
+                        <Photos isFocused={isFocused}/>
+                    </div>
+                    <div
+                        onFocus={() => {
+                        setFocused("Yournotes");
+                        }}
+                        onBlur={() => {
+                        setFocused("");
+                        }}
+                        tabIndex="0"
+                    >
+                        <Photos isFocused={isFocused}/>
+                    </div>
+                    <div
+                        onFocus={() => {
+                        setFocused("Meniti");
+                        }}
+                        onBlur={() => {
+                        setFocused("");
+                        }}
+                        tabIndex="0"
+                    >
+                        <Photos isFocused={isFocused}/>
+                    </div>
+                    <div
+                        onFocus={() => {
+                        setFocused("Issueticket");
+                        }}
+                        onBlur={() => {
+                        setFocused("");
+                        }}
+                        tabIndex="0"
+                    >
+                        <Photos isFocused={isFocused}/>
+                    </div>
+                    <div
+                        onFocus={() => {
+                        setFocused("Togather");
+                        }}
+                        onBlur={() => {
+                        setFocused("");
+                        }}
+                        tabIndex="0"
+                    >
+                        <Photos isFocused={isFocused}/>
+                    </div>
+                    <div
+                        onFocus={() => {
+                        setFocused("Dotify");
+                        }}
+                        onBlur={() => {
+                        setFocused("");
+                        }}
+                        tabIndex="0"
+                    >
+                        <Photos isFocused={isFocused}/>
+                    </div>
+                    <div
+                        onFocus={() => {
+                        setFocused("Influenger");
+                        }}
+                        onBlur={() => {
+                        setFocused("");
+                        }}
+                        tabIndex="0"
+                    >
+                        <Photos isFocused={isFocused}/>
+                    </div>
+                </Carousel>
+            }
+                <div className=" basis-4/6 max-[900px]:basis-3/5 xs:basis-1/2 pl-10 h-full overflow-y-auto">
                     <img src="./tes.gif" className=" w-3/4"/>
                     {(isFocused == "Tracker")  &&
                     <div>
@@ -214,44 +318,6 @@ const Projects = () => {
             </div>
         </>
     )
-}
-
-// const Editor = ({ isEditorFocused = false }) => {
-//     return <div className=" bg-primary">tes?{isEditorFocused && <p>hai</p>}</div>;
-//   };
-  
-//   const AddArticle = () => {
-//     const [isEditorFocused, setIsEditorFocused] = useState(false);
-  
-//     return (
-//       <div
-//         onFocus={() => {
-//           setIsEditorFocused(true);
-//         }}
-//         onBlur={() => {
-//           setIsEditorFocused(false);
-//         }}
-//         tabIndex="0"
-//       >
-//         <Editor isEditorFocused={isEditorFocused}></Editor>
-//       </div>
-//     );
-//   };
-  
-//   const Project = () => {
-//     return (
-//       <div className="App">
-//         <AddArticle />
-//         <AddArticle />
-//         <AddArticle />
-//         <AddArticle />
-//         <div style={{ marginTop: "2rem", fontSize: "0.825rem" }}>
-//           (Click on, or press the tab key, to navigate through the elements
-//           above.)
-//         </div>
-//       </div>
-//     );
-//   }
-  
+} 
 
 export default Projects
