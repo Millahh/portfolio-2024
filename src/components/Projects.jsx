@@ -10,7 +10,7 @@ import { Carousel, IconButton } from "@material-tailwind/react";
 const Photos = () => {
     return (
         <div className="mt-5 mb-10 max-md:mb-5 relative w-4/5 h-44 max-[900px]:h-36 max-md:h-28 max-[350px]:h-32 max-xs:h-44 self-center mx-auto hover:scale-110 transition-all duration-150 cursor-pointer">
-            <img src="./experiences/image.png" className=" object-cover w-full h-full max-[350px]:h-32 border-4 rounded-xl absolute z-0 desc"/>
+            <img src="./projects/tracker.png" className=" object-cover w-full h-full max-[350px]:h-32 border-4 rounded-xl absolute z-0 desc"/>
             <div className=" absolute z-1 bg-black bg-opacity-50 w-full h-full max-[350px]:h-32 border-4 rounded-xl p-3 desc-hide">
                 <div className="github bg-tertiary self-center px-2 text-md rounded-2xl align-middle inline-block">
                     <p className="align-middle pt-[1.5px] text-[0.7rem]">2024 | Self-project</p>
