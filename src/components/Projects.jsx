@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-undef */
 import { motion, AnimatePresence } from "framer-motion";
 import P from "./texts/Paragraph";
@@ -24,24 +25,94 @@ const Photos = () => {
 }
 
 const Projects = () => {
-    const [ isSelected, setSelected ] = useState("");
+    const [ isFocused, setFocused ] = useState("");
 
     return (
         <>
             <Navbar/>
             <div className="projects pb-20 px-20 min-w-full h-screen overflow-y-hidden flex flex-row">
                 <div className="basis-4/12 overflow-y-auto items-center">
-                    <Photos onClick={() => setSelected("Tracker")}/>
-                    <Photos onClick={() => setSelected("Yournotes")}/>
-                    <Photos onClick={() => setSelected("Meniti")}/>
-                    <Photos onClick={() => setSelected("Issueticket")}/>
-                    <Photos onClick={() => setSelected("Togather")}/>
-                    <Photos onClick={() => setSelected("Dotify")}/>
-                    <Photos onClick={() => setSelected("Influenger")}/>
+                    <div
+                        onFocus={() => {
+                        setFocused("Tracker");
+                        }}
+                        onBlur={() => {
+                        setFocused("");
+                        }}
+                        tabIndex="0"
+                    >
+                        <Photos isFocused={isFocused}/>
+                    </div>
+                    <div
+                        onFocus={() => {
+                        setFocused("Yournotes");
+                        }}
+                        onBlur={() => {
+                        setFocused("");
+                        }}
+                        tabIndex="0"
+                    >
+                        <Photos isFocused={isFocused}/>
+                    </div>
+                    <div
+                        onFocus={() => {
+                        setFocused("Meniti");
+                        }}
+                        onBlur={() => {
+                        setFocused("");
+                        }}
+                        tabIndex="0"
+                    >
+                        <Photos isFocused={isFocused}/>
+                    </div>
+                    <div
+                        onFocus={() => {
+                        setFocused("Issueticket");
+                        }}
+                        onBlur={() => {
+                        setFocused("");
+                        }}
+                        tabIndex="0"
+                    >
+                        <Photos isFocused={isFocused}/>
+                    </div>
+                    <div
+                        onFocus={() => {
+                        setFocused("Togather");
+                        }}
+                        onBlur={() => {
+                        setFocused("");
+                        }}
+                        tabIndex="0"
+                    >
+                        <Photos isFocused={isFocused}/>
+                    </div>
+                    <div
+                        onFocus={() => {
+                        setFocused("Dotify");
+                        }}
+                        onBlur={() => {
+                        setFocused("");
+                        }}
+                        tabIndex="0"
+                    >
+                        <Photos isFocused={isFocused}/>
+                    </div>
+                    <div
+                        onFocus={() => {
+                        setFocused("Influenger");
+                        }}
+                        onBlur={() => {
+                        setFocused("");
+                        }}
+                        tabIndex="0"
+                    >
+                        <Photos isFocused={isFocused}/>
+                    </div>
                 </div>
                 <div className=" basis-4/6 pl-10 h-full overflow-y-auto">
                     <img src="./tes.gif" className=" w-3/4"/>
-                    {(isSelected == "Tracker") && 
+                    {(isFocused == "Tracker")  &&
                     <div>
                         <div className="flex">
                             <p className="text-3xl font-bold mr-5">Tracker</p>
@@ -61,7 +132,7 @@ const Projects = () => {
                         <li>Allows you to <P>check off</P> completed task-breakdowns and let your boss see it.</li>
                         <li>Allows you to <P>upload resources</P> as your proof of completed task to make it transparent.</li>
                     </div>
-                    }{(isSelected == "Yournotes")  &&
+                    }{(isFocused == "Yournotes")  &&
                     <div>
                         <div className="flex">
                             <p className="text-3xl font-bold mr-5">youRnoteS</p>
@@ -72,7 +143,7 @@ const Projects = () => {
                         </div>
                         <p>Introducing a <P>simple</P> yet powerful <P>personal note</P> application that allows you to <P>create</P>, <P>save</P>, and <P>manage</P> your notes effortlessly.  Enjoy the convenience of <P>responsive design</P>, you can access it whether you&lsquo;re on your phone, tablet, or desktop which keeps you organized wherever you go. </p>
                     </div>
-                    }{(isSelected == "Meniti")  &&
+                    }{(isFocused == "Meniti")  &&
                     <div>
                         <div className="flex">
                             <p className="text-3xl font-bold mr-5">menITi</p>
@@ -83,7 +154,7 @@ const Projects = () => {
                         </div>
                         <p>Introducing a <P>progressive web application (PWA)</P> for <P>finding</P> and <P>offering</P> IT mentoring services. Built with <P>Laravel</P> and <P>Bootstrap</P> framework, <P>PgAdmin4</P> as a management tool for PostgreSQL databases, and <P>Figma</P> as an interface design and prototyping tools.  I performed <P>user needs analysis</P> (created personas, scenarios, user stories, determined features, prototyping and evaluating), designed <P>sequence diagrams</P>, created <P>entity relationship diagrams (ERD)</P>, <P>class diagrams</P>, implemented program <P>code</P>, and conducted <P>valuation & usability testing</P>.</p>
                     </div>
-                    }{(isSelected == "Issueticket")  &&
+                    }{(isFocused == "Issueticket")  &&
                     <div>
                         <div className="flex">
                             <p className="text-3xl font-bold mr-5">Issue Ticket Web</p>
@@ -94,7 +165,7 @@ const Projects = () => {
                         </div>
                         <p>Introducing an innovative issue ticketing web application, built with <P>adminLTE</P> as the front-end framework, <P>Laravel</P> as the back-end framework, and <P>PostgreSQL</P> as the database management system. Issue Ticket Web makes programmers&lsquo; jobs easier with comprehensive tools to <P>report</P> and <P>solve web bugs</P> to deliver and improve solutions for users</p>
                     </div>
-                    }{(isSelected == "Togather")  && 
+                    }{(isFocused == "Togather")  && 
                     <div>
                         <div className="flex">
                             <p className="text-3xl font-bold mr-5">To-Gather</p>
@@ -113,7 +184,7 @@ const Projects = () => {
                         <li>Create <P>interfaces</P></li>
                         <li><P>Implement</P> them in the form of programming.</li>
                     </div>
-                    }{(isSelected == "Dotify")  &&
+                    }{(isFocused == "Dotify")  &&
                     <div>
                         <div className="flex">
                             <p className="text-3xl font-bold mr-5">Dotify</p>
@@ -127,7 +198,7 @@ const Projects = () => {
                         <li>&quot;Reminder&quot; : <P>Notifications</P> based on specified times.</li>
                         <li>&quot;Tips & Tricks&quot; : <P>Insightful advice</P> about productivity related.</li>
                     </div>
-                    }{(isSelected == "Influenger")  &&
+                    }{(isFocused == "Influenger")  &&
                     <div>
                         <div className="flex">
                             <p className="text-3xl font-bold mr-5">InfluenGer</p>
@@ -144,5 +215,43 @@ const Projects = () => {
         </>
     )
 }
+
+// const Editor = ({ isEditorFocused = false }) => {
+//     return <div className=" bg-primary">tes?{isEditorFocused && <p>hai</p>}</div>;
+//   };
+  
+//   const AddArticle = () => {
+//     const [isEditorFocused, setIsEditorFocused] = useState(false);
+  
+//     return (
+//       <div
+//         onFocus={() => {
+//           setIsEditorFocused(true);
+//         }}
+//         onBlur={() => {
+//           setIsEditorFocused(false);
+//         }}
+//         tabIndex="0"
+//       >
+//         <Editor isEditorFocused={isEditorFocused}></Editor>
+//       </div>
+//     );
+//   };
+  
+//   const Project = () => {
+//     return (
+//       <div className="App">
+//         <AddArticle />
+//         <AddArticle />
+//         <AddArticle />
+//         <AddArticle />
+//         <div style={{ marginTop: "2rem", fontSize: "0.825rem" }}>
+//           (Click on, or press the tab key, to navigate through the elements
+//           above.)
+//         </div>
+//       </div>
+//     );
+//   }
+  
 
 export default Projects
