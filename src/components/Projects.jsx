@@ -9,8 +9,8 @@ import { Carousel } from "@material-tailwind/react";
 const Photos = () => {
     return (
         <div className="mt-5 mb-10 max-md:mb-5 relative w-4/5 h-44 max-[900px]:h-36 max-md:h-28 max-xs:h-24 self-center mx-auto hover:scale-110 transition-all duration-150 cursor-pointer">
-            <img src="./experiences/image.png" className=" object-cover w-full h-full border-4 rounded-xl absolute z-0 desc"/>
-            <div className=" absolute z-1 bg-black bg-opacity-50 w-full h-full border-4 rounded-xl p-3 desc-hide">
+            <img src="./experiences/image.png" className=" object-cover w-full h-full max-xs:h-44 border-4 rounded-xl absolute z-0 desc"/>
+            <div className=" absolute z-1 bg-black bg-opacity-50 w-full h-full max-xs:h-44 border-4 rounded-xl p-3 desc-hide">
                 <div className="github bg-tertiary self-center px-2 text-md rounded-2xl align-middle inline-block">
                     <p className="align-middle pt-[1.5px] text-[0.7rem]">2024 | Self-project</p>
                 </div>
@@ -134,7 +134,20 @@ const Projects = () => {
                     </div>
                 </div>
             }{isMobile && 
-                <Carousel>
+                <Carousel
+                    navigation={({ setActiveIndex, activeIndex, length }) => (
+                        <div className="absolute top-52 left-2/4 z-50 flex -translate-x-2/4 gap-2">
+                        {new Array(length).fill("").map((_, i) => (
+                            <span
+                            key={i}
+                            className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
+                                activeIndex === i ? "w-8 bg-white" : "w-4 bg-white/50"
+                            }`}
+                            onClick={() => setActiveIndex(i)}
+                            />
+                        ))}
+                        </div>
+                    )}>
                 <div
                         onFocus={() => {
                         setFocused("Tracker");
