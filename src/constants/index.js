@@ -1,7 +1,7 @@
+import Resources from "./Constants";
 
+const example = () => {
 
-const example = [
+}
 
-]
-
-export { example };
+export { example, Resources };
