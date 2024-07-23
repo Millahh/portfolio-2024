@@ -12,13 +12,13 @@ const Photos = ({ name, img, date, desc, tech }) => {
     return (
         <div className="mt-5 mb-10 max-md:mb-5 relative w-4/5 h-44 max-[900px]:h-36 max-md:h-28 max-[350px]:h-32 max-xs:h-44 self-center mx-auto hover:scale-110 transition-all duration-150 cursor-pointer">
             <img src={img} className=" object-cover w-full h-full max-[350px]:h-32 border-4 rounded-xl absolute z-0 desc"/>
-            <div className=" absolute z-1 bg-black bg-opacity-50 w-full h-full max-[350px]:h-32 border-4 rounded-xl p-3 desc-hide">
+            <div className="absolute z-1 bg-black bg-opacity-50 w-full h-full max-[350px]:h-32 border-4 rounded-xl p-3 desc-hide">
                 <div className="github bg-tertiary self-center px-2 text-md rounded-2xl align-middle inline-block">
                     <p className="align-middle pt-[1.5px] text-[0.7rem]">{date}</p>
                 </div>
-                <p className=" text-white font-semibold">{name}</p>
+                <p className=" text-white font-semibold mt-2">{name}</p>
                 <p className=" text-white text-xs">{desc}</p>
-                <div className="github bg-secondary self-center px-2 text-md rounded-2xl align-middle inline-block">
+                <div className="absolute bottom-6 github bg-secondary self-center px-2 text-md rounded-2xl align-middle inline-block">
                     <p className="align-middle pt-[1.5px] text-[0.7rem]">{tech}</p>
                 </div>
             </div>
@@ -26,88 +26,24 @@ const Photos = ({ name, img, date, desc, tech }) => {
     )
 }
 
-const ProjectDesc = ({isFocused = ""}) => {
+const ProjectDesc = ({isFocused = "Tracker"}) => {
     return (
         <>
             <img src="./tes.gif" className=" w-3/4"/>
-            {(isFocused == "Tracker")  &&
-            <div>
-                <div className="flex">
-                    <p className="text-3xl font-bold mr-5">Tracker</p>
-                    <div className="github bg-secondary self-center px-3 text-md rounded-xl flex align-middle">
-                        <p className="text-sm inline align-middle pt-0.5">Visit github</p>
-                        <img src={Github} className=" w-4 h-4 ml-1 self-center align-middle"/>
+            {projects.map((project) => (
+                (isFocused == project.name)  &&
+                <div key={project.name}>
+                    <div className="flex">
+                        <p className="text-3xl font-bold mr-5">{project.name}</p>
+                        <div className="github bg-secondary self-center px-3 text-md rounded-xl flex align-middle">
+                            <p className="text-sm inline align-middle pt-0.5">{project.visit}</p>
+                            <img src={Github} className=" w-4 h-4 ml-1 self-center align-middle"/>
+                        </div>
                     </div>
+                    <Resources select={project.name}/>
                 </div>
-                <Resources select="Tracker"/>
-            </div>
-            }{(isFocused == "youRnoteS")  &&
-            <div>
-                <div className="flex">
-                    <p className="text-3xl font-bold mr-5">youRnoteS</p>
-                    <div className="github bg-secondary self-center px-3 text-md rounded-xl flex align-middle">
-                        <p className="text-sm inline align-middle pt-0.5">Visit github</p>
-                        <img src={Github} className=" w-4 h-4 ml-1 self-center align-middle"/>
-                    </div>
-                </div>
-                <Resources select="Yournotes"/>
-            </div>
-            }{(isFocused == "MenITi")  &&
-            <div>
-                <div className="flex">
-                    <p className="text-3xl font-bold mr-5">MenITi</p>
-                    <div className="github bg-secondary self-center px-3 text-md rounded-xl flex align-middle">
-                        <p className="text-sm inline align-middle pt-0.5">Visit github</p>
-                        <img src={Github} className=" w-4 h-4 ml-1 self-center align-middle"/>
-                    </div>
-                </div>
-                <Resources select="Meniti"/>
-            </div>
-            }{(isFocused == "Issue Ticket")  &&
-            <div>
-                <div className="flex">
-                    <p className="text-3xl font-bold mr-5">Issue Ticket Web</p>
-                    <div className="github bg-secondary self-center px-3 text-md rounded-xl flex align-middle">
-                        <p className="text-sm inline align-middle pt-0.5">Visit github</p>
-                        <img src={Github} className=" w-4 h-4 ml-1 self-center align-middle"/>
-                    </div>
-                </div>
-                <Resources select="Issueticket"/>
-            </div>
-            }{(isFocused == "To-Gather")  && 
-            <div>
-                <div className="flex">
-                    <p className="text-3xl font-bold mr-5">To-Gather</p>
-                    <div className="github bg-secondary self-center px-3 text-md rounded-xl flex align-middle">
-                        <p className="text-sm inline align-middle pt-0.5">Visit github</p>
-                        <img src={Github} className=" w-4 h-4 ml-1 self-center align-middle"/>
-                    </div>
-                </div>
-                <Resources select="Togather"/>
-            </div>
-            }{(isFocused == "Dotify")  &&
-            <div>
-                <div className="flex">
-                    <p className="text-3xl font-bold mr-5">Dotify</p>
-                    <div className="github bg-secondary self-center px-3 text-md rounded-xl flex align-middle">
-                        <p className="text-sm inline align-middle pt-0.5">Visit github</p>
-                        <img src={Github} className=" w-4 h-4 ml-1 self-center align-middle"/>
-                    </div>
-                </div>
-                <Resources select="Dotify"/>
-            </div>
-            }{(isFocused == "InfluenGer")  &&
-            <div>
-                <div className="flex">
-                    <p className="text-3xl font-bold mr-5">InfluenGer</p>
-                    <div className="github bg-secondary self-center px-3 text-md rounded-xl flex align-middle">
-                        <p className="text-sm inline align-middle pt-0.5">Visit github</p>
-                        <img src={Github} className=" w-4 h-4 ml-1 self-center align-middle"/>
-                    </div>
-                </div>
-                <Resources select="Influenger"/>
-            </div>
-            }
+            ))}
+
         </>
     )
 }
