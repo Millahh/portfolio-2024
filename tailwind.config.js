@@ -26,7 +26,7 @@ export default {
         xs: "450px",
       },
       backgroundImage: {
-        "custom": "url('/bg.png')",
+        "custom": "url('./src/assets/bg.png')",
       },
       letterSpacing: {
         widest: ".25em"
