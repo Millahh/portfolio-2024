@@ -7,18 +7,18 @@ import Navbar from "./Navbar";
 import { useState, useEffect } from "react";
 import { Carousel, IconButton } from "@material-tailwind/react";
 
-const Photos = () => {
+const Photos = ({ date, name, desc, lang }) => {
     return (
         <div className="mt-5 mb-10 max-md:mb-5 relative w-4/5 h-44 max-[900px]:h-36 max-md:h-28 max-[350px]:h-32 max-xs:h-44 self-center mx-auto hover:scale-110 transition-all duration-150 cursor-pointer">
             <img src="./projects/tracker.png" className=" object-cover w-full h-full max-[350px]:h-32 border-4 rounded-xl absolute z-0 desc"/>
             <div className=" absolute z-1 bg-black bg-opacity-50 w-full h-full max-[350px]:h-32 border-4 rounded-xl p-3 desc-hide">
                 <div className="github bg-tertiary self-center px-2 text-md rounded-2xl align-middle inline-block">
-                    <p className="align-middle pt-[1.5px] text-[0.7rem]">2024 | Self-project</p>
+                    <p className="align-middle pt-[1.5px] text-[0.7rem]">{date}</p>
                 </div>
-                <p className=" text-white font-semibold">Tracker</p>
-                <p className=" text-white text-xs">Task progress tracking application that supports multi role login.</p>
+                <p className=" text-white font-semibold">{name}</p>
+                <p className=" text-white text-xs">{desc}</p>
                 <div className="github bg-secondary self-center px-2 text-md rounded-2xl align-middle inline-block">
-                    <p className="align-middle pt-[1.5px] text-[0.7rem]">Laravel | Tailwind</p>
+                    <p className="align-middle pt-[1.5px] text-[0.7rem]">{lang}</p>
                 </div>
             </div>
         </div>
@@ -222,7 +222,7 @@ const Projects = () => {
                         }}
                         tabIndex="0"
                     >
-                        <Photos isFocused={isFocused}/>
+                        <Photos isFocused={isFocused} date="2024 | Self-project" name="Tracker" desc="Task progress tracking application that supports multi role login." lang="Laravel | Tailwind"/>
                     </div>
                     <div
                         onFocus={() => {
@@ -233,7 +233,7 @@ const Projects = () => {
                         }}
                         tabIndex="0"
                     >
-                        <Photos isFocused={isFocused}/>
+                        <Photos isFocused={isFocused} date="2024 | Self-project" name="Tracker" desc="Task progress tracking application that supports multi role login." lang="Laravel | Tailwind"/>
                     </div>
                     <div
                         onFocus={() => {
@@ -244,7 +244,7 @@ const Projects = () => {
                         }}
                         tabIndex="0"
                     >
-                        <Photos isFocused={isFocused}/>
+                        <Photos isFocused={isFocused} date="2024 | Self-project" name="Tracker" desc="Task progress tracking application that supports multi role login." lang="Laravel | Tailwind"/>
                     </div>
                     <div
                         onFocus={() => {
@@ -255,7 +255,7 @@ const Projects = () => {
                         }}
                         tabIndex="0"
                     >
-                        <Photos isFocused={isFocused}/>
+                        <Photos isFocused={isFocused} date="2024 | Self-project" name="Tracker" desc="Task progress tracking application that supports multi role login." lang="Laravel | Tailwind"/>
                     </div>
                     <div
                         onFocus={() => {
@@ -266,7 +266,7 @@ const Projects = () => {
                         }}
                         tabIndex="0"
                     >
-                        <Photos isFocused={isFocused}/>
+                        <Photos isFocused={isFocused} date="2024 | Self-project" name="Tracker" desc="Task progress tracking application that supports multi role login." lang="Laravel | Tailwind"/>
                     </div>
                     <div
                         onFocus={() => {
@@ -277,7 +277,7 @@ const Projects = () => {
                         }}
                         tabIndex="0"
                     >
-                        <Photos isFocused={isFocused}/>
+                        <Photos isFocused={isFocused} date="2024 | Self-project" name="Tracker" desc="Task progress tracking application that supports multi role login." lang="Laravel | Tailwind"/>
                     </div>
                     <div
                         onFocus={() => {
@@ -288,7 +288,7 @@ const Projects = () => {
                         }}
                         tabIndex="0"
                     >
-                        <Photos isFocused={isFocused}/>
+                        <Photos isFocused={isFocused} date="2024 | Self-project" name="Tracker" desc="Task progress tracking application that supports multi role login." lang="Laravel | Tailwind"/>
                     </div>
                 </div>
             }{isMobile && 
@@ -302,7 +302,8 @@ const Projects = () => {
                         }}
                         tabIndex="0"
                     >
-                    <Photos isFocused={isFocused}/>
+                    <Photos isFocused={isFocused} date="2024 | Self-project" name="Tracker" desc="Task progress tracking application that supports multi role login." lang="Laravel | Tailwind"/>
+
                     </div>
                 </MobileCarousel>
             }
