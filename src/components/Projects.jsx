@@ -6,8 +6,9 @@ import { Github } from "../assets";
 import Navbar from "./Navbar";
 import { useState, useEffect } from "react";
 import { Carousel, IconButton } from "@material-tailwind/react";
+import { projects } from "../constants";
 
-const Photos = ({ img, date, name, desc, lang }) => {
+const Photos = ({ name, img, date, desc, tech }) => {
     return (
         <div className="mt-5 mb-10 max-md:mb-5 relative w-4/5 h-44 max-[900px]:h-36 max-md:h-28 max-[350px]:h-32 max-xs:h-44 self-center mx-auto hover:scale-110 transition-all duration-150 cursor-pointer">
             <img src={img} className=" object-cover w-full h-full max-[350px]:h-32 border-4 rounded-xl absolute z-0 desc"/>
@@ -18,7 +19,7 @@ const Photos = ({ img, date, name, desc, lang }) => {
                 <p className=" text-white font-semibold">{name}</p>
                 <p className=" text-white text-xs">{desc}</p>
                 <div className="github bg-secondary self-center px-2 text-md rounded-2xl align-middle inline-block">
-                    <p className="align-middle pt-[1.5px] text-[0.7rem]">{lang}</p>
+                    <p className="align-middle pt-[1.5px] text-[0.7rem]">{tech}</p>
                 </div>
             </div>
         </div>
@@ -40,7 +41,7 @@ const ProjectDesc = ({isFocused = ""}) => {
                 </div>
                 <Resources select="Tracker"/>
             </div>
-            }{(isFocused == "Yournotes")  &&
+            }{(isFocused == "youRnoteS")  &&
             <div>
                 <div className="flex">
                     <p className="text-3xl font-bold mr-5">youRnoteS</p>
@@ -51,10 +52,10 @@ const ProjectDesc = ({isFocused = ""}) => {
                 </div>
                 <Resources select="Yournotes"/>
             </div>
-            }{(isFocused == "Meniti")  &&
+            }{(isFocused == "MenITi")  &&
             <div>
                 <div className="flex">
-                    <p className="text-3xl font-bold mr-5">menITi</p>
+                    <p className="text-3xl font-bold mr-5">MenITi</p>
                     <div className="github bg-secondary self-center px-3 text-md rounded-xl flex align-middle">
                         <p className="text-sm inline align-middle pt-0.5">Visit github</p>
                         <img src={Github} className=" w-4 h-4 ml-1 self-center align-middle"/>
@@ -62,7 +63,7 @@ const ProjectDesc = ({isFocused = ""}) => {
                 </div>
                 <Resources select="Meniti"/>
             </div>
-            }{(isFocused == "Issueticket")  &&
+            }{(isFocused == "Issue Ticket")  &&
             <div>
                 <div className="flex">
                     <p className="text-3xl font-bold mr-5">Issue Ticket Web</p>
@@ -73,7 +74,7 @@ const ProjectDesc = ({isFocused = ""}) => {
                 </div>
                 <Resources select="Issueticket"/>
             </div>
-            }{(isFocused == "Togather")  && 
+            }{(isFocused == "To-Gather")  && 
             <div>
                 <div className="flex">
                     <p className="text-3xl font-bold mr-5">To-Gather</p>
@@ -95,7 +96,7 @@ const ProjectDesc = ({isFocused = ""}) => {
                 </div>
                 <Resources select="Dotify"/>
             </div>
-            }{(isFocused == "Influenger")  &&
+            }{(isFocused == "InfluenGer")  &&
             <div>
                 <div className="flex">
                     <p className="text-3xl font-bold mr-5">InfluenGer</p>
@@ -213,98 +214,37 @@ const Projects = () => {
             <div className="projects pb-20 px-20 max-lg:px-10 min-w-full h-screen max-xs:h-5/6 overflow-y-hidden flex max-[450px]:block flex-row">
             {!isMobile && 
                 <div className="basis-4/12 max-[900px]:basis-2/5 max-xs:basis-1/2 overflow-y-auto max-xs:overflow-y-hidden items-center">
-                    <div
-                        onFocus={() => {
-                        setFocused("Tracker");
-                        }}
-                        onBlur={() => {
-                        setFocused("");
-                        }}
-                        tabIndex="0"
-                    >
-                        <Photos isFocused={isFocused} img="./projects/tracker.png" date="2024 | Self-project" name="Tracker" desc="Task progress tracking application that supports multi role login." lang="Laravel | Tailwind"/>
-                    </div>
-                    <div
-                        onFocus={() => {
-                        setFocused("Yournotes");
-                        }}
-                        onBlur={() => {
-                        setFocused("");
-                        }}
-                        tabIndex="0"
-                    >
-                        <Photos isFocused={isFocused} img="./projects/yournotes.png" date="2024 | Self-project" name="youRnoteS" desc="Make, keep and manage your personal notes wherever you go." lang="Laravel | Tailwind"/>
-                    </div>
-                    <div
-                        onFocus={() => {
-                        setFocused("Meniti");
-                        }}
-                        onBlur={() => {
-                        setFocused("");
-                        }}
-                        tabIndex="0"
-                    >
-                        <Photos isFocused={isFocused} date="2024 | Self-project" name="Tracker" desc="Task progress tracking application that supports multi role login." lang="Laravel | Tailwind"/>
-                    </div>
-                    <div
-                        onFocus={() => {
-                        setFocused("Issueticket");
-                        }}
-                        onBlur={() => {
-                        setFocused("");
-                        }}
-                        tabIndex="0"
-                    >
-                        <Photos isFocused={isFocused} date="2024 | Self-project" name="Tracker" desc="Task progress tracking application that supports multi role login." lang="Laravel | Tailwind"/>
-                    </div>
-                    <div
-                        onFocus={() => {
-                        setFocused("Togather");
-                        }}
-                        onBlur={() => {
-                        setFocused("");
-                        }}
-                        tabIndex="0"
-                    >
-                        <Photos isFocused={isFocused} date="2024 | Self-project" name="Tracker" desc="Task progress tracking application that supports multi role login." lang="Laravel | Tailwind"/>
-                    </div>
-                    <div
-                        onFocus={() => {
-                        setFocused("Dotify");
-                        }}
-                        onBlur={() => {
-                        setFocused("");
-                        }}
-                        tabIndex="0"
-                    >
-                        <Photos isFocused={isFocused} date="2024 | Self-project" name="Tracker" desc="Task progress tracking application that supports multi role login." lang="Laravel | Tailwind"/>
-                    </div>
-                    <div
-                        onFocus={() => {
-                        setFocused("Influenger");
-                        }}
-                        onBlur={() => {
-                        setFocused("");
-                        }}
-                        tabIndex="0"
-                    >
-                        <Photos isFocused={isFocused} date="2024 | Self-project" name="Tracker" desc="Task progress tracking application that supports multi role login." lang="Laravel | Tailwind"/>
-                    </div>
+                    {projects.map((project) => (
+                        <div
+                            key={project.name}
+                            onFocus={() => {
+                            setFocused(project.name);
+                            }}
+                            onBlur={() => {
+                            setFocused("");
+                            }}
+                            tabIndex="0"
+                        >
+                            <Photos isFocused={isFocused} img={project.img} date={project.date} name={project.name} desc={project.desc} tech={project.tech}/>
+                        </div>
+                    ))}
                 </div>
             }{isMobile && 
                 <MobileCarousel>
-                    <div
-                        onFocus={() => {
-                        setFocused("Tracker");
-                        }}
-                        onBlur={() => {
-                        setFocused("");
-                        }}
-                        tabIndex="0"
-                    >
-                    <Photos isFocused={isFocused} date="2024 | Self-project" name="Tracker" desc="Task progress tracking application that supports multi role login." lang="Laravel | Tailwind"/>
-
-                    </div>
+                    {projects.map((project) => (
+                            <div
+                                key={project.name}
+                                onFocus={() => {
+                                setFocused(project.name);
+                                }}
+                                onBlur={() => {
+                                setFocused("");
+                                }}
+                                tabIndex="0"
+                            >
+                                <Photos isFocused={isFocused} img={project.img} date={project.date} name={project.name} desc={project.desc} tech={project.tech}/>
+                            </div>
+                    ))}
                 </MobileCarousel>
             }
                 <div className="basis-4/6 max-[900px]:basis-3/5 max-xs:basis-1/2 pl-10 h-full overflow-y-auto">
