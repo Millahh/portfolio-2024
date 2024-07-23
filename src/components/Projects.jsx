@@ -120,7 +120,7 @@ const MobileCarousel = (props) => {
 }
 
 const Projects = () => {
-    const [ isFocused, setFocused ] = useState("");
+    const [ isFocused, setFocused ] = useState("Tracker");
     const [isMobile, setIsMobile] = useState(false);
     useEffect(() => {
         // Add a listener for changes to the screen size
