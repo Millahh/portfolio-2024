@@ -1,6 +1,20 @@
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable react/prop-types */
 import { useState } from "react";
+import { navLinks } from "../constants";
+
+const Links = () => {
+    return (
+        <>
+            {navLinks.map((link) => (
+                <a 
+                key={link.id}
+                className="max-md:flex m-auto justify-center hover:scale-125 transition-transform duration-100 opacity-50 hover:opacity-100 focus:opacity-100 max-md:w-20"
+                >{link.title}</a>
+            ))}
+        </>
+    )
+}
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -8,11 +22,7 @@ const Navbar = () => {
         <>
             <div className="navbar flex md:justify-between px-10 py-5 xl:w-1/2 lg:w-2/3 md:w-full max-md:hidden max-sm:hidden max-xs:hidden">
                 <a className="flex hover:scale-125 transition-transform duration-100 opacity-50 hover:opacity-100">HI<p className="text-sm -ml-1">👋</p></a>
-                <a>ABOUT</a>
-                <a>PROJECTS</a>
-                <a>EXPERIENCES</a>
-                <a>FUN FACTS</a>
-                <a>CONTACT</a>
+                <Links/>
             </div>
             <div class="md:hidden max-w-screen-xl pt-4 pr-4">
                 <button type="button" class="float-right p-2 w-8 h-8 rounded-lg bg-primary bg-opacity-30 hover:bg-opacity-40 focus:outline-none hover:border-transparent" onClick={() => setIsOpen(!isOpen)}>
@@ -21,13 +31,9 @@ const Navbar = () => {
                     </svg>
                 </button>
                 {isOpen && 
-                <div class="navbar w-full pl-5" id="navbar-mobile">
-                    <a className="flex hover:scale-125 transition-transform duration-100 opacity-50 hover:opacity-100">HI<p className="text-sm -ml-1">👋</p></a>
-                    <a className="flex">ABOUT</a>
-                    <a className="flex">PROJECTS</a>
-                    <a className="flex">EXPERIENCES</a>
-                    <a className="flex">FUN FACTS</a>
-                    <a className="flex">CONTACT</a>
+                <div class="navbar w-1/2 text-center self-center m-auto pl-4" id="navbar-mobile">
+                    <a className="flex m-auto hover:scale-125 justify-center transition-transform duration-100 opacity-50 hover:opacity-100 w-20">HI<p className="text-sm -ml-1">👋</p></a>
+                    <Links/>
                 </div>
                 }
             </div>

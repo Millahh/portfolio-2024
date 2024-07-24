@@ -7,10 +7,11 @@ import Navbar from "./Navbar";
 import { useState, useEffect } from "react";
 import { Carousel, IconButton } from "@material-tailwind/react";
 import { projects } from "../constants";
+import { macbook, trackervideo } from "../assets";
 
 const Photos = ({ name, img, date, desc, tech }) => {
     return (
-        <div className="mt-5 mb-10 max-md:mb-5 relative w-4/5 h-44 max-[900px]:h-36 max-md:h-28 max-[350px]:h-32 max-xs:h-44 self-center mx-auto hover:scale-110 transition-all duration-150 cursor-pointer">
+        <div className="mt-5 mb-10 max-md:mb-5 relative w-4/5 h-44 max-[900px]:h-36 max-md:h-28 max-[350px]:h-32 max-[450px]:h-44 self-center mx-auto hover:scale-110 transition-all duration-150 cursor-pointer">
             <img src={img} className=" object-cover w-full h-full max-[350px]:h-32 border-4 rounded-xl absolute z-0 desc"/>
             <div className="absolute z-1 bg-black bg-opacity-50 w-full h-full max-[350px]:h-32 border-4 rounded-xl p-3 desc-hide">
                 <div className="github bg-tertiary self-center px-2 text-md rounded-2xl align-middle inline-block">
@@ -29,7 +30,12 @@ const Photos = ({ name, img, date, desc, tech }) => {
 const ProjectDesc = ({isFocused = "Tracker"}) => {
     return (
         <>
-            <img src="./tes.gif" className=" w-3/4"/>
+            <div className="m-auto bg-macbook bg-contain bg-center bg-no-repeat h-3/5 w-2/3 content-center">
+                <video className="mx-auto w-2/3" controls >
+                    <source src={trackervideo} type="video/mp4"/>
+                </video>
+                {/* <img src={macbook} className=" w-3/4"/> */}
+            </div>
             {projects.map((project) => (
                 (isFocused == project.name)  &&
                 <div key={project.name}>
@@ -183,7 +189,7 @@ const Projects = () => {
                     ))}
                 </MobileCarousel>
             }
-                <div className="basis-4/6 max-[900px]:basis-3/5 max-xs:basis-1/2 pl-10 h-full overflow-y-auto">
+                <div className="basis-4/6 max-[900px]:basis-3/5 max-xs:basis-1/2 pl-10 max-[450px]:pl-0 h-full overflow-y-auto">
                     <ProjectDesc isFocused={isFocused}/>
                 </div>
             </div>

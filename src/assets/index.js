@@ -32,5 +32,7 @@ import pk21 from "./experiences/pk2-1.png";
 import pk22 from "./experiences/pk2-2.png";
 import pk23 from "./experiences/pk2-3.png";
 import poros from "./experiences/poros & cyberclass.png"
+import macbook from "./projects/Macbook.png"
+import trackervideo from "./projects/tracker.mp4"
 
-export { AdminLTE, Bootstrap, CSS, Figma, HTML, JavaScript, Laravel, PHP, phpMyAdmin, PostgreSQL, React, Tailwind, Threejs, Github, Influenger, Issueticket, Meniti, Togather, Tracker, Yournotes, Bem1, Bem2, Bem3, Internship1, Internship2, Internship3, Ipcree1, Ipcree2, lkmmtd1, lkmmtd2, pk21, pk22, pk23, poros };
+export { AdminLTE, Bootstrap, CSS, Figma, HTML, JavaScript, Laravel, PHP, phpMyAdmin, PostgreSQL, React, Tailwind, Threejs, Github, Influenger, Issueticket, Meniti, Togather, Tracker, Yournotes, Bem1, Bem2, Bem3, Internship1, Internship2, Internship3, Ipcree1, Ipcree2, lkmmtd1, lkmmtd2, pk21, pk22, pk23, poros, macbook, trackervideo };

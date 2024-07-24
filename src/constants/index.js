@@ -3,10 +3,6 @@ import { Tracker, Yournotes, Meniti, Issueticket, Togather, Influenger } from ".
 
 export const navLinks = [
     {
-        id: "hi",
-        title: "HI",
-    }
-    ,{
       id: "about",
       title: "ABOUT",
     },

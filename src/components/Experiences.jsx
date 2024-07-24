@@ -11,28 +11,28 @@ const Experiences = () => {
             <div className="experiences py-3 px-20 min-w-full h-screen overflow-y-auto">
                 <section className="mb-auto space-y-5">
                     <div className="flex flex-row relative">
-                        <div className="basis-1/4">
+                        <div className="basis-1/4 border">
                             <AnimatePresence>
                                 <motion.div className="z-0 absolute w-1/4"
                                 initial={{ opacity: 0, x:50 }}
                                 animate={{ opacity: 1, x:0 }}
                                 transition={{ delay:0.2, type: "tween", duration: 0.2 }}
                                 >
-                                    <img src={Internship3} className="object-cover w-11/12 border-2 border-white rounded-xl"/>
+                                    <img src={Internship3} className="object-cover h-40 w-11/12 border-2 border-white rounded-xl"/>
                                 </motion.div>
                                 <motion.div className="-z-1 top-2 left-3 absolute w-1/4"
                                 initial={{ opacity: 0, x:50 }}
                                 animate={{ opacity: 1, x:0 }}
                                 transition={{ delay:0.5, type: "tween", duration: 0.2 }}
                                 >
-                                    <img src={Internship2} className="object-cover w-11/12 border-2 border-white rounded-xl"/>
+                                    <img src={Internship2} className="object-cover h-40  w-11/12 border-2 border-white rounded-xl"/>
                                 </motion.div>
                                 <motion.div className="-z-2 top-4 left-6 absolute w-1/4"
                                 initial={{ opacity: 0, x:50 }}
                                 animate={{ opacity: 1, x:0 }}
                                 transition={{ delay:0.7, type: "tween", duration: 0.2 }}
                                 >
-                                    <img src={Internship1} className="object-cover w-11/12 border-2 border-white rounded-xl"/>
+                                    <img src={Internship1} className="object-cover  h-40 w-11/12 border-2 border-white rounded-xl"/>
                                 </motion.div>
                             </AnimatePresence>
                         </div>
