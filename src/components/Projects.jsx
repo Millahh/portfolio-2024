@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 /* eslint-disable react/prop-types */
 /* eslint-disable no-undef */
 import P from "./texts/Paragraph";
@@ -30,23 +31,24 @@ const Photos = ({ name, img, date, desc, tech }) => {
 const ProjectDesc = ({isFocused = "Tracker"}) => {
     return (
         <>
-            <div className="m-auto bg-macbook bg-contain bg-center bg-no-repeat h-3/5 w-2/3 content-center">
-                <video className="mx-auto w-2/3" controls >
-                    <source src={trackervideo} type="video/mp4"/>
-                </video>
-                {/* <img src={macbook} className=" w-3/4"/> */}
-            </div>
             {projects.map((project) => (
                 (isFocused == project.name)  &&
                 <div key={project.name}>
-                    <div className="flex">
-                        <p className="text-3xl font-bold mr-5">{project.name}</p>
-                        <div className="github bg-secondary self-center px-3 text-md rounded-xl flex align-middle">
-                            <p className="text-sm inline align-middle pt-0.5">{project.visit}</p>
-                            <img src={Github} className=" w-4 h-4 ml-1 self-center align-middle"/>
-                        </div>
+                    <div className="m-auto bg-macbook bg-contain bg-no-repeat bg-center h-80 content-center">
+                        <video className="mx-auto w-1/2 h-4/5" loop muted autoPlay={true}>
+                            <source src={trackervideo} type="video/mp4"/>
+                        </video>
                     </div>
-                    <Resources select={project.name}/>
+                    <div>
+                        <div className="flex">
+                            <p className="text-3xl font-bold mr-5">{project.name}</p>
+                            <div className="github bg-secondary self-center px-3 text-md rounded-xl flex align-middle">
+                                <p className="text-sm inline align-middle pt-0.5">{project.visit}</p>
+                                <img src={Github} className=" w-4 h-4 ml-1 self-center align-middle"/>
+                            </div>
+                        </div>
+                        <Resources select={project.name}/>
+                    </div>
                 </div>
             ))}
 
@@ -153,7 +155,7 @@ const Projects = () => {
     return (
         <>
             <Navbar/>
-            <div className="projects pb-20 px-20 max-lg:px-10 min-w-full h-screen max-xs:h-5/6 overflow-y-hidden flex max-[450px]:block flex-row">
+            <div className="projects pb-20 px-20 max-lg:px-10 min-w-full h-screen max-[450px]:h-5/6 overflow-y-hidden flex max-[450px]:block flex-row">
             {!isMobile && 
                 <div className="basis-4/12 max-[900px]:basis-2/5 max-xs:basis-1/2 overflow-y-auto max-xs:overflow-y-hidden items-center">
                     {projects.map((project) => (
