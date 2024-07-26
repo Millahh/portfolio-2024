@@ -1,5 +1,5 @@
 import Resources from "./Constants";
-import { imgTracker, imgYournotes, imgMeniti, imgIssueticket, imgTogather, imgInfluenger, vidIssueTicket, vidMenITi, vidToGather, vidTracker, vidyouRnoteS } from "../assets";
+import { imgTracker, imgYournotes, imgMeniti, imgIssueticket, imgTogather, vidIssueTicket, vidMenITi, vidToGather, vidTracker, vidyouRnoteS } from "../assets";
 
 export const navLinks = [
     {
@@ -69,15 +69,6 @@ const projects = [
         desc: "Find your ideal team members for any project or competition in your chosen field!", 
         tech: "Laravel | JavaScript",
         visit: "Visit Github",
-    },
-    {
-        name: "InfluenGer", 
-        img: imgInfluenger, 
-        vid: "",
-        date: "2021 | Team-project", 
-        desc: "Make, keep and manage your personal notes wherever you go.", 
-        tech: "Figma",
-        visit: "Visit Figma",
     },
 ]
 export { projects, Resources };
