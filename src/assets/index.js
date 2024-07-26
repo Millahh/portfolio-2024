@@ -12,12 +12,12 @@ import React from "./tech/reactjs.png";
 import Tailwind from "./tech/tailwind.png";
 import Threejs from "./tech/threejs.png";
 import Github from "./github.png";
-import Influenger from "./projects/influenger.png";
-import Issueticket from "./projects/issueticket.png";
-import Meniti from "./projects/meniti.png";
-import Togather from "./projects/togather.png";
-import Tracker from "./projects/tracker.png";
-import Yournotes from "./projects/yournotes.png";
+import imgInfluenger from "./projects/influenger.png";
+import imgIssueticket from "./projects/issueticket.png";
+import imgMeniti from "./projects/meniti.png";
+import imgTogather from "./projects/togather.png";
+import imgTracker from "./projects/tracker.png";
+import imgYournotes from "./projects/yournotes.png";
 import Bem1 from "./experiences/bem-1.jpeg";
 import Bem2 from "./experiences/bem-2.jpeg";
 import Bem3 from "./experiences/bem-3.jpeg";
@@ -33,6 +33,10 @@ import pk22 from "./experiences/pk2-2.png";
 import pk23 from "./experiences/pk2-3.png";
 import poros from "./experiences/poros & cyberclass.png"
 import macbook from "./projects/Macbook.png"
-import trackervideo from "./projects/tracker.mp4"
+import vidTracker from "./projects/tracker.mp4"
+import vidyouRnoteS from "./projects/yournotes.mp4"
+import vidMenITi from "./projects/meniti.mp4"
+import vidIssueTicket from "./projects/issueticket.mp4"
+import vidToGather from "./projects/togather.mp4"
 
-export { AdminLTE, Bootstrap, CSS, Figma, HTML, JavaScript, Laravel, PHP, phpMyAdmin, PostgreSQL, React, Tailwind, Threejs, Github, Influenger, Issueticket, Meniti, Togather, Tracker, Yournotes, Bem1, Bem2, Bem3, Internship1, Internship2, Internship3, Ipcree1, Ipcree2, lkmmtd1, lkmmtd2, pk21, pk22, pk23, poros, macbook, trackervideo };
+export { AdminLTE, Bootstrap, CSS, Figma, HTML, JavaScript, Laravel, PHP, phpMyAdmin, PostgreSQL, React, Tailwind, Threejs, Github, imgInfluenger, imgIssueticket, imgMeniti, imgTogather, imgTracker, imgYournotes, Bem1, Bem2, Bem3, Internship1, Internship2, Internship3, Ipcree1, Ipcree2, lkmmtd1, lkmmtd2, pk21, pk22, pk23, poros, macbook, vidIssueTicket, vidMenITi, vidToGather, vidTracker, vidyouRnoteS };

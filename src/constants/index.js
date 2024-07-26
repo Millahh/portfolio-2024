@@ -1,5 +1,5 @@
 import Resources from "./Constants";
-import { Tracker, Yournotes, Meniti, Issueticket, Togather, Influenger } from "../assets";
+import { imgTracker, imgYournotes, imgMeniti, imgIssueticket, imgTogather, imgInfluenger, vidIssueTicket, vidMenITi, vidToGather, vidTracker, vidyouRnoteS } from "../assets";
 
 export const navLinks = [
     {
@@ -27,7 +27,8 @@ export const navLinks = [
 const projects = [
     {
         name: "Tracker", 
-        img: Tracker, 
+        img: imgTracker, 
+        vid: vidTracker,
         date: "2024 | Self-project", 
         desc: "Task progress tracking application that supports multi role login.", 
         tech: "Laravel | Tailwind",
@@ -35,7 +36,8 @@ const projects = [
     },
     {
         name: "youRnoteS", 
-        img: Yournotes, 
+        img: imgYournotes, 
+        vid: vidyouRnoteS,
         date: "2024 | Self-project", 
         desc: "Make, keep and manage your personal notes wherever you go.", 
         tech: "Laravel | Tailwind",
@@ -43,7 +45,8 @@ const projects = [
     },
     {
         name: "MenITi", 
-        img: Meniti, 
+        img: imgMeniti, 
+        vid: vidMenITi,
         date: "2022 | Bachelor's Degree Final Project", 
         desc: "Find your mentor in IT field or be one of them.", 
         tech: "Laravel | Bootstrap",
@@ -51,7 +54,8 @@ const projects = [
     },
     {
         name: "Issue-Ticket", 
-        img: Issueticket, 
+        img: imgIssueticket, 
+        vid: vidIssueTicket,
         date: "2022 | Internship", 
         desc: "Make, keep and manage your personal notes wherever you go.", 
         tech: "Laravel | AdminLTE",
@@ -59,7 +63,8 @@ const projects = [
     },
     {
         name: "To-Gather", 
-        img: Togather, 
+        img: imgTogather, 
+        vid: vidToGather,
         date: "2021 | Team-project", 
         desc: "Find your ideal team members for any project or competition in your chosen field!", 
         tech: "Laravel | JavaScript",
@@ -67,7 +72,8 @@ const projects = [
     },
     {
         name: "InfluenGer", 
-        img: Influenger, 
+        img: imgInfluenger, 
+        vid: "",
         date: "2021 | Team-project", 
         desc: "Make, keep and manage your personal notes wherever you go.", 
         tech: "Figma",

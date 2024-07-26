@@ -8,7 +8,7 @@ import Navbar from "./Navbar";
 import { useState, useEffect } from "react";
 import { Carousel, IconButton } from "@material-tailwind/react";
 import { projects } from "../constants";
-import { macbook, trackervideo } from "../assets";
+import { macbook } from "../assets";
 
 const Photos = ({ name, img, date, desc, tech }) => {
     return (
@@ -34,11 +34,13 @@ const ProjectDesc = ({isFocused = "Tracker"}) => {
             {projects.map((project) => (
                 (isFocused == project.name)  &&
                 <div key={project.name}>
-                    <div className="m-auto bg-macbook bg-contain bg-no-repeat bg-center h-80 content-center">
-                        <video className="mx-auto w-1/2 h-4/5" loop muted autoPlay={true}>
-                            <source src={trackervideo} type="video/mp4"/>
+                    {(project.vid !== "") &&
+                    <div className="bg-macbook bg-contain bg-no-repeat bg-center h-80 content-center">
+                        <video className="mx-auto w-3/5 h-3/4 -mt-5" loop muted autoPlay={true}>
+                            <source src={project.vid} type="video/mp4"/>
                         </video>
                     </div>
+                    }
                     <div>
                         <div className="flex">
                             <p className="text-3xl font-bold mr-5">{project.name}</p>
