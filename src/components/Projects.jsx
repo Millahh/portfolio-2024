@@ -12,16 +12,16 @@ import { macbook } from "../assets";
 
 const Photos = ({ name, img, date, desc, tech }) => {
     return (
-        <div className="mt-5 mb-10 max-md:mb-5 relative w-4/5 h-44 max-[900px]:h-36 max-md:h-28 max-[350px]:h-32 max-[450px]:h-44 self-center mx-auto hover:scale-110 transition-all duration-150 cursor-pointer">
-            <img src={img} className=" object-cover w-full h-full max-[350px]:h-32 border-4 rounded-xl absolute z-0 desc"/>
-            <div className="absolute z-1 bg-black bg-opacity-50 w-full h-full max-[350px]:h-32 border-4 rounded-xl p-3 desc-hide">
+        <div className="mt-5 mb-10 max-md:mb-5 relative w-4/5 h-44 max-[900px]:h-36 max-md:h-28 max-[450px]:h-44 self-center mx-auto hover:scale-110 transition-all duration-150 cursor-pointer">
+            <img src={img} className=" object-cover w-full h-full border-4 rounded-xl absolute z-0 desc"/>
+            <div className="absolute z-1 bg-black bg-opacity-50 w-full h-full border-4 rounded-xl p-3 desc-hide">
                 <div className="github bg-tertiary self-center px-2 text-md rounded-2xl align-middle inline-block">
                     <p className="align-middle pt-[1.5px] text-[0.7rem]">{date}</p>
                 </div>
-                <p className=" text-white font-semibold mt-2">{name}</p>
-                <p className=" text-white text-xs">{desc}</p>
-                <div className="absolute bottom-6 github bg-secondary self-center px-2 text-md rounded-2xl align-middle inline-block">
-                    <p className="align-middle pt-[1.5px] text-[0.7rem]">{tech}</p>
+                <p className=" text-white font-semibold mt-2 max-lg:text-sm">{name}</p>
+                <p className=" text-white text-xs max-lg:text-[0.7rem]">{desc}</p>
+                <div className="absolute bottom-6 max-xl:bottom-2 github bg-secondary self-center px-2 text-md rounded-2xl align-middle inline-block">
+                    <p className="align-middle pt-[1.5px] text-[0.65rem]">{tech}</p>
                 </div>
             </div>
         </div>
@@ -33,9 +33,9 @@ const ProjectDesc = ({isFocused = "Tracker"}) => {
         <>
             {projects.map((project) => (
                 (isFocused == project.name)  &&
-                <div key={project.name}>
-                    <div className="bg-macbook bg-contain bg-no-repeat bg-center xs:h-52 md:h-80 content-center">
-                        <video className="mx-auto xs:w-9/12 sm:w-9/12 xl:w-3/5 lg:w-2/3 xs:h-3/4 sm:h-3/4 xl:h-3/4 lg:h-4/5 -mt-5" loop muted autoPlay={true}>
+                <div key={project.name} className="max-[450px]:pb-20">
+                    <div className="bg-macbook bg-contain bg-no-repeat bg-center max-xs:h-52 xs:h-52 md:h-80 content-center">
+                        <video className="mx-auto max-xs:w-9/12 xs:w-9/12 sm:w-9/12 xl:w-3/5 lg:w-2/3 max-xs:h-3/4 xs:h-3/4 sm:h-3/4 xl:h-3/4 lg:h-4/5 -mt-5" loop muted autoPlay={true}>
                             <source src={project.vid} type="video/mp4"/>
                         </video>
                     </div>
@@ -59,7 +59,7 @@ const ProjectDesc = ({isFocused = "Tracker"}) => {
 const MobileCarousel = (props) => {
     return (
         <>
-            <Carousel className="h-2/5"
+            <Carousel className="h-2/5 max-xs:h-fit max-xs:mb-4"
                 navigation={({ setActiveIndex, activeIndex, length }) => (
                     <div className="absolute top-52 left-2/4 z-50 flex -translate-x-2/4 gap-2">
                     {new Array(length).fill("").map((_, i) => (
@@ -155,7 +155,7 @@ const Projects = () => {
     return (
         <>
             <Navbar/>
-            <div className="projects pb-20 px-20 max-lg:px-10 min-w-full h-screen max-[450px]:h-5/6 overflow-y-hidden flex max-[450px]:block flex-row">
+            <div className="projects pb-20 max-xs:pb-16 px-20 max-lg:px-10 min-w-full h-screen max-[450px]:overflow-y-auto overflow-y-hidden flex max-[450px]:block flex-row">
             {!isMobile && 
                 <div className="basis-4/12 max-[900px]:basis-2/5 max-xs:basis-1/2 overflow-y-auto max-xs:overflow-y-hidden items-center">
                     {projects.map((project) => (
@@ -191,7 +191,7 @@ const Projects = () => {
                     ))}
                 </MobileCarousel>
             }
-                <div className="basis-4/6 max-[900px]:basis-3/5 max-xs:basis-1/2 pl-10 max-[450px]:pl-0 h-full overflow-y-auto">
+                <div className="basis-4/6 max-[900px]:basis-3/5 max-xs:basis-1/2 pl-10 max-[450px]:pl-0 h-full overflow-y-visible ">
                     <ProjectDesc isFocused={isFocused}/>
                 </div>
             </div>
