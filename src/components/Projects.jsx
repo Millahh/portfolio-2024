@@ -35,8 +35,8 @@ const ProjectDesc = ({isFocused = "Tracker"}) => {
                 (isFocused == project.name)  &&
                 <div key={project.name}>
                     {(project.vid !== "") &&
-                    <div className="bg-macbook bg-contain bg-no-repeat bg-center h-80 content-center">
-                        <video className="mx-auto w-3/5 h-3/4 -mt-5" loop muted autoPlay={true}>
+                    <div className="bg-macbook bg-contain bg-no-repeat bg-center xs:h-52 md:h-80 content-center">
+                        <video className="mx-auto xs:w-9/12 sm:w-9/12 xl:w-3/5 lg:w-2/3 xs:h-3/4 sm:h-3/4 xl:h-3/4 lg:h-4/5 -mt-5" loop muted autoPlay={true}>
                             <source src={project.vid} type="video/mp4"/>
                         </video>
                     </div>
