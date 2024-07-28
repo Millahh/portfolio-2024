@@ -11,23 +11,23 @@ const Experiences = () => {
             <div className="experiences py-3 px-20 max-lg:px-10 min-w-full h-screen overflow-y-auto overflow-x-hidden">
                 <section className="mb-auto">
                     <div className="sm:flex flex-row relative">
-                        <div className="basis-1/4 h-44 max-sm:flex max-sm:space-x-5">
+                        <div className="basis-1/4 h-44 max-sm:flex max-sm:space-x-5 max-xs:space-x-0">
                             <AnimatePresence>
-                                <motion.div className="z-0 sm:absolute w-1/4 max-lg:w-1/3"
+                                <motion.div className="z-0 sm:absolute w-1/4 max-lg:w-1/3 max-xs:hidden"
                                 initial={{ opacity: 0, x:50 }}
                                 animate={{ opacity: 1, x:0 }}
                                 transition={{ delay:0.2, type: "tween", duration: 0.2 }}
                                 >
                                     <img src={Internship3} className="object-cover h-40 w-11/12 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
-                                <motion.div className="-z-1 top-2 left-3 sm:absolute w-1/4 max-lg:w-1/3"
+                                <motion.div className="-z-1 top-2 left-3 sm:absolute w-1/4 max-lg:w-1/3 max-xs:hidden"
                                 initial={{ opacity: 0, x:50 }}
                                 animate={{ opacity: 1, x:0 }}
                                 transition={{ delay:0.5, type: "tween", duration: 0.2 }}
                                 >
                                     <img src={Internship2} className="object-cover h-40 w-11/12 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
-                                <motion.div className="-z-2 top-4 left-6 sm:absolute w-1/4 max-lg:w-1/3"
+                                <motion.div className="-z-2 top-4 left-6 sm:absolute w-1/4 max-lg:w-1/3 max-xs:w-full"
                                 initial={{ opacity: 0, x:50 }}
                                 animate={{ opacity: 1, x:0 }}
                                 transition={{ delay:0.7, type: "tween", duration: 0.2 }}
@@ -36,7 +36,7 @@ const Experiences = () => {
                                 </motion.div>
                             </AnimatePresence>
                         </div>
-                        <div className="basis-3/4 p-5 pl-10 max-lg:pl-28 max-sm:pl-0 max-sm:text-center">
+                        <div className="basis-3/4 p-5 pl-10 max-lg:pl-28 max-sm:p-0 max-sm:text-center">
                             <p className=" tracking-widest text-xs opacity-50">INTERNSHIP | 2022</p>
                             <p className=" text-xl font-bold text-primary bg-white bg-opacity-90 inline-block px-1 pt-1 my-1">Fullstack Developer at PT. Andromedia</p>
                             <p className=" text-base">This internship is a part of Program Magang dan Studi Independen<br></br> Bersertifikat (MSIB) Batch 3.</p>
@@ -102,32 +102,32 @@ const Experiences = () => {
                                 </motion.div>
                             </AnimatePresence>
                         </div>
-                        <div className="basis-3/4 p-5 pl-10 max-lg:pl-20 max-sm:pl-0">
+                        <div className="basis-3/4 p-5 pl-10 max-lg:pl-20 max-sm:p-0">
                             <p className=" tracking-widest text-xs opacity-50">SOFT SKILLS</p>
                             <p className=" text-base">I also took the opportunity and responsibility to be part of <P>Tribe Leader</P>, help communication <br></br>between the company and MSIB to help effective collaboration.</p>
                         </div>
                     </div>
                 </section>
-                <hr className=" mt-24 mb-10 max-sm:mt-0"></hr>
+                <hr className=" mt-24 mb-10 max-sm:mt-6"></hr>
                 <section className="mb-auto">
                     <div className="sm:flex flex-row relative">
-                        <div className="basis-1/4 h-44 max-lg:basis-1/3 max-sm:flex max-sm:space-x-5">
+                        <div className="basis-1/4 h-44 max-lg:basis-1/3 max-sm:flex max-sm:space-x-5 max-xs:space-x-0">
                             <AnimatePresence>
-                                <motion.div className="z-0 sm:absolute w-1/4 max-lg:w-1/3"
+                                <motion.div className="z-0 sm:absolute w-1/4 max-lg:w-1/3 max-sm:hidden"
                                 initial={{ opacity: 0, x:50 }}
                                 animate={{ opacity: 1, x:0 }}
                                 transition={{ delay:0.2, type: "tween", duration: 0.2 }}
                                 >
                                     <img src={Bem1} className="object-cover w-11/12 h-40 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
-                                <motion.div className="-z-1 top-2 left-3 sm:absolute w-1/4 max-lg:w-1/3"
+                                <motion.div className="-z-1 top-2 left-3 sm:absolute w-1/4 max-lg:w-1/3 max-sm:hidden"
                                 initial={{ opacity: 0, x:50 }}
                                 animate={{ opacity: 1, x:0 }}
                                 transition={{ delay:0.5, type: "tween", duration: 0.2 }}
                                 >
                                     <img src={Bem3} className="object-cover w-11/12 h-40 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
-                                <motion.div className="-z-2 top-4 left-6 sm:absolute w-1/4 max-lg:w-1/3"
+                                <motion.div className="-z-2 top-4 left-6 sm:absolute w-1/4 max-lg:w-1/3 max-sm:w-full"
                                 initial={{ opacity: 0, x:50 }}
                                 animate={{ opacity: 1, x:0 }}
                                 transition={{ delay:0.7, type: "tween", duration: 0.2 }}
@@ -136,7 +136,7 @@ const Experiences = () => {
                                 </motion.div>
                             </AnimatePresence>
                         </div>
-                        <div className="basis-3/4 p-5 pl-10 max-lg:pl-20 max-sm:pl-0 max-sm:text-center">
+                        <div className="basis-3/4 p-5 pl-10 max-lg:pl-20 max-sm:p-0 max-sm:text-center">
                             <p className=" tracking-widest text-xs opacity-50">ORGANIZATION | 2021</p>
                             <p className=" text-xl font-bold text-primary bg-white bg-opacity-90 inline-block px-1 pt-1 my-1">Expert Staff of Information and Technology <br></br>Development (PIT)</p>
                             <p className=" text-base">PIT is a part of Student Executive Board (BEM) Divisions of Fakultas Ilmu Komputer</p>
@@ -199,18 +199,18 @@ const Experiences = () => {
                                 </motion.div>
                             </AnimatePresence>
                         </div>
-                        <div className="basis-3/4 py-7 pl-10 pr-20 max-lg:pl-20 max-sm:pl-0">
+                        <div className="basis-3/4 py-7 pl-10 pr-20 max-lg:pl-20 max-sm:p-0">
                             <p className=" tracking-widest text-xs opacity-50">SOFT SKILLS</p>
                             <p className=" text-base">Supported a team of 3 members as a PIT <P>Mentor for PIT Staff</P>. This experience allowed me to <P>share</P> my knowledge and <P>learn</P> from the diverse perspectives and ideas of my mentees.</p>
                         </div>
                     </div>
                 </section>
-                <hr className=" mt-24 mb-10 max-sm:mt-0"></hr>
+                <hr className=" mt-24 mb-10 max-sm:mt-5"></hr>
                 <section className="mb-auto space-y-5">
                     <div className="sm:flex flex-row sm:relative mt-10">
                         <div className="basis-1/4 h-36 max-lg:basis-1/3">
                             <AnimatePresence>
-                                <motion.div className="z-0 sm:absolute w-1/4 max-lg:w-1/3 max-sm:w-1/2 max-sm:m-auto"
+                                <motion.div className="z-0 sm:absolute w-1/4 max-lg:w-1/3 max-sm:w-full max-sm:m-auto"
                                 initial={{ opacity: 0, x:50 }}
                                 animate={{ opacity: 1, x:0 }}
                                 transition={{ delay:0.2, type: "tween", duration: 0.2 }}
@@ -219,17 +219,17 @@ const Experiences = () => {
                                 </motion.div>
                             </AnimatePresence>
                         </div>
-                        <div className="basis-3/4 p-3 pl-10 text-center max-sm:mt-10">
-                            <p className=" tracking-widest text-xs opacity-50">ORGANIZATION | 2021</p>
+                        <div className="basis-3/4 p-3 pl-10 text-center max-sm:mt-10 max-sm:p-0">
+                            <p className=" tracking-widest text-xs opacity-50 pt-1">ORGANIZATION | 2021</p>
                             <p className=" text-xl font-bold text-primary bg-white bg-opacity-90 inline-block px-1 pt-1 my-1">Public Relations Staff of Organization of <br></br>Open Source (POROS)</p>
                         </div>
                     </div>
-                    <div className="sm:flex flex-row borde pt-10">
-                        <div className="basis-1/2 pr-20">
+                    <div className="sm:flex flex-row pt-10 max-sm:p-0">
+                        <div className="basis-1/2 pr-20 max-sm:p-0">
                             <p className=" tracking-widest text-xs opacity-50">HARD SKILLS</p>
                             <p>Created posts design and maintained an official instagram account of POROS  to enhance our online presence(@porosfilkom).</p>
                         </div>
-                        <div className="basis-1/2 pr-20 max-sm:mt-2">
+                        <div className="basis-1/2 pr-20 max-sm:mt-2 max-sm:p-0">
                             <p className=" tracking-widest text-xs opacity-50">SOFT SKILLS</p>
                             <p>Took responsibility as Vice Chief Committee and Master of Ceremonies at the 'Cyber Class 2020' event.</p>
                         </div>
@@ -244,7 +244,7 @@ const Experiences = () => {
                         </div>
                         <div className="basis-1/4 max-lg:basis-1/3 my-3">
                             <AnimatePresence>
-                                <motion.div className="z-0 sm:absolute w-1/4 max-lg:w-1/3 max-sm:w-1/2 max-sm:m-auto"
+                                <motion.div className="z-0 sm:absolute w-1/4 max-lg:w-1/3 max-sm:w-full max-sm:m-auto"
                                 initial={{ opacity: 0, x:-50 }}
                                 animate={{ opacity: 1, x:0 }}
                                 transition={{ delay:1, type: "tween", duration: 0.2 }}
@@ -263,15 +263,15 @@ const Experiences = () => {
                         <p className="text-xl font-bold text-primary bg-white bg-opacity-90 inline-block px-1 pt-1 my-1">PK2MABA & STARTUP ACADEMY</p>
                         <p>Annual campus event welcomes new students, introducing and providing essential information to help kickstart their journey.</p>
                     </div>
-                    <div className="flex justify-between space-x-5">
+                    <div className="flex justify-between space-x-5 max-xs:space-x-0">
                         <div>
-                            <img src={pk21} className="object-cover h-48 max-lg:h-40 max-lg:w-56 border-2 border-white rounded-xl"/>
+                            <img src={pk21} className="object-cover h-48 max-lg:h-40 max-lg:w-56 border-2 border-white rounded-xl max-xs:hidden"/>
                         </div>
                         <div>
-                            <img src={pk23} className="object-cover h-48 max-lg:h-40 max-lg:w-56 border-2 border-white rounded-xl"/>
+                            <img src={pk23} className="object-cover h-48 max-lg:h-40 max-lg:w-56 border-2 border-white rounded-xl max-xs:w-full max-xs:h-full"/>
                         </div>
                         <div>
-                            <img src={pk22} className="object-cover h-48 max-lg:h-40 max-lg:w-56 border-2 border-white rounded-xl"/>
+                            <img src={pk22} className="object-cover h-48 max-lg:h-40 max-lg:w-56 border-2 border-white rounded-xl max-xs:hidden"/>
                         </div> 
                     </div>
                     <div>
@@ -288,13 +288,13 @@ const Experiences = () => {
                     </div>
                 </section>
                 <hr className=" my-10"></hr>
-                <section className=" h-4/5 mb-auto space-y-8">
+                <section className=" h-4/5 mb-auto space-y-8 max-xs:mb-52">
                     <div className="sm:flex flex-row">
                         <div className="basis-1/4 max-lg:basis-1/3">
-                            <img src={lkmmtd1} className=" object-cover object-left-bottom h-44 border-2 border-white rounded-xl max-sm:m-auto"/>
+                            <img src={lkmmtd1} className=" object-cover object-left-top h-44 border-2 border-white rounded-xl max-sm:m-auto max-xs:w-full"/>
                         </div>
-                        <div className="basis-3/4 p-5 pl-10 max-sm:pl-0 max-sm:text-center">
-                            <p className=" tracking-widest text-xs opacity-50">VOLUNTEER | 2021</p>
+                        <div className="basis-3/4 p-5 pl-10 max-sm:p-0 max-sm:text-center">
+                            <p className=" tracking-widest text-xs opacity-50 pt-2">VOLUNTEER | 2021</p>
                             <p className=" text-xl font-bold text-primary bg-white bg-opacity-90 inline-block px-1 pt-1 my-1">Head of Event Division at LKMM-TD</p>
                             <p className=" text-base">LKMM-TD is Latihan Keterampilan Manajemen Mahasiswa Tingkat Dasar to provide knowledge and managerial skills to be a good leader.</p>
                         </div>
