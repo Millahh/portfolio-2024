@@ -9,7 +9,7 @@ const Links = () => {
             {navLinks.map((link) => (
                 <a 
                 key={link.id}
-                className="max-md:flex m-auto justify-center hover:scale-125 transition-transform duration-100 opacity-50 hover:opacity-100 focus:opacity-100 max-md:w-20"
+                className="max-md:flex m-auto max-md:mr-0 justify-center max-md:justify-end hover:scale-125 transition-transform duration-100 opacity-50 hover:opacity-100 focus:opacity-100 max-md:w-20"
                 >{link.title}</a>
             ))}
         </>
@@ -31,8 +31,8 @@ const Navbar = () => {
                     </svg>
                 </button>
                 {isOpen && 
-                <div class="navbar w-1/2 text-center self-center m-auto pl-4" id="navbar-mobile">
-                    <a className="flex m-auto hover:scale-125 justify-center transition-transform duration-100 opacity-50 hover:opacity-100 w-20">HI<p className="text-sm -ml-1">👋</p></a>
+                <div class="navbar w-1/2 max-md:w-1/3 max-md:bg-primary max-md:bg-opacity-10 text-center self-center m-auto max-md:mr-0 pl-4 max-md:pr-10" id="navbar-mobile">
+                    <a className="flex m-auto hover:scale-125 justify-center max-md:mr-0 max-md:justify-end transition-transform duration-100 opacity-50 hover:opacity-100 w-20">HI<p className="text-sm -ml-1">👋</p></a>
                     <Links/>
                 </div>
                 }
