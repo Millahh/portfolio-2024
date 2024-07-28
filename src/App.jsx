@@ -11,8 +11,8 @@ function App() {
       {/* <About/> */}
       {/* <FunFacts/> */}
       {/* <Hobbies/> */}
-      {/* <Experiences /> */}
-      <Projects />
+      <Experiences />
+      {/* <Projects /> */}
     </BrowserRouter>
   )
 }

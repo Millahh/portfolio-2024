@@ -8,42 +8,42 @@ const Experiences = () => {
     return (
         <>
             <Navbar/>
-            <div className="experiences py-3 px-20 min-w-full h-screen overflow-y-auto">
-                <section className="mb-auto space-y-5">
+            <div className="experiences py-3 px-20 max-lg:px-10 min-w-full h-screen overflow-y-auto">
+                <section className="mb-auto">
                     <div className="flex flex-row relative">
-                        <div className="basis-1/4 border">
+                        <div className="basis-1/4 h-44">
                             <AnimatePresence>
-                                <motion.div className="z-0 absolute w-1/4"
+                                <motion.div className="z-0 absolute w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:50 }}
                                 animate={{ opacity: 1, x:0 }}
                                 transition={{ delay:0.2, type: "tween", duration: 0.2 }}
                                 >
-                                    <img src={Internship3} className="object-cover h-40 w-11/12 border-2 border-white rounded-xl"/>
+                                    <img src={Internship3} className="object-cover h-40 w-11/12 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
-                                <motion.div className="-z-1 top-2 left-3 absolute w-1/4"
+                                <motion.div className="-z-1 top-2 left-3 absolute w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:50 }}
                                 animate={{ opacity: 1, x:0 }}
                                 transition={{ delay:0.5, type: "tween", duration: 0.2 }}
                                 >
-                                    <img src={Internship2} className="object-cover h-40  w-11/12 border-2 border-white rounded-xl"/>
+                                    <img src={Internship2} className="object-cover h-40 w-11/12 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
-                                <motion.div className="-z-2 top-4 left-6 absolute w-1/4"
+                                <motion.div className="-z-2 top-4 left-6 absolute w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:50 }}
                                 animate={{ opacity: 1, x:0 }}
                                 transition={{ delay:0.7, type: "tween", duration: 0.2 }}
                                 >
-                                    <img src={Internship1} className="object-cover  h-40 w-11/12 border-2 border-white rounded-xl"/>
+                                    <img src={Internship1} className="object-cover  h-40 w-11/12 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
                             </AnimatePresence>
                         </div>
-                        <div className="basis-3/4 p-5 pl-10">
+                        <div className="basis-3/4 p-5 pl-10 max-lg:pl-28">
                             <p className=" tracking-widest text-xs opacity-50">INTERNSHIP | 2022</p>
                             <p className=" text-xl font-bold text-primary bg-white bg-opacity-90 inline-block px-1 pt-1 my-1">Fullstack Developer at PT. Andromedia</p>
                             <p className=" text-base">This internship is a part of Program Magang dan Studi Independen<br></br> Bersertifikat (MSIB) Batch 3.</p>
                         </div>
                     </div>
                     <div className="flex flex-row relative">
-                        <div className="basis-3/4 w-screen p-5 pr-10">
+                        <div className="basis-3/4 w-screen p-5 pr-10 max-lg:pr-16">
                             <p className=" tracking-widest text-xs opacity-50">HARD SKILLS</p>
                             <li>Built <P>Issue Ticket Website</P> using <P>adminLTE</P>, <P>Laravel</P>, and <P>PostgreSQL</P>.</li>
                             <li>Continued development <P>Kelava CRM</P> Project using special company’s <P>CMS</P> with <P>AngularJS</P>, <P>Yii1</P>, and <P>Rapid Application Development (RAD)</P> as a development method.</li>
@@ -52,154 +52,154 @@ const Experiences = () => {
                         </div>
                         <div className="basis-1/4 align-middle">
                             <AnimatePresence>
-                                <motion.div className="z-0 absolute w-1/4"
+                                <motion.div className="z-0 absolute right-0 w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:-50 }}
                                 animate={{ opacity: 1, x:0 }}
                                 transition={{ delay:1, type: "tween", duration: 0.2 }}
                                 >
-                                    <img src={Internship3} className="object-cover w-11/12 border-2 border-white rounded-xl"/>
+                                    <img src={Internship3} className="object-cover w-11/12 h-40 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
-                                <motion.div className="-z-1 top-2 right-3 absolute w-1/4"
+                                <motion.div className="-z-1 top-2 right-3 max-lg:right-2 absolute w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:-50 }}
                                 animate={{ opacity: 1, x:0 }}
                                 transition={{ delay:1.2, type: "tween", duration: 0.2 }}
                                 >
-                                    <img src={Internship1} className="object-cover w-11/12 border-2 border-white rounded-xl"/>
+                                    <img src={Internship1} className="object-cover w-11/12 h-40 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
-                                <motion.div className="-z-2 top-4 right-6 absolute w-1/4"
+                                <motion.div className="-z-2 top-4 right-6 max-lg:right-4 absolute w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:-50 }}
                                 animate={{ opacity: 1, x:0 }}
                                 transition={{ delay:1.4, type: "tween", duration: 0.2 }}
                                 >
-                                    <img src={Internship2} className="object-cover w-11/12 border-2 border-white rounded-xl"/>
+                                    <img src={Internship2} className="object-cover w-11/12 h-40 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
                             </AnimatePresence>
                         </div>
                     </div>
                     <div className="flex flex-row relative">
-                        <div className="basis-1/4">
+                        <div className="basis-1/4 max-lg:basis-1/3">
                             <AnimatePresence>
-                                <motion.div className="z-0 absolute w-1/4"
+                                <motion.div className="z-0 absolute w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:50 }}
                                 animate={{ opacity: 1, x:0 }}
                                 transition={{ delay:0.2, type: "tween", duration: 0.2 }}
                                 >
-                                    <img src={Internship2} className="object-cover w-11/12 border-2 border-white rounded-xl"/>
+                                    <img src={Internship2} className="object-cover w-11/12 max-lg:w-full h-40 border-2 border-white rounded-xl"/>
                                 </motion.div>
-                                <motion.div className="-z-1 top-2 left-3 absolute w-1/4"
+                                <motion.div className="-z-1 top-2 left-3 absolute w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:50 }}
                                 animate={{ opacity: 1, x:0 }}
                                 transition={{ delay:0.5, type: "tween", duration: 0.2 }}
                                 >
-                                    <img src={Internship1} className="object-cover w-11/12 border-2 border-white rounded-xl"/>
+                                    <img src={Internship1} className="object-cover w-11/12 h-40 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
-                                <motion.div className="-z-2 top-4 left-6 absolute w-1/4"
+                                <motion.div className="-z-2 top-4 left-6 absolute w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:50 }}
                                 animate={{ opacity: 1, x:0 }}
                                 transition={{ delay:0.7, type: "tween", duration: 0.2 }}
                                 >
-                                    <img src={Internship3} className="object-cover w-11/12 border-2 border-white rounded-xl"/>
+                                    <img src={Internship3} className="object-cover w-11/12 h-40 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
                             </AnimatePresence>
                         </div>
-                        <div className="basis-3/4 p-5 pl-10">
+                        <div className="basis-3/4 p-5 pl-10 max-lg:pl-20">
                             <p className=" tracking-widest text-xs opacity-50">SOFT SKILLS</p>
                             <p className=" text-base">I also took the opportunity and responsibility to be part of <P>Tribe Leader</P>, help communication <br></br>between the company and MSIB to help effective collaboration.</p>
                         </div>
                     </div>
                 </section>
                 <hr className=" mt-24 mb-10"></hr>
-                <section className="mb-auto space-y-5">
+                <section className="mb-auto">
                     <div className="flex flex-row relative">
-                        <div className="basis-1/4">
+                        <div className="basis-1/4 h-44 max-lg:basis-1/3">
                             <AnimatePresence>
-                                <motion.div className="z-0 absolute w-1/4"
+                                <motion.div className="z-0 absolute w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:50 }}
                                 animate={{ opacity: 1, x:0 }}
                                 transition={{ delay:0.2, type: "tween", duration: 0.2 }}
                                 >
-                                    <img src={Bem1} className="object-cover w-11/12 border-2 border-white rounded-xl"/>
+                                    <img src={Bem1} className="object-cover w-11/12 h-40 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
-                                <motion.div className="-z-1 top-2 left-3 absolute w-1/4"
+                                <motion.div className="-z-1 top-2 left-3 absolute w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:50 }}
                                 animate={{ opacity: 1, x:0 }}
                                 transition={{ delay:0.5, type: "tween", duration: 0.2 }}
                                 >
-                                    <img src={Bem3} className="object-cover w-11/12 border-2 border-white rounded-xl"/>
+                                    <img src={Bem3} className="object-cover w-11/12 h-40 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
-                                <motion.div className="-z-2 top-4 left-6 absolute w-1/4"
+                                <motion.div className="-z-2 top-4 left-6 absolute w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:50 }}
                                 animate={{ opacity: 1, x:0 }}
                                 transition={{ delay:0.7, type: "tween", duration: 0.2 }}
                                 >
-                                    <img src={Bem2} className="object-cover w-11/12 border-2 border-white rounded-xl"/>
+                                    <img src={Bem2} className="object-cover w-11/12 h-40 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
                             </AnimatePresence>
                         </div>
-                        <div className="basis-3/4 p-5 pl-10">
+                        <div className="basis-3/4 p-5 pl-10 max-lg:pl-20">
                             <p className=" tracking-widest text-xs opacity-50">ORGANIZATION | 2021</p>
                             <p className=" text-xl font-bold text-primary bg-white bg-opacity-90 inline-block px-1 pt-1 my-1">Expert Staff of Information and Technology <br></br>Development (PIT)</p>
-                            <p className=" text-base">PIT is a part of Student Executive Board (BEM) Divisions of <br></br>Fakultas Ilmu Komputer</p>
+                            <p className=" text-base">PIT is a part of Student Executive Board (BEM) Divisions of Fakultas Ilmu Komputer</p>
                         </div>
                     </div>
                     <div className="flex flex-row relative">
-                        <div className="basis-3/4 w-screen p-5 pr-10">
+                        <div className="basis-3/4 max-lg:basis-8/12 w-screen pl-5 pt-10 max-lg:pt-5 pr-10 h-40">
                             <p className=" tracking-widest text-xs opacity-50">HARD SKILLS</p>
                             <p><P>Designed</P> the Elaborasi Makna website (<P>bemfilkom.ub.ac.id</P>), creating an engaging interface that effectively showcased the organization's mission, events, and activities.</p>
                         </div>
-                        <div className="basis-1/4">
+                        <div className="basis-1/4 max-lg:basis-1/3">
                             <AnimatePresence>
-                                <motion.div className="z-0 absolute w-1/4"
+                                <motion.div className="z-0 absolute w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:-50 }}
                                 animate={{ opacity: 1, x:0 }}
                                 transition={{ delay:1, type: "tween", duration: 0.2 }}
                                 >
-                                    <img src={Bem1} className="object-cover w-11/12 border-2 border-white rounded-xl"/>
+                                    <img src={Bem1} className="object-cover w-11/12 h-40 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
-                                <motion.div className="-z-1 top-2 right-3 absolute w-1/4"
+                                <motion.div className="-z-1 top-2 right-3 absolute w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:-50 }}
                                 animate={{ opacity: 1, x:0 }}
                                 transition={{ delay:1.2, type: "tween", duration: 0.2 }}
                                 >
-                                    <img src={Bem2} className="object-cover w-11/12 border-2 border-white rounded-xl"/>
+                                    <img src={Bem2} className="object-cover w-11/12 h-40 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
-                                <motion.div className="-z-2 top-4 right-6 absolute w-1/4"
+                                <motion.div className="-z-2 top-4 right-6 absolute w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:-50 }}
                                 animate={{ opacity: 1, x:0 }}
                                 transition={{ delay:1.4, type: "tween", duration: 0.2 }}
                                 >
-                                    <img src={Bem3} className="object-cover w-11/12 border-2 border-white rounded-xl"/>
+                                    <img src={Bem3} className="object-cover w-11/12 h-40 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
                             </AnimatePresence>
                         </div>
                     </div>
                     <div className="flex flex-row relative">
-                        <div className="basis-1/4">
+                        <div className="basis-1/4 max-lg:basis-1/3">
                             <AnimatePresence>
-                                <motion.div className="z-0 absolute w-1/4"
+                                <motion.div className="z-0 absolute w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:50 }}
                                 animate={{ opacity: 1, x:0 }}
                                 transition={{ delay:0.2, type: "tween", duration: 0.2 }}
                                 >
-                                    <img src={Bem2} className="object-cover w-11/12 border-2 border-white rounded-xl"/>
+                                    <img src={Bem2} className="object-cover w-11/12 h-40 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
-                                <motion.div className="-z-1 top-2 left-3 absolute w-1/4"
+                                <motion.div className="-z-1 top-2 left-3 absolute w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:50 }}
                                 animate={{ opacity: 1, x:0 }}
                                 transition={{ delay:0.5, type: "tween", duration: 0.2 }}
                                 >
-                                    <img src={Bem3} className="object-cover w-11/12 border-2 border-white rounded-xl"/>
+                                    <img src={Bem3} className="object-cover w-11/12 h-40 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
-                                <motion.div className="-z-2 top-4 left-6 absolute w-1/4"
+                                <motion.div className="-z-2 top-4 left-6 absolute w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:50 }}
                                 animate={{ opacity: 1, x:0 }}
                                 transition={{ delay:0.7, type: "tween", duration: 0.2 }}
                                 >
-                                    <img src={Bem1} className="object-cover w-11/12 border-2 border-white rounded-xl"/>
+                                    <img src={Bem1} className="object-cover w-11/12 h-40 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
                             </AnimatePresence>
                         </div>
-                        <div className="basis-3/4 py-5 pl-10 pr-20">
+                        <div className="basis-3/4 py-7 pl-10 pr-20 max-lg:pl-20">
                             <p className=" tracking-widest text-xs opacity-50">SOFT SKILLS</p>
                             <p className=" text-base">Supported a team of 3 members as a PIT <P>Mentor for PIT Staff</P>. This experience allowed me to <P>share</P> my knowledge and <P>learn</P> from the diverse perspectives and ideas of my mentees.</p>
                         </div>
@@ -208,14 +208,14 @@ const Experiences = () => {
                 <hr className=" mt-24 mb-10"></hr>
                 <section className="mb-auto space-y-5">
                     <div className="flex flex-row relative mt-10">
-                        <div className="basis-1/4">
+                        <div className="basis-1/4 h-36 max-lg:basis-1/3">
                             <AnimatePresence>
-                                <motion.div className="z-0 absolute w-1/4"
+                                <motion.div className="z-0 absolute w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:50 }}
                                 animate={{ opacity: 1, x:0 }}
                                 transition={{ delay:0.2, type: "tween", duration: 0.2 }}
                                 >
-                                    <img src={poros} className="object-cover w-11/12 border-2 border-white rounded-xl"/>
+                                    <img src={poros} className="object-cover w-full h-44 border-2 border-white rounded-xl"/>
                                 </motion.div>
                             </AnimatePresence>
                         </div>
@@ -235,20 +235,20 @@ const Experiences = () => {
                         </div>
                     </div>
                     <div className="flex flex-row relative">
-                        <div className="basis-3/4 w-screen pr-10 text-right">
+                        <div className="basis-3/4 w-screen pr-10 text-right max-lg:basis-2/3">
                             <p className=" tracking-widest text-xs opacity-50">VOLUNTEER | 2021</p>
                             <p className=" text-xl font-bold text-primary bg-white bg-opacity-90 inline-block px-1 pt-1 my-1">Website Builder Staff of Indonesian Petroleum Community Russian and Eastern European (IPCREE)</p>
-                            <p className=" tracking-widest text-xs opacity-50">HARD SKILLS</p>
+                            <p className=" tracking-widest text-xs opacity-50 pt-2">HARD SKILLS</p>
                             <p><P>Developed website</P> of IPCREE with <P>WordPress</P> (ipcree.com) and took responsibility for <P>writing</P> one of the <P>press releases</P> for the National Energy Week event.</p>
                         </div>
-                        <div className="basis-1/4">
+                        <div className="basis-1/4 max-lg:basis-1/3">
                             <AnimatePresence>
-                                <motion.div className="z-0 absolute w-1/4"
+                                <motion.div className="z-0 absolute w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:-50 }}
                                 animate={{ opacity: 1, x:0 }}
                                 transition={{ delay:1, type: "tween", duration: 0.2 }}
                                 >
-                                    <img src={Ipcree2} className="object-cover w-11/12 border-2 border-white rounded-xl"/>
+                                    <img src={Ipcree2} className="object-cover w-full h-44 border-2 border-white rounded-xl"/>
                                 </motion.div>
                             </AnimatePresence>
                         </div>
@@ -260,16 +260,16 @@ const Experiences = () => {
                         <p className="text-xl font-bold text-primary bg-white bg-opacity-90 inline-block px-1 pt-1 my-1">PK2MABA & STARTUP ACADEMY</p>
                         <p>Annual campus event welcomes new students, introducing and providing essential information to help kickstart their journey.</p>
                     </div>
-                    <div className="flex flex-row">
-                        <div className=" basis-auto">
-                            <img src={pk21} className="object-cover w-11/12 border-2 border-white rounded-xl"/>
+                    <div className="flex justify-between space-x-5">
+                        <div>
+                            <img src={pk21} className="object-cover h-48 max-lg:h-40 max-lg:w-56 border-2 border-white rounded-xl"/>
                         </div>
-                        <div className="basis-auto">
-                            <img src={pk23} className="object-cover w-11/12 border-2 border-white rounded-xl"/>
+                        <div>
+                            <img src={pk23} className="object-cover h-48 max-lg:h-40 max-lg:w-56 border-2 border-white rounded-xl"/>
                         </div>
-                        <div className="basis-auto">
-                            <img src={pk22} className="object-cover w-11/12 border-2 border-white rounded-xl"/>
-                        </div>
+                        <div>
+                            <img src={pk22} className="object-cover h-48 max-lg:h-40 max-lg:w-56 border-2 border-white rounded-xl"/>
+                        </div> 
                     </div>
                     <div>
                         <p className=" tracking-widest text-xs opacity-50">SOFT SKILLS</p>
@@ -287,8 +287,8 @@ const Experiences = () => {
                 <hr className=" my-10"></hr>
                 <section className=" h-4/5 mb-auto space-y-8">
                     <div className="flex flex-row">
-                        <div className="basis-1/4">
-                            <img src={lkmmtd1} className=" object-cover w-11/12 border-2 border-white rounded-xl"/>
+                        <div className="basis-1/4 max-lg:basis-1/3">
+                            <img src={lkmmtd1} className=" object-cover object-left-bottom h-44 border-2 border-white rounded-xl"/>
                         </div>
                         <div className="basis-3/4 p-5 pl-10">
                             <p className=" tracking-widest text-xs opacity-50">VOLUNTEER | 2021</p>
