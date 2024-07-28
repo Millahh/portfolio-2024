@@ -8,7 +8,7 @@ const Experiences = () => {
     return (
         <>
             <Navbar/>
-            <div className="experiences py-3 px-20 max-lg:px-10 min-w-full h-screen overflow-y-auto overflow-x-hidden">
+            <div className="experiences py-3 px-20 max-lg:px-10 w-full h-screen 2xl:w-1/2 m-auto overflow-y-auto overflow-x-hidden">
                 <section className="mb-auto">
                     <div className="sm:flex flex-row relative">
                         <div className="basis-1/4 h-44 max-sm:flex max-sm:space-x-5 max-xs:space-x-0">

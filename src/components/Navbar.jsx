@@ -20,7 +20,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <>
-            <div className="navbar flex md:justify-between px-10 py-5 xl:w-1/2 lg:w-2/3 md:w-full max-md:hidden max-sm:hidden max-xs:hidden">
+            <div className="navbar flex md:justify-between px-10 py-5 xl:w-1/2 lg:w-2/3 md:w-full 2xl:m-auto max-md:hidden max-sm:hidden max-xs:hidden">
                 <a className="flex hover:scale-125 transition-transform duration-100 opacity-50 hover:opacity-100">HI<p className="text-sm -ml-1">👋</p></a>
                 <Links/>
             </div>

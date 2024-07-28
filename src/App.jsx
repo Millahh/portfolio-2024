@@ -8,10 +8,10 @@ function App() {
       {/* <AutoLoad /> */}
       {/* <Intro/> */}
       {/* <DiceIntro/> */}
-      {/* <About/> */}
+      <About/>
       {/* <FunFacts/> */}
       {/* <Hobbies/> */}
-      <Experiences />
+      {/* <Experiences /> */}
       {/* <Projects /> */}
     </BrowserRouter>
   )

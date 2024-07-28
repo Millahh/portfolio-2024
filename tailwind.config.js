@@ -24,6 +24,7 @@ export default {
       },
       screens: {
         xs: "450px",
+        custom: "900px",
       },
       backgroundImage: {
         "custom": "url('./src/assets/bg.png')",
