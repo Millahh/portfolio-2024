@@ -12,8 +12,8 @@ function App() {
       {/* <AutoLoad /> */}
       {/* <Intro/> */}
       {/* <DiceIntro/> */}
-      <About/>
-      {/* <FunFacts/> */}
+      {/* <About/> */}
+      <FunFacts/>
       {/* <Experiences /> */}
       {/* <Projects /> */}
     </BrowserRouter>

@@ -15,7 +15,7 @@ const Objects = ({ position, rotation, scale, object, light }) => {
       }, [isHovered])
     return (
         <>
-            <Float speed={ isHovered ? 7 : 4} rotationIntensity={0.2} floatIntensity={1}>
+            <Float speed={ isHovered ? 7 : 2} rotationIntensity={0.2} floatIntensity={1}>
                 <OrbitControls enableZoom={false} enableRotate={false}/>
                 <directionalLight position={light} intensity={2}/>
                 <mesh position={position}>
@@ -26,7 +26,11 @@ const Objects = ({ position, rotation, scale, object, light }) => {
                         rotation={rotation}
                         ref={ref}
                         onPointerEnter={(event) => (event.stopPropagation(), setIsHovered(true))}
-                        onPointerLeave={() => setIsHovered(false)}
+                        onPointerLeave={() => 
+                            setTimeout(() => {
+                            setIsHovered(false)
+                            }, 3000)
+                        }
                         /> 
                 </mesh>
             </Float>
