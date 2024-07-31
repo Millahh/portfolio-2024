@@ -1,4 +1,5 @@
 import Resources from "./Constants";
+import AnimCursor from "./AnimCursor";
 import { imgTracker, imgYournotes, imgMeniti, imgIssueticket, imgTogather, vidIssueTicket, vidMenITi, vidToGather, vidTracker, vidyouRnoteS } from "../assets";
 
 export const navLinks = [
@@ -71,4 +72,4 @@ const projects = [
         visit: "Visit Github",
     },
 ]
-export { projects, Resources };
+export { projects, Resources, AnimCursor };

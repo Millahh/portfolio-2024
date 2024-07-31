@@ -22,6 +22,17 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.cursor{
+  height: 2.5em;
+  width: 2.5em;
+  position: fixed;
+  border-radius: 50%;
+  background-color: rgb(250, 68, 250);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 0.03s ease-out;
+  mix-blend-mode:color-dodge;
+}
 .experiences p, .experiences li, .projects p, .projects li{
   font-family: "Josefin Sans", sans-serif;
 }
