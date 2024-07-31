@@ -21,6 +21,7 @@ const ThrowDice = () => {
             const handleAnimate = async () => {
                 await animate(scope.current, {scale : 0.4})
                 await animate(scope.current, {x:isMobile? (w/2 - 75) : (w/2 - 50), y:isMobile? (h/2 - 88) : (h/2 - 58), duration: 4})
+                // await animate(scope.current, { rotate: 360 })
 
             }
             handleAnimate()    
