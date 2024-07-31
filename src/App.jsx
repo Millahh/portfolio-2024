@@ -13,6 +13,7 @@ function App() {
       {/* <Route path="funfacts" element={<AutoLoad />} /> */}
 
       <Route index element={<Intro/>} />
+      {/* <Route index element={<DiceIntro/>} /> */}
       {/* <Route path="funfacts" element={<Intro/>} />  */}
       {/* <Route path="funfacts" element={<DiceIntro/>} />  */}
       <Route path="about" element={<About/>} />

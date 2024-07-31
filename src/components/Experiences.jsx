@@ -15,21 +15,21 @@ const Experiences = () => {
                             <AnimatePresence>
                                 <motion.div className="z-0 sm:absolute w-1/4 max-lg:w-1/3 max-xs:hidden"
                                 initial={{ opacity: 0, x:50 }}
-                                animate={{ opacity: 1, x:0 }}
+                                whileInView={{ opacity: 1, x:0 }}
                                 transition={{ delay:0.2, type: "tween", duration: 0.2 }}
                                 >
                                     <img src={Internship3} className="object-cover h-40 w-11/12 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
                                 <motion.div className="-z-1 top-2 left-3 sm:absolute w-1/4 max-lg:w-1/3 max-xs:hidden"
                                 initial={{ opacity: 0, x:50 }}
-                                animate={{ opacity: 1, x:0 }}
+                                whileInView={{ opacity: 1, x:0 }}
                                 transition={{ delay:0.5, type: "tween", duration: 0.2 }}
                                 >
                                     <img src={Internship2} className="object-cover h-40 w-11/12 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
                                 <motion.div className="-z-2 top-4 left-6 sm:absolute w-1/4 max-lg:w-1/3 max-xs:w-full"
                                 initial={{ opacity: 0, x:50 }}
-                                animate={{ opacity: 1, x:0 }}
+                                whileInView={{ opacity: 1, x:0 }}
                                 transition={{ delay:0.7, type: "tween", duration: 0.2 }}
                                 >
                                     <img src={Internship1} className="object-cover  h-40 w-11/12 max-lg:w-full border-2 border-white rounded-xl"/>
@@ -54,21 +54,21 @@ const Experiences = () => {
                             <AnimatePresence>
                                 <motion.div className="z-0 sm:absolute right-0 w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:-50 }}
-                                animate={{ opacity: 1, x:0 }}
+                                whileInView={{ opacity: 1, x:0 }}
                                 transition={{ delay:1, type: "tween", duration: 0.2 }}
                                 >
                                     <img src={Internship3} className="object-cover w-11/12 h-40 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
                                 <motion.div className="-z-1 top-2 right-3 max-lg:right-2 sm:absolute w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:-50 }}
-                                animate={{ opacity: 1, x:0 }}
+                                whileInView={{ opacity: 1, x:0 }}
                                 transition={{ delay:1.2, type: "tween", duration: 0.2 }}
                                 >
                                     <img src={Internship1} className="object-cover w-11/12 h-40 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
                                 <motion.div className="-z-2 top-4 right-6 max-lg:right-4 sm:absolute w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:-50 }}
-                                animate={{ opacity: 1, x:0 }}
+                                whileInView={{ opacity: 1, x:0 }}
                                 transition={{ delay:1.4, type: "tween", duration: 0.2 }}
                                 >
                                     <img src={Internship2} className="object-cover w-11/12 h-40 max-lg:w-full border-2 border-white rounded-xl"/>
@@ -81,22 +81,22 @@ const Experiences = () => {
                             <AnimatePresence>
                                 <motion.div className="z-0 sm:absolute w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:50 }}
-                                animate={{ opacity: 1, x:0 }}
-                                transition={{ delay:0.2, type: "tween", duration: 0.2 }}
+                                whileInView={{ opacity: 1, x:0 }}
+                                transition={{ delay:1.7, type: "tween", duration: 0.2 }}
                                 >
                                     <img src={Internship2} className="object-cover w-11/12 max-lg:w-full h-40 border-2 border-white rounded-xl"/>
                                 </motion.div>
                                 <motion.div className="-z-1 top-2 left-3 sm:absolute w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:50 }}
-                                animate={{ opacity: 1, x:0 }}
-                                transition={{ delay:0.5, type: "tween", duration: 0.2 }}
+                                whileInView={{ opacity: 1, x:0 }}
+                                transition={{ delay:1.9, type: "tween", duration: 0.2 }}
                                 >
                                     <img src={Internship1} className="object-cover w-11/12 h-40 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
                                 <motion.div className="-z-2 top-4 left-6 sm:absolute w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:50 }}
-                                animate={{ opacity: 1, x:0 }}
-                                transition={{ delay:0.7, type: "tween", duration: 0.2 }}
+                                whileInView={{ opacity: 1, x:0 }}
+                                transition={{ delay:2.2, type: "tween", duration: 0.2 }}
                                 >
                                     <img src={Internship3} className="object-cover w-11/12 h-40 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
@@ -115,21 +115,21 @@ const Experiences = () => {
                             <AnimatePresence>
                                 <motion.div className="z-0 sm:absolute w-1/4 max-lg:w-1/3 max-sm:hidden"
                                 initial={{ opacity: 0, x:50 }}
-                                animate={{ opacity: 1, x:0 }}
+                                whileInView={{ opacity: 1, x:0 }}
                                 transition={{ delay:0.2, type: "tween", duration: 0.2 }}
                                 >
                                     <img src={Bem1} className="object-cover w-11/12 h-40 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
                                 <motion.div className="-z-1 top-2 left-3 sm:absolute w-1/4 max-lg:w-1/3 max-sm:hidden"
                                 initial={{ opacity: 0, x:50 }}
-                                animate={{ opacity: 1, x:0 }}
+                                whileInView={{ opacity: 1, x:0 }}
                                 transition={{ delay:0.5, type: "tween", duration: 0.2 }}
                                 >
                                     <img src={Bem3} className="object-cover w-11/12 h-40 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
                                 <motion.div className="-z-2 top-4 left-6 sm:absolute w-1/4 max-lg:w-1/3 max-sm:w-full"
                                 initial={{ opacity: 0, x:50 }}
-                                animate={{ opacity: 1, x:0 }}
+                                whileInView={{ opacity: 1, x:0 }}
                                 transition={{ delay:0.7, type: "tween", duration: 0.2 }}
                                 >
                                     <img src={Bem2} className="object-cover w-11/12 h-40 max-lg:w-full border-2 border-white rounded-xl"/>
@@ -151,21 +151,21 @@ const Experiences = () => {
                             <AnimatePresence>
                                 <motion.div className="z-0 sm:absolute w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:-50 }}
-                                animate={{ opacity: 1, x:0 }}
+                                whileInView={{ opacity: 1, x:0 }}
                                 transition={{ delay:1, type: "tween", duration: 0.2 }}
                                 >
                                     <img src={Bem1} className="object-cover w-11/12 h-40 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
                                 <motion.div className="-z-1 top-2 right-3 sm:absolute w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:-50 }}
-                                animate={{ opacity: 1, x:0 }}
+                                whileInView={{ opacity: 1, x:0 }}
                                 transition={{ delay:1.2, type: "tween", duration: 0.2 }}
                                 >
                                     <img src={Bem2} className="object-cover w-11/12 h-40 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
                                 <motion.div className="-z-2 top-4 right-6 sm:absolute w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:-50 }}
-                                animate={{ opacity: 1, x:0 }}
+                                whileInView={{ opacity: 1, x:0 }}
                                 transition={{ delay:1.4, type: "tween", duration: 0.2 }}
                                 >
                                     <img src={Bem3} className="object-cover w-11/12 h-40 max-lg:w-full border-2 border-white rounded-xl"/>
@@ -178,22 +178,22 @@ const Experiences = () => {
                             <AnimatePresence>
                                 <motion.div className="z-0 sm:absolute w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:50 }}
-                                animate={{ opacity: 1, x:0 }}
-                                transition={{ delay:0.2, type: "tween", duration: 0.2 }}
+                                whileInView={{ opacity: 1, x:0 }}
+                                transition={{ delay:1.6, type: "tween", duration: 0.2 }}
                                 >
                                     <img src={Bem2} className="object-cover w-11/12 h-40 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
                                 <motion.div className="-z-1 top-2 left-3 sm:absolute w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:50 }}
-                                animate={{ opacity: 1, x:0 }}
-                                transition={{ delay:0.5, type: "tween", duration: 0.2 }}
+                                whileInView={{ opacity: 1, x:0 }}
+                                transition={{ delay:1.8, type: "tween", duration: 0.2 }}
                                 >
                                     <img src={Bem3} className="object-cover w-11/12 h-40 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
                                 <motion.div className="-z-2 top-4 left-6 sm:absolute w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:50 }}
-                                animate={{ opacity: 1, x:0 }}
-                                transition={{ delay:0.7, type: "tween", duration: 0.2 }}
+                                whileInView={{ opacity: 1, x:0 }}
+                                transition={{ delay:2, type: "tween", duration: 0.2 }}
                                 >
                                     <img src={Bem1} className="object-cover w-11/12 h-40 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
@@ -212,14 +212,14 @@ const Experiences = () => {
                             <AnimatePresence>
                                 <motion.div className="z-0 sm:absolute w-1/4 max-lg:w-1/3 max-sm:w-full max-sm:m-auto"
                                 initial={{ opacity: 0, x:50 }}
-                                animate={{ opacity: 1, x:0 }}
+                                whileInView={{ opacity: 1, x:0 }}
                                 transition={{ delay:0.2, type: "tween", duration: 0.2 }}
                                 >
                                     <img src={poros} className="object-cover w-full h-44 border-2 border-white rounded-xl"/>
                                 </motion.div>
                             </AnimatePresence>
                         </div>
-                        <div className="basis-3/4 p-3 pl-10 text-center max-sm:mt-10 max-sm:p-0">
+                        <div className="basis-3/4 p-3 pl-10 max-sm:text-center max-sm:mt-10 max-sm:p-0">
                             <p className=" tracking-widest text-xs opacity-50 pt-1">ORGANIZATION | 2021</p>
                             <p className=" text-xl font-bold text-primary bg-white bg-opacity-90 inline-block px-1 pt-1 my-1">Public Relations Staff of Organization of <br></br>Open Source (POROS)</p>
                         </div>
@@ -246,8 +246,8 @@ const Experiences = () => {
                             <AnimatePresence>
                                 <motion.div className="z-0 sm:absolute w-1/4 max-lg:w-1/3 max-sm:w-full max-sm:m-auto"
                                 initial={{ opacity: 0, x:-50 }}
-                                animate={{ opacity: 1, x:0 }}
-                                transition={{ delay:1, type: "tween", duration: 0.2 }}
+                                whileInView={{ opacity: 1, x:0 }}
+                                transition={{ delay:0.5, type: "tween", duration: 0.2 }}
                                 >
                                     <img src={Ipcree2} className="object-cover w-full h-44 border-2 border-white rounded-xl "/>
                                 </motion.div>
@@ -264,15 +264,29 @@ const Experiences = () => {
                         <p>Annual campus event welcomes new students, introducing and providing essential information to help kickstart their journey.</p>
                     </div>
                     <div className="flex justify-between space-x-5 max-xs:space-x-0">
-                        <div>
-                            <img src={pk21} className="object-cover h-48 max-lg:h-40 max-lg:w-56 border-2 border-white rounded-xl max-xs:hidden"/>
-                        </div>
-                        <div>
-                            <img src={pk23} className="object-cover h-48 max-lg:h-40 max-lg:w-56 border-2 border-white rounded-xl max-xs:w-full max-xs:h-full"/>
-                        </div>
-                        <div>
-                            <img src={pk22} className="object-cover h-48 max-lg:h-40 max-lg:w-56 border-2 border-white rounded-xl max-xs:hidden"/>
-                        </div> 
+                        <AnimatePresence>
+                            <motion.div
+                                initial={{ opacity: 0, x:-50 }}
+                                whileInView={{ opacity: 1, x:0 }}
+                                transition={{ delay:0.2, type: "tween", duration: 0.2 }}
+                            >
+                                <img src={pk21} className="object-cover h-48 max-lg:h-40 max-lg:w-56 border-2 border-white rounded-xl max-xs:hidden"/>
+                            </motion.div>
+                            <motion.div
+                                initial={{ opacity: 0, x:-50 }}
+                                whileInView={{ opacity: 1, x:0 }}
+                                transition={{ delay:0.5, type: "tween", duration: 0.2 }}
+                            >
+                                <img src={pk23} className="object-cover h-48 max-lg:h-40 max-lg:w-56 border-2 border-white rounded-xl max-xs:w-full max-xs:h-full"/>
+                            </motion.div>
+                            <motion.div
+                                initial={{ opacity: 0, x:-50 }}
+                                whileInView={{ opacity: 1, x:0 }}
+                                transition={{ delay:0.7, type: "tween", duration: 0.2 }}
+                            >
+                                <img src={pk22} className="object-cover h-48 max-lg:h-40 max-lg:w-56 border-2 border-white rounded-xl max-xs:hidden"/>
+                            </motion.div> 
+                        </AnimatePresence>
                     </div>
                     <div>
                         <p className=" tracking-widest text-xs opacity-50">SOFT SKILLS</p>
@@ -291,7 +305,13 @@ const Experiences = () => {
                 <section className=" h-4/5 mb-auto space-y-8 max-xs:mb-52">
                     <div className="sm:flex flex-row">
                         <div className="basis-1/4 max-lg:basis-1/3">
-                            <img src={lkmmtd1} className=" object-cover object-left-top h-44 border-2 border-white rounded-xl max-sm:m-auto max-xs:w-full"/>
+                            <motion.div
+                                    initial={{ opacity: 0, x:-50 }}
+                                    whileInView={{ opacity: 1, x:0 }}
+                                    transition={{ delay:0.2, type: "tween", duration: 0.2 }}
+                                >
+                                <img src={lkmmtd1} className=" object-cover object-left-top h-44 border-2 border-white rounded-xl max-sm:m-auto max-xs:w-full"/>
+                            </motion.div>
                         </div>
                         <div className="basis-3/4 p-5 pl-10 max-sm:p-0 max-sm:text-center">
                             <p className=" tracking-widest text-xs opacity-50 pt-2">VOLUNTEER | 2021</p>

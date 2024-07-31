@@ -30,7 +30,7 @@ const ThrowDice = () => {
     }, []);
 
     return(
-        <div className="h-screen w-screen absolute my-auto -z-2">
+        <div className="h-screen w-screen absolute my-auto -z-1">
             <Canvas 
                 frameloop="always"
                 shadows
