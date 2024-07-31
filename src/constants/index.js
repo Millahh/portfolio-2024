@@ -4,23 +4,23 @@ import { imgTracker, imgYournotes, imgMeniti, imgIssueticket, imgTogather, vidIs
 
 export const navLinks = [
     {
-      id: "about",
+      id: "/about",
       title: "ABOUT",
     },
     {
-      id: "projects",
+      id: "/projects",
       title: "PROJECTS",
     },
     {
-        id: "experiences",
+        id: "/experiences",
         title: "EXPERIENCES",
     },
     {
-        id: "funfacts",
+        id: "/funfacts",
         title: "FUN FACTS",
     },
     {
-      id: "contact",
+      id: "/contact",
       title: "CONTACT",
     },
   ];

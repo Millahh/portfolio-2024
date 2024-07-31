@@ -4,12 +4,14 @@ import T from "./texts/Title";
 import P from "./texts/Paragraph";
 import Hobbies from "./canvas/Hobbies";
 import { DiceIntro } from "./canvas";
+import Navbar from "./Navbar";
 
 
 const FunFacts = () => {
     return(
         <>
             <Hobbies />
+            <Navbar/>
             <div className="container text-center px-48 max-[850px]:px-20 max-[450px]:px-10 h-screen m-auto content-center z-99">
                 <div className="align-middle">
                     <p className="font-bold mb-2 max-[850px]:text-xl max-[450px]:text-lg min-[850px]:text-[3.2em]"><T>Fun</T> facts</p>

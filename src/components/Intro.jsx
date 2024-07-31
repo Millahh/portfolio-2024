@@ -4,6 +4,7 @@ import { DiceIntro } from "./canvas";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { easeIn, motion } from "framer-motion";
+import Navbar from "./Navbar";
 
 const About = () => {
     const variants = {
@@ -22,6 +23,7 @@ const About = () => {
     return(
         <>
             <DiceIntro/>
+            <Navbar/>
             <motion.div 
                 className="container text-center px-48 h-screen min-w-full content-center absolute my-auto -z-1"
                 initial="hidden"
