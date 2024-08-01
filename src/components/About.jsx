@@ -64,8 +64,6 @@ const HardSkills = ({ logos, desc }) => {
 const About = () => {
     return(
         <>
-        {/* <DiceIntro/> */}
-        <Navbar/>
         <div className="h-screen max-md:overflow-y-auto overflow-x-hidden max-md:pt-20 w-full">
             <div className="w-full h-full content-center min-[1400px]:w-4/5 min-[1500px]:w-3/4 min-[3000px]:w-1/2 min-[4000px]:w-1/3 m-auto">
                 <div className="sm:flex flex-row m-auto">

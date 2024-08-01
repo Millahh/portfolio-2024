@@ -22,8 +22,6 @@ const About = () => {
     }
     return(
         <>
-            <DiceIntro/>
-            <Navbar/>
             <motion.div 
                 className="container text-center px-48 h-screen min-w-full content-center absolute my-auto -z-1"
                 initial="hidden"

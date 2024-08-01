@@ -154,8 +154,7 @@ const Projects = () => {
 
     return (
         <>
-            <Navbar/>
-            <div className="projects pb-20 max-xs:pb-16 px-20 max-lg:px-10 w-full 2xl:w-9/12 min-[2000px]:w-1/2 m-auto h-screen max-[450px]:overflow-y-auto overflow-y-hidden flex max-[450px]:block flex-row">
+            <div className="projects py-10 max-xs:pb-16 px-20 max-lg:px-10 w-full 2xl:w-9/12 min-[2000px]:w-1/2 m-auto h-screen max-[450px]:overflow-y-auto overflow-y-hidden flex max-[450px]:block flex-row">
             {!isMobile && 
                 <div className="basis-4/12 max-[900px]:basis-2/5 max-xs:basis-1/2 overflow-y-auto max-xs:overflow-y-hidden items-center">
                     {projects.map((project) => (
@@ -191,7 +190,7 @@ const Projects = () => {
                     ))}
                 </MobileCarousel>
             }
-                <div className="basis-4/6 max-[900px]:basis-3/5 max-xs:basis-1/2 pl-10 max-[450px]:pl-0 h-full overflow-y-visible ">
+                <div className="basis-4/6 max-[900px]:basis-3/5 max-xs:basis-1/2 pl-10 max-[450px]:pl-0 h-full overflow-y-auto z-10">
                     <ProjectDesc isFocused={isFocused}/>
                 </div>
             </div>

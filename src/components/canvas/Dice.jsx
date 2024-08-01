@@ -21,7 +21,7 @@ const Dice = ({ position, rotation, isMobile, isNext }) => {
         
         const currentTime = performance.now() / 1000; // get current time in seconds
         const elapsedTime = currentTime - startTime.current;
-        if (isNext) ref.current.rotation.y += currentTime * 2 
+        if (isNext) ref.current.rotation.y += 6.5 
     
         if (elapsedTime > duration) {
           isActive.current = false; // Stop further updates

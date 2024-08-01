@@ -32,6 +32,7 @@
   transform: translate(-50%, -50%);
   transition: 0.03s ease-out;
   mix-blend-mode:color-dodge;
+  z-index: 99;
 }
 .active{
   opacity: 1;

@@ -9,9 +9,9 @@ function App() {
   return (
     <BrowserRouter>
       <AnimCursor/>
-      <Routes path="/" element={<Navbar/>}>
+      <DiceIntro/>
+      <Routes path="/">
       {/* <Route path="funfacts" element={<AutoLoad />} /> */}
-
       <Route index element={<Intro/>} />
       {/* <Route index element={<DiceIntro/>} /> */}
       {/* <Route path="funfacts" element={<Intro/>} />  */}

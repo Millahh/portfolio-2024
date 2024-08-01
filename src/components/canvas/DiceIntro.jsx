@@ -6,7 +6,7 @@ import { Physics, RigidBody } from "@react-three/rapier";
 import { Box, OrbitControls} from "@react-three/drei";
 import { useAnimate, usePresence } from "framer-motion";
 import Dice from "./Dice";
-import CanvasLoader from '../LoaderProgressBar';
+import { CanvasLoader, Navbar } from '../index.js';
 
 
 const ThrowDice = () => {
@@ -15,15 +15,16 @@ const ThrowDice = () => {
     const [scope, animate] = useAnimate();
     const isMobile = h>w ? true : false;
     const [isNext, setIsNext] = useState(false);
-    // setIsNext(true)
+    const [isFinish, setIsFinish] = useState(false);
+
     useEffect(() => {
         // Use setTimeout to update the message after 2000 milliseconds (2 seconds)
         const timeoutId = setTimeout(() => {
             const handleAnimate = async () => {
                 await animate(scope.current, {scale : 0.4})
                 await animate(scope.current, {x:isMobile? (w/2 - 75) : (w/2 - 50), y:isMobile? (h/2 - 88) : (h/2 - 58), duration: 4})
-                // await animate(scope.current, { rotate: 360 })
                 await setIsNext(true) 
+                await setIsFinish(true)
 
             }
             handleAnimate()   
@@ -33,7 +34,9 @@ const ThrowDice = () => {
     }, []);
 
     return(
-        <div className="h-screen w-screen absolute my-auto -z-1">
+        <>
+        <Navbar isFinish={isFinish}/>
+        <div className="h-screen w-screen absolute my-auto z-0">
             <Canvas 
                 frameloop="always"
                 shadows
@@ -59,6 +62,7 @@ const ThrowDice = () => {
                 </Suspense>
             </Canvas>
         </div>
+        </>
     )
 }
 

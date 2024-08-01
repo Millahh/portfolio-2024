@@ -23,11 +23,11 @@ const MyLinks = () => {
     )
 }
 
-const Navbar = () => {
+const Navbar = ({isFinish}) => {
     const [isOpen, setIsOpen] = useState(false);
-    return (
+    if (isFinish) return (
         <>
-            <div className="navbar flex md:justify-between px-10 pt-5 xl:w-1/2 lg:w-2/3 md:w-full 2xl:m-auto max-md:hidden max-sm:hidden max-xs:hidden">
+            <div className="navbar flex md:justify-between px-10 pt-5 xl:w-1/2 lg:w-2/3 md:w-full 2xl:m-auto max-md:hidden max-sm:hidden max-xs:hidden absolute z-20">
                 <MyLinks/>
             </div>
             <div class="md:hidden max-w-screen-xl pt-4 pr-4">
