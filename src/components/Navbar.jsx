@@ -27,8 +27,10 @@ const Navbar = ({isFinish}) => {
     const [isOpen, setIsOpen] = useState(false);
     if (isFinish) return (
         <>
-            <div className="navbar flex md:justify-between px-10 pt-5 xl:w-1/2 lg:w-2/3 md:w-full 2xl:m-auto max-md:hidden max-sm:hidden max-xs:hidden absolute z-20">
-                <MyLinks/>
+            <div className="w-full h-12 bg-black bg-opacity-80 absolute z-20 max-md:hidden">
+                <div className="navbar flex md:justify-between px-10 pt-5 xl:w-1/2 lg:w-2/3 md:w-full 2xl:m-auto max-md:hidden max-sm:hidden max-xs:hidden absolute z-20">
+                    <MyLinks/>
+                </div>
             </div>
             <div class="md:hidden max-w-screen-xl pt-4 pr-4">
                 <button type="button" class="float-right p-2 w-8 h-8 rounded-lg bg-primary bg-opacity-30 hover:bg-opacity-40 focus:outline-none hover:border-transparent" onClick={() => setIsOpen(!isOpen)}>
@@ -45,5 +47,6 @@ const Navbar = ({isFinish}) => {
         </>
     )
 }
+
 
 export default Navbar;

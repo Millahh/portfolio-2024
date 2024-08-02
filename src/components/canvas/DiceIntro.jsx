@@ -3,7 +3,7 @@
 import { useState, useEffect, Suspense, useRef } from 'react';
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Physics, RigidBody } from "@react-three/rapier";
-import { Box, OrbitControls} from "@react-three/drei";
+import { Box, OrbitControls, useGLTF} from "@react-three/drei";
 import { useAnimate, usePresence } from "framer-motion";
 import Dice from "./Dice";
 import { CanvasLoader, Navbar } from '../index.js';

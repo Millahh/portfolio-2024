@@ -44,7 +44,7 @@ const Hobbies = () => {
     const isMobile = h>w ? true : false;
     return (
         <>
-            <div className=" h-full w-screen absolute m-auto -z-2 max-[350px]:h-full max-[350px]:top-0 max-[450px]:h-4/5 max-[450px]:top-[12%]">
+            <div className=" h-full w-screen absolute m-auto max-[350px]:h-full max-[350px]:top-0 max-[450px]:h-4/5 max-[450px]:top-[12%]">
                 <Canvas 
                 frameloop="always"
                 shadows
