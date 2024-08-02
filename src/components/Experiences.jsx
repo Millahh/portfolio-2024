@@ -1,7 +1,6 @@
 /* eslint-disable no-undef */
 import { motion, AnimatePresence } from "framer-motion";
 import P from "./texts/Paragraph";
-import Navbar from "./Navbar";
 import { Internship1, Internship2, Internship3, Bem1, Bem2, Bem3, poros, Ipcree1, Ipcree2, pk21, pk22, pk23, lkmmtd1, lkmmtd2 } from "../assets";
 
 const Experiences = () => {

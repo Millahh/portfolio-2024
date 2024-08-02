@@ -4,7 +4,6 @@ import { DiceIntro } from "./canvas";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { easeIn, motion } from "framer-motion";
-import Navbar from "./Navbar";
 
 const About = () => {
     const variants = {

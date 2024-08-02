@@ -4,7 +4,6 @@
 import P from "./texts/Paragraph";
 import { Resources } from "../constants";
 import { Github } from "../assets";
-import Navbar from "./Navbar";
 import { useState, useEffect } from "react";
 import { Carousel, IconButton } from "@material-tailwind/react";
 import { projects } from "../constants";
