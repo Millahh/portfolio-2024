@@ -4,8 +4,10 @@ import { DiceIntro } from "./canvas";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { easeIn, motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
-const About = () => {
+const Intro = ({delay}) => {
+
     const variants = {
         hidden: {
             y: 400,
@@ -13,7 +15,7 @@ const About = () => {
         visible: {
             y: 0,
             transition: {
-              delay: 5,
+              delay: delay,
               duration: 0.7,
               ease: "easeIn",
             },
@@ -34,7 +36,7 @@ const About = () => {
                         <motion.h1
                             animate={{ rotate:[0, 15, 0], x: [0, 5, 0],  y: [0, -2, 0] }}
                             transition={{
-                                delay: 6,
+                                delay: delay,
                                 duration: 1,
                                 repeat: Infinity,
                                 repeatType: "loop",
@@ -70,4 +72,4 @@ const About = () => {
     )
 }
 
-export default About;
+export default Intro;

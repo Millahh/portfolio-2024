@@ -37,7 +37,7 @@
 .upScalling{
   scale: 1.2;
   color: white;
-  transition: 0.2s ease;
+  transition: 100ms;
 }
 .navbar-bg{
   background-color:black;

@@ -12,7 +12,9 @@ import { NavLink } from 'react-router-dom';
 function getPageComponent(page) {
   switch (page) {
     case 'home':
-      return <Intro />;
+      return <Intro delay={5} />;
+    case 'homeIsVisited':
+        return <Intro delay={0.1} />;
     case 'about':
       return <About />;
     case 'projects':
@@ -31,13 +33,14 @@ function getPageComponent(page) {
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState('home');
+
   return (
     <BrowserRouter>
       <AnimCursor/>
       <DiceIntro/>
       <div className="w-full h-12 bg-black bg-opacity-40 absolute z-20 max-md:hidden">
         <div className="navbar flex md:justify-between px-10 pt-5 xl:w-1/2 lg:w-2/3 md:w-full 2xl:m-auto max-md:hidden max-sm:hidden max-xs:hidden absolute z-20">
-          <NavLink  onClick={() => setCurrentPage('home')} to="/" className={`${currentPage === 'home' ? 'upScalling' : ''} flex hover:scale-125 max-md:mr-0 max-md:justify-end transition-all duration-100 text-gray-500 hover:text-white`}>HI<p className="text-sm -ml-1">👋</p></NavLink>
+          <NavLink  onClick={() => setCurrentPage('homeIsVisited')} to="/" className={`${currentPage === 'home' || currentPage === 'homeIsVisited' ? 'upScalling' : ''} flex hover:scale-125 max-md:mr-0 max-md:justify-end transition-all duration-100 text-gray-500 hover:text-white`}>HI<p className="text-sm -ml-1">👋</p></NavLink>
             {navLinks.map((link) => (
                 <NavLink 
                 onClick={() => setCurrentPage(link.id)}
@@ -56,7 +59,7 @@ function App() {
           </button>
           {isOpen && 
           <div class="navbar w-1/2 max-md:w-1/3 max-md:bg-primary max-md:bg-opacity-10 text-center self-center m-auto max-md:mr-0 pl-4 max-md:pr-12" id="navbar-mobile">
-            <NavLink  onClick={() => setCurrentPage('home')} to="/" className={`${currentPage === 'home' ? 'upScalling' : ''} flex hover:scale-125 max-md:mr-0 max-md:justify-end transition-transform duration-100 opacity-50 hover:opacity-100`}>HI<p className="text-sm -ml-1">👋</p></NavLink>
+            <NavLink  onClick={() => setCurrentPage('homeIsVisited')} to="/" className={`${currentPage === 'home' || currentPage === 'homeIsVisited' ? 'upScalling' : ''} flex hover:scale-125 max-md:mr-0 max-md:justify-end transition-transform duration-100 opacity-50 hover:opacity-100`}>HI<p className="text-sm -ml-1">👋</p></NavLink>
               {navLinks.map((link) => (
                   <NavLink 
                   onClick={() => setCurrentPage(link.id)}
