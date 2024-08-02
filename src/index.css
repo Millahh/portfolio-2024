@@ -34,9 +34,13 @@
   mix-blend-mode:color-dodge;
   z-index: 99;
 }
-.active{
-  opacity: 1;
+.upScalling{
   scale: 1.2;
+  color: white;
+  transition: 0.2s ease;
+}
+.navbar-bg{
+  background-color:black;
 }
 .experiences p, .experiences li, .projects p, .projects li{
   font-family: "Josefin Sans", sans-serif;
