@@ -27,7 +27,7 @@ const Navbar = ({isFinish}) => {
     const [isOpen, setIsOpen] = useState(false);
     if (isFinish) return (
         <>
-            <div className="w-full h-12 bg-black bg-opacity-80 absolute z-20 max-md:hidden">
+            <div className="w-full h-12 bg-black bg-opacity-50 absolute z-20 max-md:hidden">
                 <div className="navbar flex md:justify-between px-10 pt-5 xl:w-1/2 lg:w-2/3 md:w-full 2xl:m-auto max-md:hidden max-sm:hidden max-xs:hidden absolute z-20">
                     <MyLinks/>
                 </div>

@@ -1,11 +1,13 @@
 /* eslint-disable no-empty */
 /* eslint-disable react/no-unknown-property */
+import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Intro, AutoLoad, About, FunFacts, Experiences, Projects, Navbar } from "./components";
 import { DiceIntro, Hobbies } from "./components/canvas";
 import { AnimCursor } from "./constants";
 
 function App() {
+  const [currentPage, setCurrentPage] = useState('home');
   return (
     <BrowserRouter>
       <AnimCursor/>
