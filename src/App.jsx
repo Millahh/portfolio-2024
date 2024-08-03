@@ -32,7 +32,7 @@ function getPageComponent(page) {
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
-  const [currentPage, setCurrentPage] = useState('home');
+  const [currentPage, setCurrentPage] = useState('contact');
 
   return (
     <BrowserRouter>

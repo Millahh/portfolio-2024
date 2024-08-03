@@ -61,10 +61,10 @@ const Contact = () => {
   };
 
   return (
-    <div className="absolute z-10 overflow-y-auto h-screen w-screen pt-10">
+    <div className="absolute z-10 overflow-y-auto h-screen w-screen xs:pt-10 max-xs:pt-0">
       <div className=' p-8 rounded-2xl'>
         <form ref={formRef} onSubmit={handleSubmit} className=' space-y-2'>
-          <p className="text-white text-lg font-bold mb-4">I&apos;m looking forward to hearing from you!</p>
+          <p className="text-white text-lg font-bold mb-2">I&apos;m looking forward to hearing from you!</p>
           <div className=" flex flex-row space-x-10">
             <div className=" basis-1/2">
               <label className=''>
@@ -108,13 +108,13 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
-        <div className="social absolute bottom-3">
+        <div className=" w-fit mt-10 space-y-1">
+          <p className=" text-xs text-white my-auto font-bold">Let&apos;s connect!</p>
           <div className="flex space-x-1 mb-1">
             <img src={Github} className=" h-6 my-auto"/>
             <img src={Linkedin} className=" h-[1.3rem] my-auto"/>
             <img src={Insta} className=" h-5 my-auto"/>
           </div>
-          <p className=" text-xs text-center text-primary my-auto font-bold">Social Links</p>
         </div>
       </div>
     </div>
