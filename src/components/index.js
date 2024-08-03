@@ -4,6 +4,7 @@ import About from "./About";
 import FunFacts from "./FunFacts";
 import Experiences from "./Experiences";
 import Projects from "./Projects";
-import CanvasLoader from "./LoaderProgressBar"
+import CanvasLoader from "./LoaderProgressBar";
+import Contact from "./Contact";
 
-export { Intro, AutoLoad, About, FunFacts, Experiences, Projects, CanvasLoader };
+export { Intro, AutoLoad, About, FunFacts, Experiences, Projects, CanvasLoader, Contact };

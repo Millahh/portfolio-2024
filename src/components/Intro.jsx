@@ -49,7 +49,7 @@ const Intro = ({delay}) => {
                     <p>You can <P>swipe right</P> to find it there!</p>
                 </div>
             </motion.div>
-            <motion.div 
+            {/* <motion.div 
                 className="swipe-right w-fit flex right-0 bottom-100 absolute z-1 h-screen pr-4"                   
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}                   
@@ -67,7 +67,7 @@ const Intro = ({delay}) => {
                   }}
                 ><FontAwesomeIcon icon={faArrowRight} size="xl"/></motion.div>
                 <div className="bg-white w-2 h-2 rounded-lg self-center ml-1"/>
-            </motion.div>
+            </motion.div> */}
         </>
     )
 }

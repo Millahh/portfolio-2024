@@ -3,7 +3,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Intro, AutoLoad, About, FunFacts, Experiences, Projects } from "./components";
+import { Intro, AutoLoad, About, FunFacts, Experiences, Projects, Contact } from "./components";
 import { DiceIntro, Hobbies } from "./components/canvas";
 import { AnimCursor } from "./constants";
 import { navLinks } from "./constants";
@@ -23,8 +23,8 @@ function getPageComponent(page) {
       return <Experiences />;
     case 'funfacts':
       return <FunFacts />;
-    // case 'contact':
-    //   return <Contact />;
+    case 'contact':
+      return <Contact />;
     default:
       return <Intro />;
   }
