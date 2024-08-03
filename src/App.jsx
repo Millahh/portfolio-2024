@@ -3,7 +3,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Intro, AutoLoad, About, FunFacts, Experiences, Projects, Contact } from "./components";
+import { Intro, About, FunFacts, Experiences, Projects, Contact } from "./components";
 import { DiceIntro, Hobbies } from "./components/canvas";
 import { AnimCursor } from "./constants";
 import { navLinks } from "./constants";
