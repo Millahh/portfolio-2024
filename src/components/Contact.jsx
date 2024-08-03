@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import { Linkedin, Github } from "../assets";
+import { Linkedin, Github, Insta } from "../assets";
 
 const Contact = () => {
   const formRef = useRef();
@@ -63,56 +63,58 @@ const Contact = () => {
   return (
     <div className="absolute z-10 overflow-y-auto h-screen w-screen pt-10">
       <div className=' p-8 rounded-2xl'>
-        <div className=" flex flex-row space-x-10">
-            <div className=" basis-3/4">
-                <p className="text-white text-lg font-bold mb-4">I&apos;m looking forward to hearing from you!</p>
-                <form ref={formRef} onSubmit={handleSubmit} className=' space-y-2'>
-                    <label className=''>
-                        <p className='text-white text-xs mt-2 mb-1 font-semibold opacity-80'>Your Name</p>
-                        <input
-                            type='text'
-                            name='name'
-                            value={form.name}
-                            onChange={handleChange}
-                            placeholder="What's your good name?"
-                            className=' w-full bg-tertiary bg-opacity-75 py-3 px-4 placeholder:text-secondary placeholder:text-sm text-white rounded-lg outline-none border-none font-medium'
-                        />
-                    </label>
-                    <label className=''>
-                        <p className='text-white text-xs mt-2 mb-1 font-semibold  opacity-80'>Your email</p>
-                        <input
-                        type='email'
-                        name='email'
-                        value={form.email}
-                        onChange={handleChange}
-                        placeholder="What's your email?"
-                        className='w-full bg-tertiary bg-opacity-75 py-3 px-4 placeholder:text-secondary placeholder:text-sm text-white rounded-lg outline-none border-none font-medium'
-                        />
-                    </label>
-                    <label className=''>
-                        <p className='text-white text-xs mt-2 mb-1 font-semibold  opacity-80'>Your Message</p>
-                        <textarea
-                        rows={6}
-                        name='message'
-                        value={form.message}
-                        onChange={handleChange}
-                        placeholder='I&apos;d love to discuss an opportunity with you.'
-                        className='w-full bg-tertiary bg-opacity-75 py-3 px-4 placeholder:text-secondary placeholder:text-sm text-white rounded-lg outline-none border-none font-medium'
-                        />
-                    </label>
-                    <button type='submit' className='bg-tertiary bg-opacity-75 py-2 px-7 rounded-md outline-none w-fit text-primary text-sm font-bold shadow-md hover:bg-opacity-90'>
-                        {loading ? "Sending..." : "Send"}
-                    </button>
-                </form>
+        <form ref={formRef} onSubmit={handleSubmit} className=' space-y-2'>
+          <p className="text-white text-lg font-bold mb-4">I&apos;m looking forward to hearing from you!</p>
+          <div className=" flex flex-row space-x-10">
+            <div className=" basis-1/2">
+              <label className=''>
+                  <p className='text-white text-xs mt-2 mb-1 font-semibold opacity-80'>Your Name</p>
+                  <input
+                      type='text'
+                      name='name'
+                      value={form.name}
+                      onChange={handleChange}
+                      placeholder="What's your good name?"
+                      className=' w-full bg-tertiary bg-opacity-75 py-3 px-4 placeholder:text-secondary placeholder:text-sm text-white rounded-lg outline-none border-none font-medium'
+                  />
+              </label>
             </div>
-            <div className=" basis-1/4 m-auto">
-                <h1 className=" text-[2rem] font-extrabold text-center text-primary">Feel free to</h1>
-                <h1 className=" text-[1.5rem] font-bold text-center text-white">Reach out to me on</h1>
-                <div className=" flex w-fit mx-auto mt-2 space-x-2">
-                    <img src={Github} className=" h-14 my-auto"/>
-                    <img src={Linkedin} className=" h-[3.1rem] my-auto"/>
-                </div>
+            <div className=" basis-1/2 ">
+              <label className=''>
+                  <p className='text-white text-xs mt-2 mb-1 font-semibold  opacity-80'>Your email</p>
+                  <input
+                  type='email'
+                  name='email'
+                  value={form.email}
+                  onChange={handleChange}
+                  placeholder="What's your email?"
+                  className='w-full bg-tertiary bg-opacity-75 py-3 px-4 placeholder:text-secondary placeholder:text-sm text-white rounded-lg outline-none border-none font-medium'
+                  />
+              </label>
             </div>
+          </div>
+          <label className=''>
+            <p className='text-white text-xs mt-2 mb-1 font-semibold  opacity-80'>Your Message</p>
+            <textarea
+            rows={6}
+            name='message'
+            value={form.message}
+            onChange={handleChange}
+            placeholder='I&apos;d love to discuss an opportunity with you.'
+            className='w-full bg-tertiary bg-opacity-75 py-3 px-4 placeholder:text-secondary placeholder:text-sm text-white rounded-lg outline-none border-none font-medium'
+            />
+          </label>
+          <button type='submit' className='bg-tertiary bg-opacity-75 py-2 px-7 rounded-md outline-none w-fit text-primary text-sm font-bold shadow-md hover:bg-opacity-90'>
+            {loading ? "Sending..." : "Send"}
+          </button>
+        </form>
+        <div className="social absolute bottom-3">
+          <div className="flex space-x-1 mb-1">
+            <img src={Github} className=" h-6 my-auto"/>
+            <img src={Linkedin} className=" h-[1.3rem] my-auto"/>
+            <img src={Insta} className=" h-5 my-auto"/>
+          </div>
+          <p className=" text-xs text-center text-primary my-auto font-bold">Social Links</p>
         </div>
       </div>
     </div>

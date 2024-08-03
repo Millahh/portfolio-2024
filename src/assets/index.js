@@ -13,6 +13,7 @@ import Tailwind from "./tech/tailwind.png";
 import Threejs from "./tech/threejs.png";
 import Github from "./github.png";
 import Linkedin from "./likedin.webp";
+import Insta from "./insta.png"
 import imgInfluenger from "./projects/influenger.png";
 import imgIssueticket from "./projects/issueticket.png";
 import imgMeniti from "./projects/meniti.png";
@@ -40,4 +41,4 @@ import vidMenITi from "./projects/meniti.mp4"
 import vidIssueTicket from "./projects/issueticket.mp4"
 import vidToGather from "./projects/togather.mp4"
 
-export { AdminLTE, Bootstrap, CSS, Figma, HTML, JavaScript, Laravel, PHP, phpMyAdmin, PostgreSQL, React, Tailwind, Threejs, Github, Linkedin, imgInfluenger, imgIssueticket, imgMeniti, imgTogather, imgTracker, imgYournotes, Bem1, Bem2, Bem3, Internship1, Internship2, Internship3, Ipcree1, Ipcree2, lkmmtd1, lkmmtd2, pk21, pk22, pk23, poros, macbook, vidIssueTicket, vidMenITi, vidToGather, vidTracker, vidyouRnoteS };
+export { AdminLTE, Bootstrap, CSS, Figma, HTML, JavaScript, Laravel, PHP, phpMyAdmin, PostgreSQL, React, Tailwind, Threejs, Github, Linkedin, Insta, imgInfluenger, imgIssueticket, imgMeniti, imgTogather, imgTracker, imgYournotes, Bem1, Bem2, Bem3, Internship1, Internship2, Internship3, Ipcree1, Ipcree2, lkmmtd1, lkmmtd2, pk21, pk22, pk23, poros, macbook, vidIssueTicket, vidMenITi, vidToGather, vidTracker, vidyouRnoteS };
