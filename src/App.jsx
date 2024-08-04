@@ -32,7 +32,7 @@ function getPageComponent(page) {
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
-  const [currentPage, setCurrentPage] = useState('contact');
+  const [currentPage, setCurrentPage] = useState('home');
 
   return (
     <BrowserRouter>
@@ -71,6 +71,9 @@ function App() {
           </div>
           }
       </div>
+
+      <Hobbies isShow={currentPage === 'funfacts' ? true : false}/>
+      {console.log(currentPage)}
       <Routes>
       <Route path="/" element={getPageComponent(currentPage)} />
       </Routes>

@@ -10,6 +10,7 @@ import { CanvasLoader } from '../index.js';
 
 
 const ThrowDice = () => {
+    const assets = [useGLTF('./objects/music.glb'), useGLTF('./objects/mic.glb'), useGLTF('./objects/coffee.glb'), useGLTF('./objects/dance.glb')]
     var w = window.innerWidth;
     var h = window.innerHeight;
     const [scope, animate] = useAnimate();
