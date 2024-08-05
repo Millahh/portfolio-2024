@@ -79,6 +79,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
+            <p className="absolute bottom-2 right-3 text-sm font-sans italic">Don&apos;t quit rolling the dice except you win. </p>
         </div>
         </>
     )

@@ -192,6 +192,7 @@ const Projects = () => {
                 <div className="basis-4/6 max-[900px]:basis-3/5 max-xs:basis-1/2 pl-10 max-[450px]:pl-0 h-full overflow-y-auto z-10">
                     <ProjectDesc isFocused={isFocused}/>
                 </div>
+                <p className="absolute bottom-2 right-3 text-sm font-sans italic">Roll the dice, then drive it!</p>
             </div>
         </>
     )

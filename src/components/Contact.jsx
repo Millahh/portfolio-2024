@@ -117,6 +117,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <p className="absolute bottom-2 right-3 text-sm font-sans italic">The bad news is that the dice may be unpredictable, but the good news is that the dice are in your hand. </p>
     </div>
   );
 };
