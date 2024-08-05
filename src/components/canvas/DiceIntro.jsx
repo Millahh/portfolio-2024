@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unknown-property */
 import { useState, useEffect, Suspense, useRef } from 'react';
@@ -9,28 +10,43 @@ import Dice from "./Dice";
 import { CanvasLoader } from '../index.js';
 
 
-const ThrowDice = () => {
-    const assets = [useGLTF('./objects/music.glb'), useGLTF('./objects/mic.glb'), useGLTF('./objects/coffee.glb'), useGLTF('./objects/dance.glb')]
+const ThrowDice = ({isStart, setIsStart}) => {
     var w = window.innerWidth;
     var h = window.innerHeight;
     const [scope, animate] = useAnimate();
     const isMobile = h>w ? true : false;
-    const [isNext, setIsNext] = useState(false);
+
+    // useEffect(() => {
+    //     let timer;
+    //     if (isStart) {
+    //       timer = setTimeout(() => {
+    //         setIsStart(false);
+    //       }, 5000); // Stop rotation after 5 seconds
+    //     }
+    
+    //     return () => clearTimeout(timer);
+    //   }, [isStart, setIsStart]);
 
     useEffect(() => {
         // Use setTimeout to update the message after 2000 milliseconds (2 seconds)
-        const timeoutId = setTimeout(() => {
+        const timerDiceIntro = setTimeout(() => {
             const handleAnimate = async () => {
                 await animate(scope.current, {scale : 0.4})
                 await animate(scope.current, {x:isMobile? (w/2 - 75) : (w/2 - 50), y:isMobile? (h/2 - 88) : (h/2 - 58), duration: 4})
-                await setIsNext(true) 
 
             }
             handleAnimate()   
         }, 3200);
+        
+        let timerRotatingDice;
+        if (isStart) {
+          timerRotatingDice = setTimeout(() => {
+            setIsStart(false);
+          }, 500); // Stop rotation after 5 seconds
+        }
         // Cleanup function to clear the timeout if the component unmounts
-        return () => clearTimeout(timeoutId);
-    }, []);
+        return () => {clearTimeout(timerDiceIntro); clearTimeout(timerRotatingDice);};
+    }, [isStart, setIsStart]);
 
     return(
         <>
@@ -47,7 +63,7 @@ const ThrowDice = () => {
                         <OrbitControls enableZoom={false} enableRotate={false}/>
                         <directionalLight position={[100, 10, 200]} intensity={6}/>
                         <RigidBody gravityScale={10}>
-                            <Dice position={isMobile ? [30, 12, 15] : [30, 17, 20]} rotation={[1, -5, 4]} isMobile={isMobile} isNext={isNext}/>
+                            <Dice position={isMobile ? [30, 12, 15] : [30, 17, 20]} rotation={[1, -5, 4]} isMobile={isMobile} isStart={isStart} setIsStart={setIsStart}/>
                         </RigidBody>
                         <RigidBody type="fixed">
                             <Box position={[-10,1,-5]} args={[500,0.1,500]}>
@@ -64,7 +80,7 @@ const ThrowDice = () => {
     )
 }
 
-const DiceIntro = () => {
+const DiceIntro = ({isStart, setIsStart}) => {
     const [isFinish, setFinish] = useState(false);
 
     useEffect(() => {
@@ -78,7 +94,7 @@ const DiceIntro = () => {
     }, []); // Empty dependency array ensures the effect runs only once
 
     if(isFinish) {
-        return <ThrowDice/>
+        return <ThrowDice isStart={isStart} setIsStart={setIsStart}/>
     }
 }
 export default DiceIntro;

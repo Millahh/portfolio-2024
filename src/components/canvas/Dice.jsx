@@ -1,31 +1,19 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unknown-property */
 import { useGLTF } from "@react-three/drei";
-import { useState, useEffect, Suspense, useRef } from 'react';
+import { useRef } from 'react';
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useTimer } from "use-timer";
 
-const Dice = ({ position, rotation, isMobile, isNext }) => {
+const Dice = ({ position, rotation, isMobile, isStart }) => {
     const dice = useGLTF('./objects/dice/scene.gltf')
     const ref = useRef()
-
-    const startTime = useRef(0);
-    const isActive = useRef(true); //CHANGE THIS DEPEND ON CONDITION -> WHEN LINK CLICKED
-    const duration = 4.2; // duration in seconds
-    useEffect(() => {
-        startTime.current = performance.now() / 1000; // get current time in seconds
-      }, []);
-    
     useFrame(() => {
-        if (!isActive.current) return; // Skip frame updates if not active
-        
-        const currentTime = performance.now() / 1000; // get current time in seconds
-        const elapsedTime = currentTime - startTime.current;
-        if (isNext) ref.current.rotation.y += 6.5 
-    
-        if (elapsedTime > duration) {
-          isActive.current = false; // Stop further updates
-          return;
+        console.log(ref.current.rotation)
+        if(isStart){
+            ref.current.rotation.y += 0;
+            //ref.current.rotation.y += 6.18; // dice 2
+            // ref.current.rotation.y -= 5.686; // dice 3
         }
     });
     
