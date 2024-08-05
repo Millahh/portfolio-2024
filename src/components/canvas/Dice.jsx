@@ -9,11 +9,11 @@ const Dice = ({ position, rotation, isMobile, isStart }) => {
     const dice = useGLTF('./objects/dice/scene.gltf')
     const ref = useRef()
     useFrame(() => {
-        console.log(ref.current.rotation)
         if(isStart){
-            ref.current.rotation.y += 0;
-            //ref.current.rotation.y += 6.18; // dice 2
-            // ref.current.rotation.y -= 5.686; // dice 3
+            // ref.current.rotation.y += 6.18; // dice 2 (about)
+
+            // ref.current.rotation.x -=6.18 //dice 4 (experiences)
+            // ref.current.rotation.y += 5.978; // dice 4 (experiences)
         }
     });
     

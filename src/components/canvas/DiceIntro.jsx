@@ -16,17 +16,6 @@ const ThrowDice = ({isStart, setIsStart}) => {
     const [scope, animate] = useAnimate();
     const isMobile = h>w ? true : false;
 
-    // useEffect(() => {
-    //     let timer;
-    //     if (isStart) {
-    //       timer = setTimeout(() => {
-    //         setIsStart(false);
-    //       }, 5000); // Stop rotation after 5 seconds
-    //     }
-    
-    //     return () => clearTimeout(timer);
-    //   }, [isStart, setIsStart]);
-
     useEffect(() => {
         // Use setTimeout to update the message after 2000 milliseconds (2 seconds)
         const timerDiceIntro = setTimeout(() => {
