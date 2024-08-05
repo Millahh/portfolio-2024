@@ -9,12 +9,12 @@ import { faL } from "@fortawesome/free-solid-svg-icons";
 const Dice = ({ position, rotation, isMobile, isStart, setIsStart }) => {
     const dice = useGLTF('./objects/dice/scene.gltf')
     const ref = useRef()
+    let i = 0;
     useFrame(() => {
-        // DICE 1
-        // ref.current.rotation.x = 7; 
-
-        // FIRST STATE = [1, -5, 4]
         if(isStart){
+            //SET TO FIRST STATE
+            //if (i==0) i++; rotation=[1, -5, 4];
+
             // DICE 2 ([x, 4.5, z])
             // (Math.round(ref.current.rotation.y) > 4.4) ? setIsStart(false) : ref.current.rotation.y += 0.25; 
 
@@ -39,6 +39,9 @@ const Dice = ({ position, rotation, isMobile, isStart, setIsStart }) => {
             // Math.round(ref.current.rotation.y > -3.5) ? ref.current.rotation.y : ref.current.rotation.y += 0.1;
             // Math.round(ref.current.rotation.z > 4.8) ? ref.current.rotation.z : ref.current.rotation.z += 0.1; 
             // if (Math.round(ref.current.rotation.x < -5.9) && Math.round(ref.current.rotation.y > -3.5) && Math.round(ref.current.rotation.z < 4.8)) setIsStart(false)
+
+            // DICE 1 [7, y, z]
+            //(Math.round(ref.current.rotation.y) > 7.1) ? setIsStart(false) : ref.current.rotation.y += 0.1 * 3; 
         }
     },[isStart, setIsStart]);
     // console.log(ref.current.rotation)
