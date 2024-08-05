@@ -26,16 +26,9 @@ const ThrowDice = ({isStart, setIsStart}) => {
             }
             handleAnimate()   
         }, 3200);
-        
-        let timerRotatingDice;
-        if (isStart) {
-          timerRotatingDice = setTimeout(() => {
-            setIsStart(false);
-          }, 500); // Stop rotation after 5 seconds
-        }
         // Cleanup function to clear the timeout if the component unmounts
-        return () => {clearTimeout(timerDiceIntro); clearTimeout(timerRotatingDice);};
-    }, [isStart, setIsStart]);
+        return () => {clearTimeout(timerDiceIntro); };
+    }, []);
 
     return(
         <>
