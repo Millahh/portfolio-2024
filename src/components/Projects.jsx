@@ -42,7 +42,7 @@ const ProjectDesc = ({isFocused = "Tracker"}) => {
                         <div className="flex">
                             <p className="text-3xl font-bold mr-5">{project.name}</p>
                             <div className="github bg-secondary self-center px-3 text-md rounded-xl flex align-middle">
-                                <p className="text-sm inline align-middle pt-0.5">{project.visit}</p>
+                                <a href="https://github.com/Millahh" target="_blank"><p className="text-sm inline align-middle pt-0.5">{project.visit}</p></a>
                                 <img src={Github} className=" w-4 h-4 ml-1 self-center align-middle"/>
                             </div>
                         </div>
@@ -162,9 +162,6 @@ const Projects = () => {
                             onFocus={() => {
                             setFocused(project.name);
                             }}
-                            onBlur={() => {
-                            setFocused("");
-                            }}
                             tabIndex="0"
                         >
                             <Photos isFocused={isFocused} img={project.img} date={project.date} name={project.name} desc={project.desc} tech={project.tech}/>
@@ -178,9 +175,6 @@ const Projects = () => {
                                 key={project.name}
                                 onFocus={() => {
                                 setFocused(project.name);
-                                }}
-                                onBlur={() => {
-                                setFocused("");
                                 }}
                                 tabIndex="0"
                             >
