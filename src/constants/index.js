@@ -34,6 +34,7 @@ const projects = [
         desc: "Task progress tracking application that supports multi role login.", 
         tech: "Laravel | Tailwind",
         visit: "Visit Github",
+        link: "https://github.com/Millahh/Tracker", 
     },
     {
         name: "youRnoteS", 
@@ -43,6 +44,7 @@ const projects = [
         desc: "Make, keep and manage your personal notes wherever you go.", 
         tech: "Laravel | Tailwind",
         visit: "Visit Github",
+        link: "https://github.com/Millahh/youRnoteS", 
     },
     {
         name: "MenITi", 
@@ -52,6 +54,7 @@ const projects = [
         desc: "Find your mentor in IT field or be one of them.", 
         tech: "Laravel | Bootstrap",
         visit: "Visit Github",
+        link: "https://github.com/Millahh/menITi", 
     },
     {
         name: "Issue-Ticket", 
@@ -61,6 +64,7 @@ const projects = [
         desc: "Make, keep and manage your personal notes wherever you go.", 
         tech: "Laravel | AdminLTE",
         visit: "Visit Github",
+        link: "https://github.com/Millahh/IssueTicketWeb", 
     },
     {
         name: "To-Gather", 
@@ -70,6 +74,7 @@ const projects = [
         desc: "Find your ideal team members for any project or competition in your chosen field!", 
         tech: "Laravel | JavaScript",
         visit: "Visit Github",
+        link: "https://github.com/Millahh/togather-app", 
     },
 ]
 export { projects, Resources, AnimCursor };
