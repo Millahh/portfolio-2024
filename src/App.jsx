@@ -33,7 +33,7 @@ function getPageComponent(page) {
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState('home');
-  const [isStart, setIsStart] = useState(false);
+  const [isStart, setIsStart] = useState("stop");
   const [navbarShow, setNavbarShow] = useState(false);
   useEffect(() => {
     // Use setTimeout to update the message after 2000 milliseconds (2 seconds)
@@ -51,12 +51,12 @@ function App() {
         <>
           <div className="w-full h-12 bg-black bg-opacity-40 absolute z-20 max-md:hidden">
             <div className="navbar flex md:justify-between px-10 pt-5 xl:w-1/2 lg:w-2/3 md:w-full 2xl:m-auto max-md:hidden max-sm:hidden max-xs:hidden absolute z-20">
-              <NavLink  onClick={() => setCurrentPage('homeIsVisited')} to="/" className={`${currentPage === 'home' || currentPage === 'homeIsVisited' ? 'upScalling' : ''} flex hover:scale-125 max-md:mr-0 max-md:justify-end transition-all duration-100 text-gray-500 hover:text-white`}>HI<p className="text-sm -ml-1">👋</p></NavLink>
+              <NavLink  onClick={() => {setCurrentPage('homeIsVisited'); setIsStart('homeIsVisited')}} to="/" className={`${currentPage === 'home' || currentPage === 'homeIsVisited' ? 'upScalling' : ''} flex hover:scale-125 max-md:mr-0 max-md:justify-end transition-all duration-100 text-gray-500 hover:text-white`}>HI<p className="text-sm -ml-1">👋</p></NavLink>
                 {navLinks.map((link) => (
                     <NavLink 
                     onClick={() => {
                       setCurrentPage(link.id) 
-                      setIsStart(true)
+                      setIsStart(link.id)
                     }}
                     to="/" 
                     key={link.id}
