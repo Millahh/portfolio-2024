@@ -2,33 +2,12 @@
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable react/prop-types */
 import { useState, useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import { Intro, About, FunFacts, Experiences, Projects, Contact } from "./components";
 import { DiceIntro, Hobbies } from "./components/canvas";
 import { AnimCursor } from "./constants";
 import { navLinks } from "./constants";
 import { NavLink } from 'react-router-dom';
-
-function getPageComponent(page) {
-  switch (page) {
-    case 'home':
-      return <Intro delay={5} />;
-    case 'homeIsVisited':
-        return <Intro delay={0.1} />;
-    case 'about':
-      return <About/>;
-    case 'projects':
-      return <Projects />;
-    case 'experiences':
-      return <Experiences />;
-    case 'funfacts':
-      return <FunFacts />;
-    case 'contact':
-      return <Contact />;
-    default:
-      return <Intro />;
-  }
-}
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,6 +22,27 @@ function App() {
     // Cleanup function to clear the timeout if the component unmounts
     return () => clearTimeout(timeoutId);
 }, []);
+
+function getPageComponent(page) {
+  switch (page) {
+    case 'home':
+      return <Intro delay={5} />;
+    case 'homeIsVisited':
+        return <Intro delay={0.1} />;
+    case 'about':
+      return <About setCurrentPage={setCurrentPage} setIsStart={setIsStart}/>;
+    case 'projects':
+      return <Projects />;
+    case 'experiences':
+      return <Experiences />;
+    case 'funfacts':
+      return <FunFacts />;
+    case 'contact':
+      return <Contact />;
+    default:
+      return <Intro />;
+  }
+}
 
   return (
     <BrowserRouter>
