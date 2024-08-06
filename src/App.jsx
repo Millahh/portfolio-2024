@@ -2,7 +2,7 @@
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable react/prop-types */
 import { useState, useEffect } from "react";
-import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Intro, About, FunFacts, Experiences, Projects, Contact } from "./components";
 import { DiceIntro, Hobbies } from "./components/canvas";
 import { AnimCursor } from "./constants";
@@ -42,7 +42,7 @@ function getPageComponent(page) {
     case 'contact':
       return <Contact />;
     default:
-      return <Intro />;
+      return <Intro delay={0.1} />;
   }
 }
 

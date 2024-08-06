@@ -7,7 +7,6 @@ import { Github } from "../assets";
 import { useState, useEffect } from "react";
 import { Carousel, IconButton } from "@material-tailwind/react";
 import { projects } from "../constants";
-import { macbook } from "../assets";
 
 const Photos = ({ name, img, date, desc, tech }) => {
     return (

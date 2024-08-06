@@ -1,8 +1,7 @@
 /* eslint-disable react/prop-types */
 import T from "./texts/Title";
 import { AdminLTE, Bootstrap, CSS, Figma, HTML, JavaScript, Laravel, PHP, phpMyAdmin, PostgreSQL, React, Tailwind, Threejs, Github } from "../assets";
-import { animate, motion } from "framer-motion";
-import { DiceIntro } from "./canvas";
+import { motion } from "framer-motion";
 
 const Animation = () => {
     const animation1 = {

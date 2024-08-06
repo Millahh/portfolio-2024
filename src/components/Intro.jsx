@@ -1,13 +1,8 @@
 import T from "./texts/Title";
 import P from "./texts/Paragraph";
-import { DiceIntro } from "./canvas";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { easeIn, motion } from "framer-motion";
-import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 const Intro = ({delay}) => {
-
     const variants = {
         hidden: {
             y: 400,
@@ -46,28 +41,8 @@ const Intro = ({delay}) => {
                     </div>
                     <h2 className="font-bold text-2xl tracking-widest my-2">Web Developer</h2>
                     <p>I <P>build websites</P> both <P>front-end</P> and <P>back-end</P>. I love to use <P>Frameworks</P> and <P>libraries</P>, they provide best practices that allow me to <P>focus</P> on <P>creativity</P> and <P>innovation</P> more, yet reliable and secure. <P>Laravel</P> is my favorite one, but I’m also strongly interested in learning <P>various frameworks and libraries</P>.</p>
-                    <p>You can <P>swipe right</P> to find it there!</p>
                 </div>
             </motion.div>
-            {/* <motion.div 
-                className="swipe-right w-fit flex right-0 bottom-100 absolute z-1 h-screen pr-4"                   
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}                   
-                transition={{
-                    delay: 6
-                }}
-            >
-                <motion.div 
-                  className="w-fit self-center pr-3"
-                  animate={{ x: [0, 10, 0], }}
-                  transition={{
-                    duration: 1.5,
-                    repeat: Infinity,
-                    repeatType: "loop",
-                  }}
-                ><FontAwesomeIcon icon={faArrowRight} size="xl"/></motion.div>
-                <div className="bg-white w-2 h-2 rounded-lg self-center ml-1"/>
-            </motion.div> */}
         </>
     )
 }
