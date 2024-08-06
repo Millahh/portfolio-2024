@@ -14,6 +14,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState('home');
   const [isStart, setIsStart] = useState("stop");
   const [navbarShow, setNavbarShow] = useState(false);
+  const [ isFocused, setFocused ] = useState("Tracker");
   useEffect(() => {
     // Use setTimeout to update the message after 2000 milliseconds (2 seconds)
     const timeoutId = setTimeout(() => {
@@ -30,9 +31,9 @@ function getPageComponent(page) {
     case 'homeIsVisited':
         return <Intro delay={0.1} />;
     case 'about':
-      return <About setCurrentPage={setCurrentPage} setIsStart={setIsStart}/>;
+      return <About setCurrentPage={setCurrentPage} setIsStart={setIsStart} isFocused={isFocused} setFocused={setFocused}/>;
     case 'projects':
-      return <Projects />;
+      return <Projects isFocused={isFocused} setFocused={setFocused}/>;
     case 'experiences':
       return <Experiences />;
     case 'funfacts':
