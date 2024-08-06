@@ -43,8 +43,8 @@ const Experiences = () => {
                     <div className="sm:flex flex-row relative">
                         <div className="basis-3/4 w-screen p-5 pr-10 max-lg:pr-16 max-sm:pl-0">
                             <p className=" tracking-widest text-xs opacity-50">HARD SKILLS</p>
-                            <li>Built <P>Issue Ticket Website</P> using <P>adminLTE</P>, <P>Laravel</P>, and <P>PostgreSQL</P>.</li>
-                            <li>Continued development <P>Kelava CRM</P> Project using special company’s <P>CMS</P> with <P>AngularJS</P>, <P>Yii1</P>, and <P>Rapid Application Development (RAD)</P> as a development method.</li>
+                            <li>Built <a href="https://github.com/Millahh/IssueTicketWeb" target="_blank" className="inline-block underline underline-offset-4 hover:text-primary"><P>Issue Ticket Website</P></a> using <P>adminLTE</P>, <P>Laravel</P>, and <P>PostgreSQL</P>.</li>
+                            <li>Continued development <a href="https://kelava.id/" target="_blank" className="inline-block underline underline-offset-4 hover:text-primary"><P>Kelava CRM</P></a> Project using special company’s <P>CMS</P> with <P>AngularJS</P>, <P>Yii1</P>, and <P>Rapid Application Development (RAD)</P> as a development method.</li>
                             <li>Developed the <P>front-end</P> of <P>CRP Web Project</P> with <P>RAD</P> approach.</li>
                             <li>Evaluated and redesigned <P>Mobile Warehouse Application</P> using <P>Figma</P> and <P>Maze</P> to meet client usability requirements.</li>
                         </div>
@@ -143,7 +143,7 @@ const Experiences = () => {
                     <div className="sm:flex flex-row relative">
                         <div className="basis-3/4 max-lg:basis-8/12 w-screen pl-5 pt-10 max-lg:pt-5 pr-10 max-sm:pl-0 h-40">
                             <p className=" tracking-widest text-xs opacity-50">HARD SKILLS</p>
-                            <p><P>Designed</P> the Elaborasi Makna website (<P>bemfilkom.ub.ac.id</P>), creating an engaging interface that effectively showcased the organization's mission, events, and activities.</p>
+                            <p className="inline-block"><P>Designed</P> the Elaborasi Makna website <a href="https://bemfilkom.ub.ac.id/2020/#/" target="_blank" className="inline-block underline underline-offset-4 hover:text-primary"><P>bemfilkom.ub.ac.id</P></a>, creating an engaging interface that effectively showcased the organization&apos;s mission, events, and activities.</p>
                         </div>
                         <div className="basis-1/4 max-lg:basis-1/3 max-sm:hidden max-sm:space-x-5">
                             <AnimatePresence>
@@ -225,7 +225,7 @@ const Experiences = () => {
                     <div className="sm:flex flex-row pt-10 max-sm:p-0">
                         <div className="basis-1/2 pr-20 max-sm:p-0">
                             <p className=" tracking-widest text-xs opacity-50">HARD SKILLS</p>
-                            <p>Created posts design and maintained an official instagram account of POROS  to enhance our online presence(@porosfilkom).</p>
+                            <p>Created posts design and maintained an official instagram account of POROS  to enhance our online presence <a href="https://www.instagram.com/porosfilkom/" target="_blank" className="inline-block underline underline-offset-4 hover:text-primary">@porosfilkom</a>.</p>
                         </div>
                         <div className="basis-1/2 pr-20 max-sm:mt-2 max-sm:p-0">
                             <p className=" tracking-widest text-xs opacity-50">SOFT SKILLS</p>

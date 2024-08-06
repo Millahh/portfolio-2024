@@ -16,7 +16,7 @@ function getPageComponent(page) {
     case 'homeIsVisited':
         return <Intro delay={0.1} />;
     case 'about':
-      return <About />;
+      return <About/>;
     case 'projects':
       return <Projects />;
     case 'experiences':

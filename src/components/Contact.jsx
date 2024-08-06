@@ -110,10 +110,10 @@ const Contact = () => {
         </form>
         <div className=" w-fit mt-10 space-y-1">
           <p className=" text-xs text-white my-auto font-bold">Let&apos;s connect!</p>
-          <div className="flex space-x-1 mb-1">
-            <img src={Github} className=" h-6 my-auto"/>
-            <img src={Linkedin} className=" h-[1.3rem] my-auto"/>
-            <img src={Insta} className=" h-5 my-auto"/>
+          <div className="flex mb-1">
+            <a href="https://github.com/Millahh" target="_blank" className=" h-6 my-auto"><img src={Github} className=" h-6 my-auto"/></a>
+            <a href="https://linkedin.com/in/munirotul-millah" target="_blank" className=" h-[1.3rem] my-auto mr-1 ml-[0.1rem]"><img src={Linkedin} className=" h-[1.3rem] my-auto"/></a>
+            <a href="https://instagram.com/mmillah_" target="_blank" className=" h-5 my-auto"><img src={Insta} className=" h-5 my-auto"/></a>
           </div>
         </div>
       </div>

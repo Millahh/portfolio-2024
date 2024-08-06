@@ -71,7 +71,7 @@ const About = () => {
                     </div>
                     <div className=" basis-3/5 max-lg:basis-1/2 px-10 h-fit max-md:h-fit max-md:py-20 overflow-y-auto max-sm:overflow-y-hidden content-center m-auto">
                         <h1 className=" font-bold max-md:text-[2em] max-md:mb-3 max-lg:text-[2.3em] "><T>Get to</T> know me</h1>
-                        <HardSkills logos={[{logo: Laravel, width:20}, {logo: Bootstrap, width:20}]} desc={"I started learning Laravel and Bootstrap since 2021 and have built some applications with it. Tracker, youRnoteS, MenITi, To-Gather (link)"}/>
+                        <HardSkills logos={[{logo: Laravel, width:20}, {logo: Bootstrap, width:20}]} desc={"I started learning Laravel and Bootstrap since 2021 and have built some applications with it. (Tracker, youRnoteS, MenITi, To-Gather)"}/>
                         <HardSkills logos={[{logo: Tailwind, width:20}, {logo: React, width:20}]} desc={"I’ve recently been interested built front-end web using Tailwind and React. (Tracker, youRnoteS)"}/>
                         <HardSkills logos={[{logo: Threejs, width:20}]} desc={"I recently fell in love with learning Three.js. I implemented Three.js as well as React and Tailwind on this portfolio based on what I've learned so far."}/>
                         <HardSkills logos={[{logo: PostgreSQL, width:23}, {logo: phpMyAdmin, width:30}]} desc={"I use PostgreSQL and phpMyAdmin for database management, i prefer PostgreSQL for interface, familiarity, performance and scalability."}/>
