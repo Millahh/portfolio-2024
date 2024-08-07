@@ -12,14 +12,15 @@ const Photos = ({ name, img, date, desc, tech }) => {
     return (
         <div className="mt-5 mb-10 max-md:mb-5 relative w-4/5 h-44 max-[900px]:h-36 max-md:h-28 max-[450px]:h-44 self-center mx-auto hover:scale-110 transition-all duration-150 cursor-pointer">
             <img src={img} className=" object-cover w-full h-full border-4 rounded-xl absolute z-0 desc"/>
-            <div className="absolute z-1 bg-black bg-opacity-50 w-full h-full border-4 rounded-xl p-3 desc-hide">
+            <div className="absolute z-1 bg-black bg-opacity-50 w-full h-full border-4 rounded-xl p-3 max-xs:p-3 max-md:py-1 desc-hide">
                 <div className="github bg-tertiary self-center px-2 text-md rounded-2xl align-middle inline-block">
-                    <p className="align-middle pt-[1.5px] text-[0.7rem]">{date}</p>
+                    <p className="align-middle pt-[1.5px] text-[0.7rem] max-xs:text-[0.7rem] max-md:text-[0.6rem]">{date}</p>
+                    {/* max-md:text-[0.6rem] */}
                 </div>
-                <p className=" text-white font-semibold mt-2 max-lg:text-sm">{name}</p>
-                <p className=" text-white text-xs max-lg:text-[0.7rem]">{desc}</p>
+                <p className=" text-white font-semibold mt-2 max-xs:mt-2 max-md:mt-0 max-xs:text-sm max-md:text-[0.6rem] max-lg:text-sm">{name}</p>
+                <p className=" text-white text-xs max-xs:text-xs max-md:text-[0.6rem] max-lg:text-[0.7rem]">{desc}</p>
                 <div className="absolute bottom-6 max-xl:bottom-2 github bg-secondary self-center px-2 text-md rounded-2xl align-middle inline-block">
-                    <p className="align-middle pt-[1.5px] text-[0.65rem]">{tech}</p>
+                    <p className="align-middle pt-[1.5px] text-[0.65rem] max-xs:text-[0.65rem] max-md:text-[0.6rem]">{tech}</p>
                 </div>
             </div>
         </div>
@@ -32,7 +33,7 @@ const ProjectDesc = ({isFocused = "Tracker"}) => {
             {projects.map((project) => (
                 (isFocused == project.name)  &&
                 <div key={project.name} className="max-[450px]:pb-20">
-                    <div className="bg-macbook bg-contain bg-no-repeat bg-center max-xs:h-52 xs:h-52 md:h-80 content-center">
+                    <div className="bg-macbook bg-contain bg-no-repeat bg-center max-xs:h-52 xs:h-52 md:h-80 content-center mt-3">
                         <video className="mx-auto max-xs:w-9/12 xs:w-9/12 sm:w-9/12 xl:w-3/5 lg:w-2/3 max-xs:h-3/4 xs:h-3/4 sm:h-3/4 xl:h-3/4 lg:h-4/5 -mt-5" loop muted autoPlay={true}>
                             <source src={project.vid} type="video/mp4"/>
                         </video>
@@ -151,7 +152,7 @@ const Projects = ({isFocused, setFocused}) => {
 
     return (
         <>
-            <div className="projects py-10 max-xs:pb-16 px-20 max-lg:px-10 w-full 2xl:w-9/12 min-[2000px]:w-1/2 m-auto h-screen max-[450px]:overflow-y-auto overflow-y-hidden flex max-[450px]:block flex-row">
+            <div className="projects py-10 max-xs:pb-16 px-20 max-lg:px-10 w-full 2xl:w-9/12 min-[2000px]:w-1/2 m-auto h-screen max-[450px]:overflow-y-auto overflow-y-hidden flex max-[450px]:block flex-row absolute z-10">
             {!isMobile && 
                 <div className="basis-4/12 max-[900px]:basis-2/5 max-xs:basis-1/2 overflow-y-auto max-xs:overflow-y-hidden items-center">
                     {projects.map((project) => (
