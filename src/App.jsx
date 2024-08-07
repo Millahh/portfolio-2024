@@ -92,11 +92,11 @@ function getPageComponent(page) {
           </div>
         </>
       }
-      <DiceIntro isStart={isStart} setIsStart={setIsStart}/>
-      <Hobbies isShow={currentPage === 'funfacts' ? true : false}/>
       <Routes>
       <Route path="/" element={getPageComponent(currentPage)} />
       </Routes>
+      <DiceIntro isStart={isStart} setIsStart={setIsStart}/>
+      <Hobbies isShow={currentPage === 'funfacts' ? true : false}/>
     </BrowserRouter>
   )
 }
