@@ -27,8 +27,8 @@ export default {
         custom: "900px",
       },
       backgroundImage: {
-        "custom": "url('../src/assets/bg.png')",
-        "macbook": "url('../src/assets/projects/Macbook.png')",
+        "custom": "url('./src/assets/bg.png')",
+        "macbook": "url('./src/assets/projects/Macbook.png')",
       },
       letterSpacing: {
         widest: ".25em"
