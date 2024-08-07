@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import T from "./texts/Title";
 import P from "./texts/Paragraph";
 import { motion } from "framer-motion";

@@ -2,7 +2,7 @@
 /* eslint-disable react/no-unknown-property */
 import { useGLTF } from "@react-three/drei";
 import { useRef, useEffect } from 'react';
-import { Canvas, useFrame } from "@react-three/fiber";
+import { useFrame } from "@react-three/fiber";
 
 const Dice = ({ position, rotation, isMobile, isStart, setIsStart }) => {
     const dice = useGLTF('./objects/dice/scene.gltf')

@@ -1,11 +1,11 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unknown-property */
-import { useState, useEffect, Suspense, useRef } from 'react';
-import { Canvas, useFrame } from "@react-three/fiber";
+import { useState, useEffect, Suspense } from 'react';
+import { Canvas } from "@react-three/fiber";
 import { Physics, RigidBody } from "@react-three/rapier";
-import { Box, OrbitControls, useGLTF} from "@react-three/drei";
-import { useAnimate, usePresence } from "framer-motion";
+import { Box, OrbitControls} from "@react-three/drei";
+import { useAnimate } from "framer-motion";
 import Dice from "./Dice";
 import { CanvasLoader } from '../index.js';
 

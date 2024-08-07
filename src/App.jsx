@@ -30,7 +30,7 @@ function getPageComponent(page) {
     case 'home':
       return <Intro delay={4} />;
     case 'homeIsVisited':
-        return <Intro delay={0.1} />;
+      return <Intro delay={0.1} />;
     case 'about':
       return <About currentPage={currentPage} setCurrentPage={setCurrentPage} setIsStart={setIsStart} isFocused={isFocused} setFocused={setFocused}/>;
     case 'projects':
