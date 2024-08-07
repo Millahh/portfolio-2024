@@ -324,7 +324,7 @@ const Experiences = () => {
                     </div>
                 </section>
             </div>
-            <p className="absolute bottom-2 right-3 text-sm font-sans italic">More rolls, more chance of luck </p>
+            <p className="absolute bottom-2 right-3 text-sm font-sans italic max-md:hidden">More rolls, more chance of luck </p>
         </>
     )
 }

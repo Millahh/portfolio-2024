@@ -37,7 +37,7 @@ const Intro = ({delay}) => {
                                 repeatType: "loop",
                             }}
                         >👋</motion.h1>
-                        <p className="absolute bottom-2 right-3 text-sm font-sans italic">Life is like rolling the dice. Keep trying, keep chasing, and get your luck.</p>
+                        <p className="absolute bottom-2 right-3 text-sm font-sans italic max-md:hidden">Life is like rolling the dice. Keep trying, keep chasing, and get your luck.</p>
                     </div>
                     <h2 className="font-bold text-2xl tracking-widest my-2">Web Developer</h2>
                     <p>I <P>build websites</P> both <P>front-end</P> and <P>back-end</P>. I love to use <P>Frameworks</P> and <P>libraries</P>, they provide best practices that allow me to <P>focus</P> on <P>creativity</P> and <P>innovation</P> more, yet reliable and secure. <P>Laravel</P> is my favorite one, but I’m also strongly interested in learning <P>various frameworks and libraries</P>.</p>
