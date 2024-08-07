@@ -98,7 +98,7 @@ const About = ({setCurrentPage, setIsStart, isFocused, setFocused}) => {
                     </div>
                 </div>
             </div>
-            <p className="absolute bottom-2 right-3 text-sm font-sans italic max-md:hidden">Don&apos;t quit rolling the dice except you win. </p>
+            <p className="max-xs:right-8 bottom-2 right-3 text-sm font-sans italic max-md:bg-black max-md:text-xs fixed z-20 max-xs:text-[0.5rem]">Don&apos;t quit rolling the dice except you win. </p>
         </div>
         </>
     )
