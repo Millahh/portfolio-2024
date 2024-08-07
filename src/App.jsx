@@ -28,7 +28,7 @@ function App() {
 function getPageComponent(page) {
   switch (page) {
     case 'home':
-      return <Intro delay={5} />;
+      return <Intro delay={4} />;
     case 'homeIsVisited':
         return <Intro delay={0.1} />;
     case 'about':

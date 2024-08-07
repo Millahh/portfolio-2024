@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Intro = ({delay}) => {
     const variants = {
         hidden: {
-            y: 400,
+            y:  window.innerHeight,
           },
         visible: {
             y: 0,
