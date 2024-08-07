@@ -1,11 +1,17 @@
 /* eslint-disable no-undef */
 import { motion, AnimatePresence } from "framer-motion";
 import P from "./texts/Paragraph";
+import { variants } from "../constants";
 import { Internship1, Internship2, Internship3, Bem1, Bem2, Bem3, poros, Ipcree1, Ipcree2, pk21, pk22, pk23, lkmmtd1, lkmmtd2 } from "../assets";
 
 const Experiences = () => {
     return (
         <>
+        <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={variants}
+            layoutScroll="false">
             <div className="experiences pb-3 pt-20 px-20 max-lg:px-10 w-full h-screen 2xl:w-9/12 min-[2000px]:w-1/2 m-auto overflow-y-auto overflow-x-hidden absolute z-10">
                 <section className="mb-auto">
                     <div className="sm:flex flex-row relative">
@@ -324,7 +330,14 @@ const Experiences = () => {
                     </div>
                 </section>
             </div>
-            <p className="max-xs:right-8 bottom-2 right-3 text-sm font-sans italic max-md:bg-black max-xs:text-[0.5rem] max-md:text-xs fixed z-20">More rolls, more chance of luck </p>
+        </motion.div>
+        <motion.p 
+            initial="hidden"
+            animate="visible"
+            variants={variants}
+            layoutScroll="false"
+            className="max-xs:right-8 bottom-2 right-3 text-sm font-sans italic max-md:bg-black max-xs:text-[0.5rem] max-md:text-xs fixed z-20"
+        >More rolls, more chance of luck </motion.p>
         </>
     )
 }

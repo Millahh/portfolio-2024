@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { Linkedin, Github, Insta } from "../assets";
+import { variants } from "../constants";
 
 const Contact = () => {
   const formRef = useRef();
@@ -61,7 +62,12 @@ const Contact = () => {
   };
 
   return (
-    <div className="absolute z-10 overflow-y-auto h-screen w-screen xs:pt-10 max-xs:pt-0">
+    <motion.div 
+      initial="hidden"
+      animate="visible"
+      variants={variants}
+      layoutScroll="false"
+      className="absolute z-10 overflow-y-auto h-screen w-screen xs:pt-10 max-xs:pt-0">
       <div className=' p-8 rounded-2xl'>
         <form ref={formRef} onSubmit={handleSubmit} className=' space-y-2'>
           <p className="text-white text-lg font-bold mb-2">I&apos;m looking forward to hearing from you!</p>
@@ -118,7 +124,7 @@ const Contact = () => {
         </div>
       </div>
       <p className="bottom-2 right-3 text-sm font-sans italic max-md:bg-black max-xs:text-[0.5rem] max-md:text-xs fixed z-20">The bad news is that the dice may be unpredictable, but the good news is that the dice are in your hand. </p>
-    </div>
+    </motion.div>
   );
 };
 

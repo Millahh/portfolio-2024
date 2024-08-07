@@ -2,6 +2,7 @@
 import T from "./texts/Title";
 import { AdminLTE, Bootstrap, CSS, Figma, HTML, JavaScript, Laravel, PHP, phpMyAdmin, PostgreSQL, React, Tailwind, Threejs, Github } from "../assets";
 import { motion } from "framer-motion";
+import { variants } from "../constants";
 
 const Animation = () => {
     const animation1 = {
@@ -82,7 +83,12 @@ const HardSkills = ({ logos, desc, setCurrentPage, projects, setIsStart, isFocus
 const About = ({setCurrentPage, setIsStart, isFocused, setFocused}) => {
     return(
         <>
-        <div className="h-screen max-md:overflow-y-auto overflow-x-hidden max-md:pt-20 w-full absolute z-10">
+        <motion.div 
+            initial="hidden"
+            animate="visible"
+            variants={variants}
+            layoutScroll="false"
+            className="h-screen max-md:overflow-y-auto overflow-x-hidden max-md:pt-20 w-full absolute z-10">
             <div className="w-full h-full content-center min-[1400px]:w-4/5 min-[1500px]:w-3/4 min-[3000px]:w-1/2 min-[4000px]:w-1/3 m-auto">
                 <div className="sm:flex flex-row m-auto">
                     <div className="basis-1/2 xl:basis-1/2 2xl:basis-2/5 min-[2000px]:basis-1/3 max-xs:w-11/12 xs:relative xs:w-2/3 min-[500px]:w-4/5 min-[600px]:w-2/3 m-auto">
@@ -99,7 +105,7 @@ const About = ({setCurrentPage, setIsStart, isFocused, setFocused}) => {
                 </div>
             </div>
             <p className="max-xs:right-8 bottom-2 right-3 text-sm font-sans italic max-md:bg-black max-md:text-xs fixed z-20 max-xs:text-[0.5rem]">Don&apos;t quit rolling the dice except you win. </p>
-        </div>
+        </motion.div>
         </>
     )
 }

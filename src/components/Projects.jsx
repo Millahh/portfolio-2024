@@ -6,7 +6,8 @@ import { Resources } from "../constants";
 import { Github } from "../assets";
 import { useState, useEffect } from "react";
 import { Carousel, IconButton } from "@material-tailwind/react";
-import { projects } from "../constants";
+import { projects, variants } from "../constants";
+import { motion } from "framer-motion";
 
 const Photos = ({ name, img, date, desc, tech }) => {
     return (
@@ -152,6 +153,11 @@ const Projects = ({isFocused, setFocused}) => {
 
     return (
         <>
+        <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={variants}
+            layoutScroll="false">
             <div className="projects py-10 max-xs:pb-16 px-20 max-lg:px-10 w-full 2xl:w-9/12 min-[2000px]:w-1/2 m-auto h-screen max-[450px]:overflow-y-auto overflow-y-hidden flex max-[450px]:block flex-row absolute z-10">
             {!isMobile && 
                 <div className="basis-4/12 max-[900px]:basis-2/5 max-xs:basis-1/2 overflow-y-auto max-xs:overflow-y-hidden items-center">
@@ -185,8 +191,15 @@ const Projects = ({isFocused, setFocused}) => {
                 <div className="basis-4/6 max-[900px]:basis-3/5 max-xs:basis-1/2 pl-10 max-[450px]:pl-0 h-full overflow-y-auto z-10">
                     <ProjectDesc isFocused={isFocused}/>
                 </div>
-                <p className="bottom-2 right-3 max-xs:right-8 text-sm font-sans italic max-md:bg-black max-xs:text-[0.5rem] max-md:text-xs fixed z-20">Roll the dice, then drive it!</p>
             </div>
+        </motion.div>
+        <motion.p 
+            initial="hidden"
+            animate="visible"
+            variants={variants}
+            layoutScroll="false"
+            className="max-xs:right-8 bottom-2 right-3 text-sm font-sans italic max-md:bg-black max-xs:text-[0.5rem] max-md:text-xs fixed z-20"
+        >Roll the dice, then drive it!</motion.p>
         </>
     )
 } 

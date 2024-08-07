@@ -77,4 +77,18 @@ const projects = [
         link: "https://github.com/Millahh/togather-app", 
     },
 ]
-export { projects, Resources, AnimCursor };
+
+const variants = {
+    hidden: {
+        y:  window.innerHeight,
+      },
+    visible: {
+        y: 0,
+        transition: {
+          duration: 0.7,
+          ease: "easeIn",
+        },
+      },
+  }
+
+export { projects, Resources, AnimCursor, variants };
