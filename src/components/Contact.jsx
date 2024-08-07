@@ -117,7 +117,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <p className="bottom-2 max-xs:right-8 right-3 text-sm font-sans italic max-md:bg-black max-xs:text-[0.5rem] max-md:text-xs fixed z-20">The bad news is that the dice may be unpredictable, but the good news is that the dice are in your hand. </p>
+      <p className="bottom-2 right-3 text-sm font-sans italic max-md:bg-black max-xs:text-[0.5rem] max-md:text-xs fixed z-20">The bad news is that the dice may be unpredictable, but the good news is that the dice are in your hand. </p>
     </div>
   );
 };

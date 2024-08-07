@@ -68,17 +68,20 @@ function getPageComponent(page) {
             </div>
           </div>
           <div class="md:hidden max-w-screen-xl pt-4 pr-4">
-              <button type="button" class="float-right p-2 w-8 h-8 rounded-lg bg-primary bg-opacity-30 hover:bg-opacity-40 focus:outline-none hover:border-transparent" onClick={() => setIsOpen(!isOpen)}>
+              <button onClick={() => setIsOpen(!isOpen)} type="button" class="float-right p-2 w-8 h-8 rounded-lg bg-primary bg-opacity-30 hover:bg-opacity-40 focus:outline-none hover:border-transparent absolute z-30 right-4">
                   <svg class="w-4 h-4 float-right" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                       <path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M1 1h15M1 7h15M1 13h15"/>
                   </svg>
               </button>
               {isOpen && 
-              <div class="navbar w-1/2 max-md:w-1/3 max-md:bg-primary max-md:bg-opacity-10 text-center self-center m-auto max-md:mr-0 pl-4 max-md:pr-12" id="navbar-mobile">
-                <NavLink  onClick={() => setCurrentPage('homeIsVisited')} to="/" className={`${currentPage === 'home' || currentPage === 'homeIsVisited' ? 'upScalling' : ''} flex hover:scale-125 max-md:mr-0 max-md:justify-end transition-transform duration-100 opacity-50 hover:opacity-100`}>HI<p className="text-sm -ml-1">👋</p></NavLink>
+              <div class="navbar w-1/2 max-md:w-1/3 max-md:bg-primary max-md:bg-opacity-10 text-center self-center m-auto max-md:mr-0 pl-4 max-md:pr-12 absolute z-20 right-4" id="navbar-mobile">
+                <NavLink  onClick={() => {setCurrentPage('homeIsVisited'); setIsStart('homeIsVisited')}} to="/" className={`${currentPage === 'home' || currentPage === 'homeIsVisited' ? 'upScalling' : ''} flex hover:scale-125 max-md:mr-0 max-md:justify-end transition-transform duration-100 opacity-50 hover:opacity-100`}>HI<p className="text-sm -ml-1">👋</p></NavLink>
                   {navLinks.map((link) => (
-                      <NavLink 
-                      onClick={() => setCurrentPage(link.id)}
+                    <NavLink 
+                      onClick={() => {
+                        setCurrentPage(link.id) 
+                        setIsStart(link.id)
+                      }}
                       to="/" 
                       key={link.id}
                       className={`${currentPage === link.id ? 'upScalling' : ''} max-md:flex m-auto max-md:mr-0 justify-center max-md:justify-end hover:scale-125 transition-transform duration-100 text-gray-500 hover:text-white max-md:w-20`}
