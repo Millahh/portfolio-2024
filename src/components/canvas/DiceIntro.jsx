@@ -20,7 +20,7 @@ const ThrowDice = ({isStart, setIsStart}) => {
         // Use setTimeout to update the message after 2000 milliseconds (2 seconds)
         const timerDiceIntro = setTimeout(() => {
             const handleAnimate = async () => {
-                await animate(scope.current, {scale: w<450 ? 0.2 : 0.4})
+                await animate(scope.current, {scale: w<450 ? 0.3 : 0.4})
                 await animate(scope.current, {x:isMobile? (w/2 - 65) : (w/2 - 50), y:isMobile? (h/2 - 68) : (h/2 - 58), duration: 4})
 
             }

@@ -33,7 +33,7 @@ const ProjectDesc = ({isFocused = "Tracker"}) => {
             {projects.map((project) => (
                 (isFocused == project.name)  &&
                 <div key={project.name} className="max-[450px]:pb-20">
-                    <div className="bg-macbook bg-contain bg-no-repeat bg-center max-xs:h-52 xs:h-52 md:h-80 content-center mt-3 max-xs:mt-0">
+                    <div className="bg-macbook bg-contain bg-no-repeat bg-center max-xs:h-52 xs:h-52 md:h-80 content-center mt-3">
                         <video className="mx-auto max-xs:w-9/12 xs:w-9/12 sm:w-9/12 xl:w-3/5 lg:w-2/3 max-xs:h-3/4 xs:h-3/4 sm:h-3/4 xl:h-3/4 lg:h-4/5 -mt-5" loop muted autoPlay={true}>
                             <source src={project.vid} type="video/mp4"/>
                         </video>
@@ -65,7 +65,7 @@ const MobileCarousel = (props) => {
                         <span
                         key={i}
                         className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
-                            activeIndex === i ? "w-8 bg-black" : "w-4 bg-white/50"
+                            activeIndex === i ? "w-8 bg-white" : "w-4 bg-white/50"
                         }`}
                         onClick={() => setActiveIndex(i)}
                         />
@@ -85,7 +85,7 @@ const MobileCarousel = (props) => {
                         fill="none"
                         viewBox="0 0 24 24"
                         strokeWidth={2}
-                        stroke="currentColor"
+                        stroke="black"
                         className="h-4 w-4"
                     >
                         <path
@@ -109,7 +109,7 @@ const MobileCarousel = (props) => {
                         fill="none"
                         viewBox="0 0 24 24"
                         strokeWidth={2}
-                        stroke="currentColor"
+                        stroke="black"
                         className="h-4 w-4"
                     >
                         <path
