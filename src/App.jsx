@@ -53,14 +53,14 @@ function getPageComponent(page) {
         <>
           <div className="w-full h-12 bg-black bg-opacity-40 absolute z-20 max-md:hidden">
             <div className="navbar flex md:justify-between px-10 pt-5 xl:w-1/2 lg:w-2/3 md:w-full 2xl:m-auto max-md:hidden max-sm:hidden max-xs:hidden absolute z-20">
-              <NavLink  onClick={() => {setCurrentPage('homeIsVisited'); setIsStart('homeIsVisited')}} to="/" className={`${currentPage === 'home' || currentPage === 'homeIsVisited' ? 'upScalling' : ''} flex hover:scale-125 max-md:mr-0 max-md:justify-end transition-all duration-100 text-gray-500 hover:text-white`}>HI<p className="text-sm -ml-1">👋</p></NavLink>
+              <NavLink  onClick={() => {setCurrentPage('homeIsVisited'); setIsStart('homeIsVisited')}} to="/portfolio-2024/" className={`${currentPage === 'home' || currentPage === 'homeIsVisited' ? 'upScalling' : ''} flex hover:scale-125 max-md:mr-0 max-md:justify-end transition-all duration-100 text-gray-500 hover:text-white`}>HI<p className="text-sm -ml-1">👋</p></NavLink>
                 {navLinks.map((link) => (
                     <NavLink 
                     onClick={() => {
                       setCurrentPage(link.id) 
                       setIsStart(link.id)
                     }}
-                    to="/" 
+                    to="/portfolio-2024/" 
                     key={link.id}
                     className={`${currentPage === link.id ? 'upScalling' : ''} max-md:flex m-auto max-md:mr-0 justify-center max-md:justify-end hover:scale-125 transition-all duration-100 text-gray-500 hover:text-white max-md:w-20`}
                     >{link.title}</NavLink>
@@ -75,14 +75,14 @@ function getPageComponent(page) {
               </button>
               {isOpen && 
               <div class="navbar w-1/2 max-md:w-1/3 max-md:bg-primary max-md:bg-opacity-10 text-center self-center m-auto max-md:mr-0 pl-4 max-md:pr-12 absolute z-20 right-4" id="navbar-mobile">
-                <NavLink  onClick={() => {setCurrentPage('homeIsVisited'); setIsStart('homeIsVisited')}} to="/" className={`${currentPage === 'home' || currentPage === 'homeIsVisited' ? 'upScalling' : ''} flex hover:scale-125 max-md:mr-0 max-md:justify-end transition-transform duration-100 opacity-50 hover:opacity-100`}>HI<p className="text-sm -ml-1">👋</p></NavLink>
+                <NavLink  onClick={() => {setCurrentPage('homeIsVisited'); setIsStart('homeIsVisited')}} to="/portfolio-2024/" className={`${currentPage === 'home' || currentPage === 'homeIsVisited' ? 'upScalling' : ''} flex hover:scale-125 max-md:mr-0 max-md:justify-end transition-transform duration-100 opacity-50 hover:opacity-100`}>HI<p className="text-sm -ml-1">👋</p></NavLink>
                   {navLinks.map((link) => (
                     <NavLink 
                       onClick={() => {
                         setCurrentPage(link.id) 
                         setIsStart(link.id)
                       }}
-                      to="/" 
+                      to="/portfolio-2024/" 
                       key={link.id}
                       className={`${currentPage === link.id ? 'upScalling' : ''} max-md:flex m-auto max-md:mr-0 justify-center max-md:justify-end hover:scale-125 transition-transform duration-100 text-gray-500 hover:text-white max-md:w-20`}
                       >{link.title}</NavLink>
@@ -95,7 +95,7 @@ function getPageComponent(page) {
       <DiceIntro isStart={isStart} setIsStart={setIsStart}/>
       <Hobbies isShow={currentPage === 'funfacts' ? true : false}/>
       <Routes>
-      <Route path="/" element={getPageComponent(currentPage)} />
+      <Route path="/portfolio-2024/" element={getPageComponent(currentPage)} />
       </Routes>
     </BrowserRouter>
   )
