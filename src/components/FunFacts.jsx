@@ -5,7 +5,6 @@ import P from "./texts/Paragraph";
 import { motion } from "framer-motion";
 import { variants } from "../constants";
 
-
 const FunFacts = () => {
     return(
         <motion.div
@@ -13,7 +12,7 @@ const FunFacts = () => {
             animate="visible"
             variants={variants}
             layoutScroll="false"
-            className=" h-screen">
+            className=" h-screen absolute z-10">
             <div className="container text-center px-48 max-[850px]:px-20 max-[450px]:px-10 h-screen m-auto content-center flex items-center">
                 <div className="align-middle">
                     <p className="font-bold mb-2 max-[850px]:text-3xl max-[450px]:text-lg min-[850px]:text-[3.2em]"><T>Fun</T> facts</p>

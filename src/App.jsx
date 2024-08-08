@@ -93,7 +93,7 @@ function getPageComponent(page) {
         </>
       }
       <DiceIntro isStart={isStart} setIsStart={setIsStart}/>
-      <Hobbies isShow={currentPage === 'funfacts' ? true : false}/>
+      <Hobbies isShow={currentPage == 'funfacts' ? true : false}/>
       <Routes>
       <Route path="/portfolio-2024/" element={getPageComponent(currentPage)} />
       </Routes>

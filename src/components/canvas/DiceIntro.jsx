@@ -21,7 +21,7 @@ const ThrowDice = ({isStart, setIsStart}) => {
         const timerDiceIntro = setTimeout(() => {
             const handleAnimate = async () => {
                 await animate(scope.current, {scale : 0.4})
-                await animate(scope.current, {x:isMobile? (w/2 - 65) : (w/2 - 50), y:isMobile? (h/2 - 95) : (h/2 - 58), duration: 4})
+                await animate(scope.current, {x:isMobile? (w/2 - 65) : (w/2 - 50), y:isMobile? (h/2 - 100) : (h/2 - 58), duration: 4})
 
             }
             handleAnimate()   
