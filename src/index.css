@@ -10,6 +10,9 @@
 body{
   color: rgba(255, 255, 255, 0.87);
 }
+.container {
+  height: calc(var(--vh));
+}
 .bg-custom {
   background-image: url('./assets/bg.png');
 }
@@ -17,6 +20,7 @@ body{
   background-image: url('./assets/projects/Macbook.png');
 }
 :root {
+  --vh: 100%;
   font-family: "Inter", sans-serif;
   line-height: 1.5;
   font-weight: 400;
