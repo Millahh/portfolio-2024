@@ -56,7 +56,6 @@ const Hobbies = ({isShow}) => {
                     preserveDrawingBuffer: true,
                     antialias: true,
                     alpha: true,
-                    powerPreference: 'high-performance'
                 }}
                 >
                 {isShow && 

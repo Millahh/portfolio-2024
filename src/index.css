@@ -7,6 +7,9 @@
   margin-block-start: 0;
   margin-block-end: 0;
 }
+body{
+  color: rgba(255, 255, 255, 0.87);
+}
 .bg-custom {
   background-image: url('./assets/bg.png');
 }
