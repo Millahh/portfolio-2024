@@ -3,9 +3,17 @@
 import { useGLTF } from "@react-three/drei";
 import { useRef, useEffect } from 'react';
 import { useFrame } from "@react-three/fiber";
+import { DRACOLoader } from "three/examples/jsm/Addons.js";
 
 const Dice = ({ position, rotation, isMobile, isStart, setIsStart }) => {
-    const dice = useGLTF('./objects/dice/scene.gltf')
+    const { scene } = useGLTF('./objects/dice/scene.gltf', true, loader => {
+        const dLoader = new DRACOLoader();
+        dLoader.setDecoderPath('https://www.gstatic.com/draco/versioned/decoders/1.5.7/');
+        dLoader.setDecoderConfig({type: 'js'});
+        loader.setDRACOLoader(dLoader);
+    });
+
+
     const ref = useRef()
 
     // Use useEffect to set the initial position when isStart changes
@@ -69,7 +77,7 @@ const Dice = ({ position, rotation, isMobile, isStart, setIsStart }) => {
             {/* <directionalLight position={[30, 0, -200]} intensity={7}/> */}
             <primitive 
                 ref={ref}
-                object={dice.scene} 
+                object={scene} 
                 scale={isMobile? 400 : 500} 
                 position={[0, 0, 0]} 
                 rotation={rotation}
