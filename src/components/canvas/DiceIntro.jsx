@@ -12,7 +12,7 @@ import { CanvasLoader } from '../index.js';
 
 const ThrowDice = ({isStart, setIsStart}) => {
     var w = window.innerWidth;
-    var h = window.visualViewport ? window.visualViewport.height *0.01 : window.innerHeight *0.01
+    var h = window.visualViewport ? window.visualViewport.height : window.innerHeight *0.01
     const [scope, animate] = useAnimate();
     const isMobile = h>w ? true : false;
 
