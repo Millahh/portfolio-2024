@@ -21,7 +21,7 @@ const ThrowDice = ({isStart, setIsStart}) => {
         const timerDiceIntro = setTimeout(() => {
             const handleAnimate = async () => {
                 await animate(scope.current, {scale : 0.4})
-                await animate(scope.current, {x:isMobile? (w/2 - 65) : (w/2 - 50), y:isMobile? (h/2 - 92) : (h/2 - 58), duration: 4})
+                await animate(scope.current, {x:isMobile? (w/2 - 65) : (w/2 - 50), y:isMobile? (h/2 - 95) : (h/2 - 58), duration: 4})
 
             }
             handleAnimate()   
@@ -35,9 +35,10 @@ const ThrowDice = ({isStart, setIsStart}) => {
         <div className="h-screen w-screen absolute my-auto z-0">
             <Canvas 
                 frameloop="always"
-                shadows
+                shadows={false}
                 camera={{ position: [200, 40, 50], fov: 7.5}}
-                gl={{ preserveDrawingBuffer: true}}
+                gl={{ preserveDrawingBuffer: true, antialias: false}}
+                dpr={window.devicePixelRatio} 
                 ref={scope} 
                 >
                 <Suspense fallback={<CanvasLoader all/>}>
