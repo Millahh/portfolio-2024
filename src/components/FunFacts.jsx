@@ -12,7 +12,8 @@ const FunFacts = () => {
             initial="hidden"
             animate="visible"
             variants={variants}
-            layoutScroll="false">
+            layoutScroll="false"
+            className="flex items-center h-screen">
             <div className="container text-center px-48 max-[850px]:px-20 max-[450px]:px-10 h-screen m-auto content-center">
                 <div className="align-middle">
                     <p className="font-bold mb-2 max-[850px]:text-3xl max-[450px]:text-lg min-[850px]:text-[3.2em]"><T>Fun</T> facts</p>

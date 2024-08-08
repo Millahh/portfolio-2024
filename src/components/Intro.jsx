@@ -20,7 +20,7 @@ const Intro = ({delay}) => {
     return(
         <>
             <motion.div 
-                className="container text-center px-48 max-lg:px-20 max-[450px]:px-10 h-screen min-w-full content-center absolute my-auto -z-1"
+                className="container text-center px-48 max-lg:px-20 max-[450px]:px-10 h-screen min-w-full content-center absolute my-auto -z-1 flex items-center"
                 initial="hidden"
                 animate="visible"
                 variants={variants}
