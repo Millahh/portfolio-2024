@@ -51,6 +51,9 @@ function getPageComponent(page) {
       <AnimCursor/>
       <DiceIntro isStart={isStart} setIsStart={setIsStart}/>
       <Hobbies isShow={currentPage === 'funfacts' ? true : false}/>
+      <Routes>
+      <Route path="/" element={getPageComponent(currentPage)} />
+      </Routes>
       {navbarShow && 
         <>
           <div className="w-full h-12 bg-black bg-opacity-40 absolute z-20 max-md:hidden">
@@ -94,9 +97,6 @@ function getPageComponent(page) {
           </div>
         </>
       }
-      <Routes>
-      <Route path="/" element={getPageComponent(currentPage)} />
-      </Routes>
     </BrowserRouter>
   )
 }
