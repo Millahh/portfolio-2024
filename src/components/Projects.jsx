@@ -16,7 +16,6 @@ const Photos = ({ name, img, date, desc, tech }) => {
             <div className="absolute z-1 bg-black bg-opacity-50 w-full h-full border-4 rounded-xl p-3 max-xs:p-3 max-md:py-1 desc-hide">
                 <div className="github bg-tertiary self-center px-2 text-md rounded-2xl align-middle inline-block">
                     <p className="align-middle pt-[1.5px] text-[0.7rem] max-xs:text-[0.7rem] max-md:text-[0.6rem]">{date}</p>
-                    {/* max-md:text-[0.6rem] */}
                 </div>
                 <p className=" text-white font-semibold mt-2 max-xs:mt-2 max-md:mt-0 max-xs:text-sm max-md:text-[0.6rem] max-lg:text-sm">{name}</p>
                 <p className=" text-white text-xs max-xs:text-xs max-md:text-[0.6rem] max-lg:text-[0.7rem]">{desc}</p>
@@ -34,7 +33,7 @@ const ProjectDesc = ({isFocused = "Tracker"}) => {
             {projects.map((project) => (
                 (isFocused == project.name)  &&
                 <div key={project.name} className="max-[450px]:pb-20">
-                    <div className="bg-macbook bg-contain bg-no-repeat bg-center max-xs:h-52 xs:h-52 md:h-80 content-center mt-3">
+                    <div className="bg-macbook bg-contain bg-no-repeat bg-center max-xs:h-52 xs:h-52 md:h-80 content-center mt-3 max-xs:mt-0">
                         <video className="mx-auto max-xs:w-9/12 xs:w-9/12 sm:w-9/12 xl:w-3/5 lg:w-2/3 max-xs:h-3/4 xs:h-3/4 sm:h-3/4 xl:h-3/4 lg:h-4/5 -mt-5" loop muted autoPlay={true}>
                             <source src={project.vid} type="video/mp4"/>
                         </video>
@@ -66,7 +65,7 @@ const MobileCarousel = (props) => {
                         <span
                         key={i}
                         className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
-                            activeIndex === i ? "w-8 bg-white" : "w-4 bg-white/50"
+                            activeIndex === i ? "w-8 bg-black" : "w-4 bg-white/50"
                         }`}
                         onClick={() => setActiveIndex(i)}
                         />

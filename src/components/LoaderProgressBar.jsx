@@ -13,6 +13,7 @@ const Loader = () => {
           marginTop: 40
         }}>
         {progress.toFixed(2)}%
+        wait...
       </p>
     </Html>
   )

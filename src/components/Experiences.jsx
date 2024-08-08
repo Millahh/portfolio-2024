@@ -20,21 +20,21 @@ const Experiences = () => {
                                 <motion.div className="z-0 sm:absolute w-1/4 max-lg:w-1/3 max-xs:hidden"
                                 initial={{ opacity: 0, x:50 }}
                                 whileInView={{ opacity: 1, x:0 }}
-                                transition={{ delay:0.2, type: "tween", duration: 0.2 }}
+                                transition={{ delay:0.1, type: "tween", duration: 0.2 }}
                                 >
                                     <img src={Internship3} className="object-cover h-40 w-11/12 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
                                 <motion.div className="-z-1 top-2 left-3 sm:absolute w-1/4 max-lg:w-1/3 max-xs:hidden"
                                 initial={{ opacity: 0, x:50 }}
                                 whileInView={{ opacity: 1, x:0 }}
-                                transition={{ delay:0.5, type: "tween", duration: 0.2 }}
+                                transition={{ delay:0.3, type: "tween", duration: 0.2 }}
                                 >
                                     <img src={Internship2} className="object-cover h-40 w-11/12 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
                                 <motion.div className="-z-2 top-4 left-6 sm:absolute w-1/4 max-lg:w-1/3 max-xs:w-full"
                                 initial={{ opacity: 0, x:50 }}
                                 whileInView={{ opacity: 1, x:0 }}
-                                transition={{ delay:0.7, type: "tween", duration: 0.2 }}
+                                transition={{ delay:0.5, type: "tween", duration: 0.2 }}
                                 >
                                     <img src={Internship1} className="object-cover  h-40 w-11/12 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
@@ -86,21 +86,21 @@ const Experiences = () => {
                                 <motion.div className="z-0 sm:absolute w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:50 }}
                                 whileInView={{ opacity: 1, x:0 }}
-                                transition={{ delay:1.7, type: "tween", duration: 0.2 }}
+                                transition={{ delay:1.5, type: "tween", duration: 0.2 }}
                                 >
                                     <img src={Internship2} className="object-cover w-11/12 max-lg:w-full h-40 border-2 border-white rounded-xl"/>
                                 </motion.div>
                                 <motion.div className="-z-1 top-2 left-3 sm:absolute w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:50 }}
                                 whileInView={{ opacity: 1, x:0 }}
-                                transition={{ delay:1.9, type: "tween", duration: 0.2 }}
+                                transition={{ delay:1.7, type: "tween", duration: 0.2 }}
                                 >
                                     <img src={Internship1} className="object-cover w-11/12 h-40 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
                                 <motion.div className="-z-2 top-4 left-6 sm:absolute w-1/4 max-lg:w-1/3"
                                 initial={{ opacity: 0, x:50 }}
                                 whileInView={{ opacity: 1, x:0 }}
-                                transition={{ delay:2.2, type: "tween", duration: 0.2 }}
+                                transition={{ delay:2, type: "tween", duration: 0.2 }}
                                 >
                                     <img src={Internship3} className="object-cover w-11/12 h-40 max-lg:w-full border-2 border-white rounded-xl"/>
                                 </motion.div>
