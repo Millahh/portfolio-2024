@@ -1,9 +1,9 @@
 /* eslint-disable no-empty */
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable react/prop-types */
-import { useState, useEffect } from "react";
+import { useState, useEffect, lazy, Suspense} from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Intro, About, FunFacts, Experiences, Projects, Contact } from "./components";
+import { Intro, About, FunFacts, Experiences, Contact } from "./components";
 import { DiceIntro, Hobbies } from "./components/canvas";
 import { AnimCursor } from "./constants";
 import { navLinks } from "./constants";
@@ -15,6 +15,8 @@ function App() {
   const [isStart, setIsStart] = useState("stop");
   const [navbarShow, setNavbarShow] = useState(false);
   const [ isFocused, setFocused ] = useState("Tracker");
+  const Projects = lazy(() => import("./components/Projects"));
+  const Experiences = lazy(() => import("./components/Experiences"));
 
   useEffect(() => {
     // Use setTimeout to update the message after 2000 milliseconds (2 seconds)
@@ -93,9 +95,11 @@ function getPageComponent(page) {
         </>
       }
       <DiceIntro isStart={isStart} setIsStart={setIsStart}/>
-      <Routes>
-      <Route path="/portfolio-2024/" element={getPageComponent(currentPage)} />
-      </Routes>
+      <Suspense>
+        <Routes>
+          <Route path="/portfolio-2024/" element={getPageComponent(currentPage)} />
+        </Routes>
+      </Suspense>
       <Hobbies isShow={currentPage == 'funfacts' ? true : false}/>
     </BrowserRouter>
   )
