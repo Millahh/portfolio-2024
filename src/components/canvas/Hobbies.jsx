@@ -5,16 +5,9 @@ import { Canvas } from "@react-three/fiber";
 import { Float, OrbitControls} from "@react-three/drei";
 import CanvasLoader from '../LoaderProgressBar';
 import { useGLTF } from "@react-three/drei";
-import { DRACOLoader } from "three/examples/jsm/Addons.js";
 
 const Objects = ({ position, rotation, scale, object, light }) => {
     const assets = [useGLTF('./objects/music.glb'), useGLTF('./objects/mic.glb'), useGLTF('./objects/coffee.glb'), useGLTF('./objects/dance.glb')]
-    // const { scene } = useGLTF('./objects/dice/scene.gltf', true, loader => {
-    //     const dLoader = new DRACOLoader();
-    //     dLoader.setDecoderPath('https://www.gstatic.com/draco/versioned/decoders/1.5.7/');
-    //     dLoader.setDecoderConfig({type: 'js'});
-    //     loader.setDRACOLoader(dLoader);
-    // });
     assets.transparent = true
     assets.opacity = 0
     const ref = useRef()
