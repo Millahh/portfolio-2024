@@ -108,7 +108,7 @@ const Experiences = () => {
                         </div>
                         <div className="basis-3/4 p-5 pl-10 max-lg:pl-20 max-sm:p-0">
                             <p className=" tracking-widest text-xs opacity-50">SOFT SKILLS</p>
-                            <p className=" text-base">I also took the opportunity and responsibility to be part of <P>Tribe Leader</P>, help communication <br></br>between the company and MSIB to help effective collaboration.</p>
+                            <p className=" text-base">I also took the opportunity and responsibility to be part of <P>Tribe-leader</P>, help communication <br></br>between the company and MSIB to help effective collaboration.</p>
                         </div>
                     </div>
                 </section>

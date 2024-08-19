@@ -31,7 +31,7 @@ const Animation = () => {
     }
     return(
         <motion.div className="hard-skills cursor-pointer h-96 align-middle max-xs:relative m-auto" animate="visible">
-            <motion.p className=" top-0 md:left-44 max-md:left-40 min-[900px]:left-44 min-[1100px]:left-52 font-bold lg:text-2xl md:text-xl max-[400px]:text-sm absolute" whileHover={{ scale: 1.3 }} variants={animation2}>Bootstrap</motion.p> 
+            <motion.p className=" top-0 md:left-44 max-md:left-40 min-[900px]:left-52 min-[1100px]:left-52 font-bold lg:text-2xl md:text-xl max-[400px]:text-sm absolute" whileHover={{ scale: 1.3 }} variants={animation2}>Bootstrap</motion.p> 
             <motion.p className=" bottom-16 md:left-14 max-md:left-20 min-[900px]:left-20 max-[400px]:text-sm absolute" whileHover={{ scale: 1.3 }} variants={animation1}>AdminLTE</motion.p>
             <motion.p className=" bottom-32 max-md:bottom-40 md:left-40 max-md:left-48 min-[900px]:left-40 max-[400px]:text-sm absolute" whileHover={{ scale: 1.3 }} variants={animation1}>CSS</motion.p>
             <motion.p className=" top-16 md:left-20 max-md:left-20 min-[900px]:left-32 max-[400px]:text-sm absolute" whileHover={{ scale: 1.3 }} variants={animation2}>HTML</motion.p>
@@ -44,7 +44,7 @@ const Animation = () => {
             <motion.p className=" bottom-48 md:left-52 max-md:left-28 min-[900px]:left-56 min-[1100px]:left-60 absolute max-[400px]:text-sm" whileHover={{ scale: 1.3 }} variants={animation2}>UI/UX</motion.p>
             <motion.p className=" top-52 md:left-12 max-md:left-8 min-[900px]:left-14 absolute lg:text-lg md:text-base text-primary font-semibold max-[400px]:text-sm" whileHover={{ scale: 1.3 }} variants={animation2}>React</motion.p>
             <motion.p className=" bottom-16 md:left-80 max-md:left-64 min-[900px]:left-96 min-[1100px]:bottom-14 min-[1700px]:left-96 absolute lg:text-lg md:text-base max-[400px]:text-sm text-primary font-semibold" whileHover={{ scale: 1.3 }} variants={animation2}>PHP</motion.p>
-            <motion.p className=" bottom-0 md:left-36 max-md:left-36 min-[900px]:left-40 min-[1100px]:left-48 absolute font-bold lg:text-2xl md:text-xl max-[400px]:text-sm" whileHover={{ scale: 1.3 }} variants={animation1}>PostgreSQL</motion.p>
+            <motion.p className=" bottom-0 md:left-44 max-md:left-44 min-[900px]:left-52 min-[1100px]:left-52 absolute font-bold lg:text-2xl md:text-xl max-[400px]:text-sm" whileHover={{ scale: 1.3 }} variants={animation1}>pgAdmin</motion.p>
         </motion.div>
     )
 }
@@ -99,7 +99,7 @@ const About = ({setCurrentPage, setIsStart, isFocused, setFocused}) => {
                         <HardSkills logos={[{logo: Laravel, width:20}, {logo: Bootstrap, width:20}]} desc={"I started learning Laravel and Bootstrap since 2021 and have built some applications with it."} projects={["Tracker", "youRnoteS", "MenITi", "To-Gather"]} setCurrentPage={setCurrentPage} setIsStart={setIsStart} isFocused={isFocused} setFocused={setFocused}/>
                         <HardSkills logos={[{logo: Tailwind, width:20}, {logo: React, width:20}]} desc={"I’ve recently been interested built front-end web using Tailwind and React."} projects={["Tracker", "youRnoteS"]} setCurrentPage={setCurrentPage} setIsStart={setIsStart} isFocused={isFocused} setFocused={setFocused}/>
                         <HardSkills logos={[{logo: Threejs, width:20}]} desc={"I recently fell in love with learning Three.js. I implemented Three.js as well as React and Tailwind on this portfolio based on what I've learned so far."}/>
-                        <HardSkills logos={[{logo: PostgreSQL, width:23}, {logo: phpMyAdmin, width:30}]} desc={"I use PostgreSQL and phpMyAdmin for database management, i prefer PostgreSQL for interface, familiarity, performance and scalability."}/>
+                        <HardSkills logos={[{logo: PostgreSQL, width:23}, {logo: phpMyAdmin, width:30}]} desc={"I use pgAdmin and phpMyAdmin for database management, i prefer pgAdmin for interface, familiarity, performance and scalability."}/>
                         <HardSkills logos={[{logo: JavaScript, width:25}, {logo: PHP, width:25}, {logo: Figma, width:20}, {logo: AdminLTE, width:20}, {logo: HTML, width:25}, {logo: CSS, width:25}]} desc={"Those are languages, frameworks, and tools that I’m familiar, confident, and have worked with."}/>
                     </div>
                 </div>
