@@ -13,7 +13,7 @@ function AnimCursor() {
     }, []);
     return (
         <>
-            <div ref={cursor} className='cursor'></div>
+            <div ref={cursor} className='cursor z-50'></div>
         </>
     )
 }

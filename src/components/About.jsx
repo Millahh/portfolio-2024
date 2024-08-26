@@ -88,7 +88,7 @@ const About = ({setCurrentPage, setIsStart, isFocused, setFocused}) => {
             animate="visible"
             variants={variants}
             layoutScroll="false"
-            className="h-screen max-md:overflow-y-auto overflow-x-hidden max-md:pt-20 w-full absolute z-10">
+            className="h-screen max-md:overflow-y-auto overflow-x-hidden max-md:pt-20 w-full absolute z-20">
             <div className="w-full h-full content-center min-[1400px]:w-4/5 min-[1500px]:w-3/4 min-[3000px]:w-1/2 min-[4000px]:w-1/3 m-auto">
                 <div className="sm:flex flex-row m-auto">
                     <div className="basis-1/2 xl:basis-1/2 2xl:basis-2/5 min-[2000px]:basis-1/3 max-xs:w-11/12 xs:relative xs:w-2/3 min-[500px]:w-4/5 min-[600px]:w-2/3 m-auto">

@@ -67,7 +67,7 @@ const Contact = () => {
       animate="visible"
       variants={variants}
       layoutScroll="false"
-      className="absolute z-10 overflow-y-auto h-screen w-screen xs:pt-10 max-xs:pt-0">
+      className="absolute z-20 overflow-y-auto h-screen w-screen xs:pt-10 max-xs:pt-0">
       <div className=' p-8 rounded-2xl'>
         <form ref={formRef} onSubmit={handleSubmit} className=' space-y-2'>
           <p className="text-white text-lg font-bold mb-2">I&apos;m looking forward to hearing from you!</p>

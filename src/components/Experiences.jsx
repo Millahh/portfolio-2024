@@ -12,7 +12,7 @@ const Experiences = () => {
             animate="visible"
             variants={variants}
             layoutScroll="false">
-            <div className="experiences pb-3 pt-20 px-20 max-lg:px-10 w-full h-screen 2xl:w-9/12 min-[2000px]:w-1/2 m-auto overflow-y-auto overflow-x-hidden absolute z-10">
+            <div className="experiences pb-3 pt-20 px-20 max-lg:px-10 w-full h-screen 2xl:w-9/12 min-[2000px]:w-1/2 m-auto overflow-y-auto overflow-x-hidden absolute z-20">
                 <section className="mb-auto">
                     <div className="sm:flex flex-row relative">
                         <div className="basis-1/4 h-44 max-sm:flex max-sm:space-x-5 max-xs:space-x-0">
