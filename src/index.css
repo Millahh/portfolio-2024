@@ -34,7 +34,7 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.cursor{
+/* .cursor{
   height: 2.5em;
   width: 2.5em;
   position: fixed;
@@ -45,7 +45,7 @@ body{
   transition: 0.03s ease-out;
   mix-blend-mode:color-dodge;
   z-index: 99;
-}
+} */
 .upScalling{
   scale: 1.2;
   color: white;
@@ -76,13 +76,13 @@ div::-webkit-scrollbar-thumb {
   font-style: italic;
 }
 
-body {
+/* body {
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-}
+} */
 
 hr{
   opacity: 0.5;
