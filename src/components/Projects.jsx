@@ -197,7 +197,7 @@ const Projects = ({isFocused, setFocused}) => {
             animate="visible"
             variants={variants}
             layoutScroll="false"
-            className="max-xs:right-8 bottom-2 right-3 text-sm font-sans italic max-md:bg-black max-xs:text-[0.5rem] max-md:text-xs fixed z-20"
+            className="max-xs:right-8 bottom-2 right-3 text-sm font-sans italic max-md:hidden max-xs:text-[0.5rem] fixed z-20"
         >Roll the dice, then drive it!</motion.p>
         </>
     )
