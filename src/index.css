@@ -10,9 +10,6 @@
 body{
   color: rgba(255, 255, 255, 0.87);
 }
-.container {
-  height: calc(var(--vh));
-}
 .bg-custom {
   background-image: url('./assets/bg.png');
 }
@@ -34,9 +31,9 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* .cursor{
-  height: 2.5em;
-  width: 2.5em;
+.cursor{
+  height: 3vw;
+  width: 3vw;
   position: fixed;
   border-radius: 50%;
   background-color: rgb(250, 68, 250);
@@ -45,7 +42,7 @@ body{
   transition: 0.03s ease-out;
   mix-blend-mode:color-dodge;
   z-index: 99;
-} */
+}
 .upScalling{
   scale: 1.2;
   color: white;
@@ -133,6 +130,7 @@ button:focus-visible {
 
 .hard-skills{
   position: static;
+  /* height: 100%; */
 }
 .hard-skills p{
   position:absolute;
@@ -143,6 +141,10 @@ button:focus-visible {
 } 
 .desc:hover + .desc-hide, .desc-hide:hover {
   display: block;
+}
+
+.funfacts{
+  padding: 0 15vw;
 }
 
 .custom-bottom-right{
@@ -157,6 +159,18 @@ button:focus-visible {
 
 .judul-h2{
   font-size: 2.5vw;
+}
+
+.text-h3{
+  font-size:1.9vw;
+}
+
+.text-h4{
+  font-size:1.4vw;
+}
+
+.text-h5{
+  font-size:1.1vw;
 }
 
 .description{
