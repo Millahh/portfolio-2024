@@ -123,7 +123,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <p className="custom-bottom-right text-sm font-sans italic max-md:hidden max-xs:text-[0.5rem] fixed z-20">The bad news is that the dice may be unpredictable, but the good news is that the dice are in your hand. </p>
+      <p className="custom-bottom-right font-sans italic max-md:hidden max-xs:text-[0.5rem] fixed z-20">The bad news is that the dice may be unpredictable, but the good news is that the dice are in your hand. </p>
     </motion.div>
   );
 };

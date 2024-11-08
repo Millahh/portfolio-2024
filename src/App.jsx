@@ -54,8 +54,8 @@ function getPageComponent(page) {
       {navbarShow && 
         <>
           <div className="w-full h-12 bg-black bg-opacity-40 absolute z-30 max-md:hidden">
-            <div className="navbar flex md:justify-between px-10 pt-5 xl:w-1/2 lg:w-2/3 md:w-full 2xl:m-auto max-md:hidden max-sm:hidden max-xs:hidden absolute z-30">
-              <NavLink  onClick={() => {setCurrentPage('homeIsVisited'); setIsStart('homeIsVisited')}} to="/portfolio-2024/" className={`${currentPage === 'home' || currentPage === 'homeIsVisited' ? 'upScalling' : ''} flex hover:scale-125 max-md:mr-0 max-md:justify-end transition-all duration-100 text-gray-500 hover:text-white`}>HI<p className="text-sm -ml-1">👋</p></NavLink>
+            <div className="navbar flex md:justify-between pt-5 xl:w-1/2 lg:w-2/3 md:w-full 2xl:m-auto max-md:hidden max-sm:hidden max-xs:hidden absolute z-30">
+              <NavLink  onClick={() => {setCurrentPage('homeIsVisited'); setIsStart('homeIsVisited')}} to="/portfolio-2024/" className={`${currentPage === 'home' || currentPage === 'homeIsVisited' ? 'upScalling' : ''} flex hover:scale-125 max-md:mr-0 max-md:justify-end transition-all duration-100 text-gray-500 hover:text-white`}>HI<p>👋</p></NavLink>
                 {navLinks.map((link) => (
                     <NavLink 
                     onClick={() => {

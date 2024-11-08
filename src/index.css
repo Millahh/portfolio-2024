@@ -86,12 +86,17 @@ h1 {
 }
 
 .navbar a{
-  letter-spacing: 3px;
-  font-size:xx-small;
+  letter-spacing: 0.2vw;
+  font-size:0.8vw;
   font-weight: 600;
   align-items: center;
   align-self: center;
   cursor: pointer;
+}
+
+.navbar{
+  font-size: 0.8vw;
+  padding: 1vw 2.5vw;
 }
 
 button {
@@ -143,5 +148,17 @@ button:focus-visible {
 .custom-bottom-right{
   bottom: 1%;
   right: 1%;
+  font-size: 1.15vw;
 }
 
+.judul-h1{
+  font-size: 4.5vw;
+}
+
+.judul-h2{
+  font-size: 2.5vw;
+}
+
+.description{
+  font-size: 1.35vw;
+}

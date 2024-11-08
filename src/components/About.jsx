@@ -95,7 +95,7 @@ const About = ({setCurrentPage, setIsStart, isFocused, setFocused}) => {
                         <Animation/>
                     </div>
                     <div className=" basis-3/5 max-lg:basis-1/2 px-10 h-fit max-md:h-fit max-md:py-20 overflow-y-auto max-sm:overflow-y-hidden content-center m-auto">
-                        <h1 className=" font-bold max-md:text-[2em] max-md:mb-3 max-lg:text-[2.3em] "><T>Get to</T> know me</h1>
+                        <h1 className=" font-bold judul-h1"><T>Get to</T> know me</h1>
                         <HardSkills logos={[{logo: Laravel, width:20}, {logo: Bootstrap, width:20}]} desc={"I started learning Laravel and Bootstrap since 2021 and have built some applications with it."} projects={["Tracker", "youRnoteS", "MenITi", "To-Gather"]} setCurrentPage={setCurrentPage} setIsStart={setIsStart} isFocused={isFocused} setFocused={setFocused}/>
                         <HardSkills logos={[{logo: Tailwind, width:20}, {logo: React, width:20}]} desc={"I’ve recently been interested built front-end web using Tailwind and React."} projects={["Tracker", "youRnoteS"]} setCurrentPage={setCurrentPage} setIsStart={setIsStart} isFocused={isFocused} setFocused={setFocused}/>
                         <HardSkills logos={[{logo: Threejs, width:20}]} desc={"I recently fell in love with learning Three.js. I implemented Three.js as well as React and Tailwind on this portfolio based on what I've learned so far."}/>
@@ -104,7 +104,7 @@ const About = ({setCurrentPage, setIsStart, isFocused, setFocused}) => {
                     </div>
                 </div>
             </div>
-            <p className="custom-bottom-right text-sm font-sans italic max-md:hidden fixed z-20 max-xs:text-[0.5rem]">Don&apos;t quit rolling the dice except you win. </p>
+            <p className="custom-bottom-right font-sans italic max-md:hidden fixed z-20 max-xs:text-[0.5rem]">Don&apos;t quit rolling the dice except you win. </p>
         </motion.div>
         </>
     )

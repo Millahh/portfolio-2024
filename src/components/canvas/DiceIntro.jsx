@@ -27,7 +27,7 @@ const ThrowDice = ({isStart, setIsStart}) => {
                 const offsetY = h * 0.05; 
 
                 // Menghitung posisi target
-                const targetX = w/ (isMobile? 2.2 : 2.0) - offsetX;
+                const targetX = w/ (isMobile? 2.2 : 2.02) - offsetX;
                 const targetY = h/2.2 - offsetY;
                 
                 // await animate(scope.current, {x:isMobile? (w/2 - 65) : (w/2 - 50), y:isMobile? (h/2 - 68) : (h/2 - 58), duration: 4})
