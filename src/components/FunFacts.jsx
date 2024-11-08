@@ -19,7 +19,7 @@ const FunFacts = () => {
                     <p className="max-[850px]:text-sm max-[450px]:text-xs max-[350px]:text-[0.6rem] 2xl:text-2xl">I sip <P>coffee</P> whenever my <P>code</P> doesn’t work well and sometimes go for a little <P>walk</P>. <br></br>I like to <P>dance</P> when I'm bored. I love <P>singing</P> (I literally sing <P>everyday</P>), sometimes I <P>record</P> it and <P>post</P> it on my Insta. I hate <P>washing dishes</P> (<P>I do</P> wash my dishes everyday). My favorite color is <P>yellow</P>, <P>not purple</P>. Last, I hate <P>house lizards</P> more than <P>cockroaches</P>.</p>
                 </div>
             </div>
-            <p className="bottom-2 max-xs:right-8 right-3 text-sm font-sans italic max-md:hidden max-xs:text-[0.5rem] fixed z-20">Every roll counts. </p>
+            <p className="custom-bottom-right text-sm font-sans italic max-md:hidden max-xs:text-[0.5rem] fixed z-20">Every roll counts. </p>
         </motion.div>
     )
 }

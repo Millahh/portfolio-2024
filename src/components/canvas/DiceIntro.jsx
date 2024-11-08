@@ -11,8 +11,8 @@ import { CanvasLoader } from '../index.js';
 
 
 const ThrowDice = ({isStart, setIsStart}) => {
-    var w = window.visualViewport ? window.visualViewport.width : window.innerWidth *0.01
-    var h = window.visualViewport ? window.visualViewport.height : window.innerHeight *0.01
+    var w = window.visualViewport ? window.visualViewport.width : window.innerWidth
+    var h = window.visualViewport ? window.visualViewport.height : window.innerHeight
     const [scope, animate] = useAnimate();
     const isMobile = h>w ? true : false;
 
@@ -21,7 +21,22 @@ const ThrowDice = ({isStart, setIsStart}) => {
         const timerDiceIntro = setTimeout(() => {
             const handleAnimate = async () => {
                 await animate(scope.current, {scale: w<450 ? 0.3 : 0.4})
-                await animate(scope.current, {x:isMobile? (w/2 - 65) : (w/2 - 50), y:isMobile? (h/2 - 68) : (h/2 - 58), duration: 4})
+
+                // Menghitung posisi objek dengan jarak dinamis 
+                const offsetX = w * 0.03; 
+                const offsetY = h * 0.05; 
+
+                // Menghitung posisi target
+                const targetX = w/ (isMobile? 2.2 : 2.0) - offsetX;
+                const targetY = h/2.2 - offsetY;
+                
+                // await animate(scope.current, {x:isMobile? (w/2 - 65) : (w/2 - 50), y:isMobile? (h/2 - 68) : (h/2 - 58), duration: 4})
+                // Animasikan objek ke pojok kanan bawah dengan jarak dinamis
+                await animate(scope.current, {
+                    x: targetX, // Menghitung posisi x secara dinamis
+                    y: targetY, // Menghitung posisi y secara dinamis
+                    duration: 4,
+                });
 
             }
             handleAnimate()   
