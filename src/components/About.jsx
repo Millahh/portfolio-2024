@@ -31,7 +31,7 @@ const Animation = () => {
     }
     return(
         <motion.div className="hard-skills h-96 cursor-pointer align-middle max-xs:relative m-auto" animate="visible">
-            <motion.p className="Bootstrap top-0 md:left-44 max-md:left-40 left-52 font-bold text-h3 max-[500px]:text-sm absolute" whileHover={{ scale: 1.3 }} variants={animation2}>Bootstrap</motion.p> 
+            <motion.p className="Bootstrap top-0 max-[900px]:left-44 max-md:left-40 left-52 font-bold text-h3 max-[500px]:text-sm absolute" whileHover={{ scale: 1.3 }} variants={animation2}>Bootstrap</motion.p> 
             <motion.p className="AdminLTE bottom-16 md:left-14 max-md:left-20 min-[900px]:left-20 text-h4 max-[400px]:text-sm absolute" whileHover={{ scale: 1.3 }} variants={animation1}>AdminLTE</motion.p>
             <motion.p className="CSS bottom-32 max-md:bottom-40 md:left-40 max-md:left-48 min-[900px]:left-40 text-h4 max-[400px]:text-sm absolute" whileHover={{ scale: 1.3 }} variants={animation1}>CSS</motion.p>
             <motion.p className="HTML top-16 md:left-20 max-md:left-20 min-[900px]:left-32 text-h4 max-[400px]:text-sm absolute" whileHover={{ scale: 1.3 }} variants={animation2}>HTML</motion.p>

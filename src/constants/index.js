@@ -50,7 +50,7 @@ const projects = [
         name: "MenITi", 
         img: imgMeniti, 
         vid: vidMenITi,
-        date: "2022 | Bachelor's Degree Final Project", 
+        date: "2022 | Thesis Project", 
         desc: "Find your mentor in IT field or be one of them.", 
         tech: "Laravel | Bootstrap",
         visit: "Visit Github",
