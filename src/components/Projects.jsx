@@ -11,16 +11,16 @@ import { motion } from "framer-motion";
 
 const Photos = ({ name, img, date, desc, tech }) => {
     return (
-        <div className="projects-card mt-5 mb-10 max-md:mb-5 relative w-4/5 max-md:h-28 max-[1280px]:h-44 self-center mx-auto hover:scale-110 transition-all duration-150 cursor-pointer">
-            <img src={img} className=" object-cover w-full h-full border-4 rounded-xl absolute z-0 desc"/>
-            <div className="absolute z-1 bg-black bg-opacity-50 w-full h-full border-4 rounded-xl p-3 max-xs:p-3 max-md:py-1 desc-hide">
-                <div className="github bg-tertiary self-center px-2 text-md rounded-2xl align-middle inline-block">
-                    <p className="align-middle pt-[1.5px] text-[0.7rem] max-xs:text-[0.7rem] max-md:text-[0.6rem]">{date}</p>
+        <div className="projects-card max-[1280px]:mt-5 max-[1280px]:mb-8 max-md:mb-5 relative w-4/5 max-md:h-44 max-[1280px]:h-48 self-center mx-auto hover:scale-110 transition-all duration-150 cursor-pointer">
+            <img src={img} className="object-cover w-full h-full border-4 max-[1280px]:rounded-xl rounded-3xl absolute z-0 desc"/>
+            <div className="projects-card-container absolute z-1 bg-black bg-opacity-50 w-full h-full border-4 max-[1280px]:rounded-xl rounded-3xl max-[1280px]:p-3 max-xs:p-3 max-md:py-1 desc-hide">
+                <div className="github bg-tertiary self-center max-[1280px]:px-2 px-5 text-md max-[1280px]:rounded-2xl rounded-full align-middle inline-block">
+                    <p className="align-middle pt-[1.5px] text-h5 max-[1280px]:text-[0.7rem] max-xs:text-[0.7rem] max-md:text-[0.6rem]">{date}</p>
                 </div>
-                <p className=" text-white font-semibold mt-2 max-xs:mt-2 max-md:mt-0 max-xs:text-sm max-md:text-[0.6rem] max-lg:text-sm">{name}</p>
-                <p className=" text-white text-xs max-xs:text-xs max-md:text-[0.6rem] max-lg:text-[0.7rem]">{desc}</p>
-                <div className="absolute bottom-6 max-xl:bottom-2 github bg-secondary self-center px-2 text-md rounded-2xl align-middle inline-block">
-                    <p className="align-middle pt-[1.5px] text-[0.65rem] max-xs:text-[0.65rem] max-md:text-[0.6rem]">{tech}</p>
+                <p className=" text-white font-semibold mt-2 max-xs:mt-2 max-md:mt-0 max-xs:text-sm max-md:text-[0.6rem] max-lg:text-sm text-h4">{name}</p>
+                <p className=" text-white mt-2 max-xs:text-xs max-md:text-[0.6rem] max-lg:text-[0.7rem] text-h5">{desc}</p>
+                <div className="absolute bottom-6 max-xl:bottom-2 github bg-secondary self-center max-[1280px]:px-2 px-5 text-md max-[1280px]:rounded-2xl rounded-full align-middle inline-block">
+                    <p className="align-middle pt-[1.5px] text-h5 max-[1280px]:text-[0.65rem] max-xs:text-[0.65rem] max-md:text-[0.6rem]">{tech}</p>
                 </div>
             </div>
         </div>
@@ -157,7 +157,7 @@ const Projects = ({isFocused, setFocused}) => {
             animate="visible"
             variants={variants}
             layoutScroll="false">
-            <div className="projects py-10 max-xs:pb-16 px-20 max-lg:px-10 w-full m-auto h-screen max-[450px]:overflow-y-auto overflow-y-hidden flex max-[450px]:block flex-row absolute z-20">
+            <div className="projects max-[900px]:py-10 max-xs:pb-16 px-20 max-lg:px-10 w-full m-auto h-screen max-[450px]:overflow-y-auto overflow-y-hidden flex max-[450px]:block flex-row absolute z-20">
             {!isMobile && 
                 <div className="basis-4/12 max-[900px]:basis-2/5 max-xs:basis-1/2 overflow-y-auto max-xs:overflow-y-hidden items-center">
                     {projects.map((project) => (

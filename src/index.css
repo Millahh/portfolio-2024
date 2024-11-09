@@ -125,8 +125,19 @@ button:focus-visible {
   height: 50vh;
 }
 
+.projects{
+  padding-top: 7vh;
+  padding-bottom: 7vh;
+}
+
 .projects-card{
-  height: 25vh;
+  height: 27vh;
+  margin-bottom: 4vh;
+  margin-top: 2vh;
+}
+
+.projects-card-container{
+  padding: 7%;
 }
 
 .projects-judul img{
@@ -225,6 +236,10 @@ button:focus-visible {
 }
 
 @media only screen and (max-width: 450px) {
+  .cursor{
+    height: 2.5em;
+    width: 2.5em;
+  }
   .navbar a{
     font-size:0.6rem;
   }
