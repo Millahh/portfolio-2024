@@ -30,8 +30,9 @@ const Animation = () => {
         }
     }
     return(
-        <motion.div className="hard-skills cursor-pointer h-96 align-middle max-xs:relative m-auto" animate="visible">
-            <motion.p className=" top-0 md:left-44 max-md:left-40 min-[900px]:left-52 min-[1100px]:left-52 font-bold text-h3 max-[400px]:text-sm absolute" whileHover={{ scale: 1.3 }} variants={animation2}>Bootstrap</motion.p> 
+        <motion.div className="hard-skills max-[500px]:h-96 cursor-pointer border-4 border-white-100 align-middle max-xs:relative m-auto" animate="visible">
+            {/* <motion.p className=" top-0 md:left-44 max-md:left-40 min-[900px]:left-52 min-[1100px]:left-52 font-bold text-h3 max-[400px]:text-sm absolute" whileHover={{ scale: 1.3 }} variants={animation2}>Bootstrap</motion.p>  */}
+            <motion.p className="bootstrap max-[500px]:top-0 max-[500px]:left-44 font-bold text-h3 max-[500px]:text-sm absolute" whileHover={{ scale: 1.3 }} variants={animation2}>Bootstrap</motion.p> 
             <motion.p className=" bottom-16 md:left-14 max-md:left-20 min-[900px]:left-20 text-h4 max-[400px]:text-sm absolute" whileHover={{ scale: 1.3 }} variants={animation1}>AdminLTE</motion.p>
             <motion.p className=" bottom-32 max-md:bottom-40 md:left-40 max-md:left-48 min-[900px]:left-40 text-h4 max-[400px]:text-sm absolute" whileHover={{ scale: 1.3 }} variants={animation1}>CSS</motion.p>
             <motion.p className=" top-16 md:left-20 max-md:left-20 min-[900px]:left-32 text-h4 max-[400px]:text-sm absolute" whileHover={{ scale: 1.3 }} variants={animation2}>HTML</motion.p>
@@ -57,7 +58,7 @@ const HardSkills = ({ logos, desc, setCurrentPage, projects, setIsStart, isFocus
                     <img key={logos.logo} src={logos.logo} width={logos.width} className="inline mr-2 my-auto"/>
                 ))}
             </div>
-            <p className="inline description">{desc}</p>
+            <p className="inline description max-[350px]:text-[0.6rem] max-[450px]:text-xs max-[900px]:text-xl">{desc}</p>
             {projects ?  (
                 projects.map((project) => (
                     <a 
@@ -69,7 +70,7 @@ const HardSkills = ({ logos, desc, setCurrentPage, projects, setIsStart, isFocus
                             setCurrentPage('projects');
                             setFocused(project)
                         }} 
-                        className="text-primary hover:text-white inline mx-1 text-h5 font-semibold underline hover:underline-white underline-offset-2"
+                        className="text-primary hover:text-white inline mx-1 text-h5 max-[350px]:text-[0.5rem] max-[450px]:text-xs max-[900px]:text-[0.9rem] font-semibold underline hover:underline-white underline-offset-2"
                         >
                         {project}
                     </a>
@@ -104,7 +105,7 @@ const About = ({setCurrentPage, setIsStart, isFocused, setFocused}) => {
                     </div>
                 </div>
             </div>
-            <p className="custom-bottom-right font-sans italic max-md:hidden fixed z-20 max-xs:text-[0.5rem]">Don&apos;t quit rolling the dice except you win. </p>
+            <p className="custom-bottom-right font-sans italic max-[900px]:hidden fixed z-20">Don&apos;t quit rolling the dice except you win. </p>
         </motion.div>
         </>
     )
