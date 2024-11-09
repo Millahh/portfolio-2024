@@ -30,11 +30,10 @@ const ThrowDice = ({isStart, setIsStart}) => {
                 const targetX = w/ (isMobile? 2.2 : 2.02) - offsetX;
                 const targetY = h/2.2 - offsetY;
                 
-                // await animate(scope.current, {x:isMobile? (w/2 - 65) : (w/2 - 50), y:isMobile? (h/2 - 68) : (h/2 - 58), duration: 4})
-                // Animasikan objek ke pojok kanan bawah dengan jarak dinamis
+                // Animasikan objek ke pojok kanan bawah
                 await animate(scope.current, {
-                    x: targetX, // Menghitung posisi x secara dinamis
-                    y: targetY, // Menghitung posisi y secara dinamis
+                    x: targetX,
+                    y: targetY,
                     duration: 4,
                 });
 

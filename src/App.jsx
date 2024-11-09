@@ -77,7 +77,7 @@ function getPageComponent(page) {
               </button>
               {isOpen && 
               <div class="navbar w-1/2 max-md:w-1/3 max-md:bg-primary max-md:bg-opacity-10 text-center self-center m-auto max-md:mr-0 pl-4 max-md:pr-12 absolute z-30 right-4" id="navbar-mobile">
-                <NavLink  onClick={() => {setCurrentPage('homeIsVisited'); setIsStart('homeIsVisited')}} to="/portfolio-2024/" className={`${currentPage === 'home' || currentPage === 'homeIsVisited' ? 'upScalling' : ''} flex hover:scale-125 max-md:mr-0 max-md:justify-end transition-transform duration-100 opacity-50 hover:opacity-100`}>HI<p className="text-sm -ml-1">👋</p></NavLink>
+                <NavLink  onClick={() => {setCurrentPage('homeIsVisited'); setIsStart('homeIsVisited')}} to="/portfolio-2024/" className={`${currentPage === 'home' || currentPage === 'homeIsVisited' ? 'upScalling' : ''} flex hover:scale-125 max-md:mr-0 max-md:justify-end transition-transform duration-100 opacity-50 hover:opacity-100`}>HI<p className="-ml-1">👋</p></NavLink>
                   {navLinks.map((link) => (
                     <NavLink 
                       onClick={() => {

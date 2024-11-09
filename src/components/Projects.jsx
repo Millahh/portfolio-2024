@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 
 const Photos = ({ name, img, date, desc, tech }) => {
     return (
-        <div className="mt-5 mb-10 max-md:mb-5 relative w-4/5 h-44 max-[900px]:h-36 max-md:h-28 max-[450px]:h-44 self-center mx-auto hover:scale-110 transition-all duration-150 cursor-pointer">
+        <div className="projects-card mt-5 mb-10 max-md:mb-5 relative w-4/5 max-md:h-28 max-[1280px]:h-44 self-center mx-auto hover:scale-110 transition-all duration-150 cursor-pointer">
             <img src={img} className=" object-cover w-full h-full border-4 rounded-xl absolute z-0 desc"/>
             <div className="absolute z-1 bg-black bg-opacity-50 w-full h-full border-4 rounded-xl p-3 max-xs:p-3 max-md:py-1 desc-hide">
                 <div className="github bg-tertiary self-center px-2 text-md rounded-2xl align-middle inline-block">
@@ -33,17 +33,17 @@ const ProjectDesc = ({isFocused = "Tracker"}) => {
             {projects.map((project) => (
                 (isFocused == project.name)  &&
                 <div key={project.name} className="max-[450px]:pb-20">
-                    <div className="bg-macbook bg-contain bg-no-repeat bg-center max-xs:h-52 xs:h-52 md:h-80 content-center mt-3">
+                    <div className="bg-macbook bg-contain bg-no-repeat bg-center max-xs:h-52 max-md:h-52 max-2xl:h-80 content-center mt-3">
                         <video className="mx-auto max-xs:w-9/12 xs:w-9/12 sm:w-9/12 xl:w-3/5 lg:w-2/3 max-xs:h-3/4 xs:h-3/4 sm:h-3/4 xl:h-3/4 lg:h-4/5 -mt-5" loop muted autoPlay={true}>
                             <source src={project.vid} type="video/mp4"/>
                         </video>
                     </div>
                     <div>
-                        <div className="flex">
-                            <p className="text-3xl font-bold mr-5">{project.name}</p>
-                            <div className="github bg-secondary self-center px-3 text-md rounded-xl flex align-middle hover:bg-[#5E2859]">
-                                <a href={project.link} target="_blank"><p className="text-sm inline align-middle pt-0.5">{project.visit}</p></a>
-                                <img src={Github} className=" w-4 h-4 ml-1 self-center align-middle"/>
+                        <div className="flex projects-judul">
+                            <p className="max-[900px]:text-3xl judul-h2 font-bold max-[900px]:mr-5">{project.name}</p>
+                            <div className="github bg-secondary self-center px-3 min-[1400px]:px-5 text-md rounded-xl min-[1400px]:rounded-full flex align-middle hover:bg-[#5E2859]">
+                                <a href={project.link} target="_blank"><p className="text-h5 max-[900px]:text-sm inline">{project.visit}</p></a>
+                                <img src={Github} className="max-[900px]:w-4 max-[900px]:h-4 max-[900px]:ml-1 self-center align-middle"/>
                             </div>
                         </div>
                         <Resources select={project.name}/>
@@ -157,7 +157,7 @@ const Projects = ({isFocused, setFocused}) => {
             animate="visible"
             variants={variants}
             layoutScroll="false">
-            <div className="projects py-10 max-xs:pb-16 px-20 max-lg:px-10 w-full 2xl:w-9/12 min-[2000px]:w-1/2 m-auto h-screen max-[450px]:overflow-y-auto overflow-y-hidden flex max-[450px]:block flex-row absolute z-20">
+            <div className="projects py-10 max-xs:pb-16 px-20 max-lg:px-10 w-full m-auto h-screen max-[450px]:overflow-y-auto overflow-y-hidden flex max-[450px]:block flex-row absolute z-20">
             {!isMobile && 
                 <div className="basis-4/12 max-[900px]:basis-2/5 max-xs:basis-1/2 overflow-y-auto max-xs:overflow-y-hidden items-center">
                     {projects.map((project) => (
@@ -197,7 +197,7 @@ const Projects = ({isFocused, setFocused}) => {
             animate="visible"
             variants={variants}
             layoutScroll="false"
-            className="custom-bottom-right font-sans italic max-md:hidden max-xs:text-[0.5rem] fixed z-20"
+            className="custom-bottom-right font-sans italic max-[900px]:hidden max-xs:text-[0.5rem] fixed z-20"
         >Roll the dice, then drive it!</motion.p>
         </>
     )

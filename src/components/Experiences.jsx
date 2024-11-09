@@ -336,7 +336,7 @@ const Experiences = () => {
             animate="visible"
             variants={variants}
             layoutScroll="false"
-            className="custom-bottom-right font-sans italic max-md:hidden max-xs:text-[0.5rem] fixed z-20"
+            className="custom-bottom-right font-sans italic max-[900px]:hidden fixed z-20"
         >More rolls, more chance of luck </motion.p>
         </>
     )

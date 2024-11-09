@@ -43,6 +43,12 @@ body{
   mix-blend-mode:color-dodge;
   z-index: 99;
 }
+.canvas-load{
+  font-size: 1.9vw;
+  margin-top: 40;
+  font-weight: 900;
+  color:#f1f1f1 ;
+}
 .upScalling{
   scale: 1.2;
   color: white;
@@ -115,25 +121,30 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.bg-macbook{
+  height: 50vh;
 }
 
-.hard-skills{
-  position: static;
-  /* height: 100%; */
+.projects-card{
+  height: 25vh;
 }
+
+.projects-judul img{
+  height: 2.8vh;
+  margin-left: 0.4vw;
+}
+
+.projects-judul .judul-h2{
+  margin-right: 1.2vw;
+}
+
 .hard-skills p{
   position:absolute;
+}
+
+.bootstrap{
+  top: 0;
+  left: 40%;
 }
 
 .desc-hide {
@@ -175,4 +186,50 @@ button:focus-visible {
 
 .description{
   font-size: 1.35vw;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@media only screen and (max-height: 552px) {
+  .hard-skills{
+    position: static;
+    /* height: 24rem; */
+    height: 70vh;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .navbar a{
+    font-size:1.2vw;
+  }
+  
+  .navbar{
+    font-size: 1.2vw;
+    padding: 1vw 2.5vw;
+  }
+
+  .canvas-load{
+    font-size: 14rem,
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .navbar a{
+    font-size:0.6rem;
+  }
+  
+  .navbar{
+    font-size: 0.6rem;
+  }
 }
