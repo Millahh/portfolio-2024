@@ -254,6 +254,24 @@ button:focus-visible {
   .contact .insta, .contact .insta img{
     height: 3.3vh;
   }
+  .experiences{
+    padding: 8vh 10vh;
+  }
+  .experiences-card, .experiences-card2{
+    height: 27vh;
+  }
+  .experiences-card3{
+    height: 32vh;
+  }
+  .experiences-card img{
+    height: 22vh;
+  }
+  .experiences-card2 img{
+    height: 24vh;
+  }
+  .experiences-card3 img{
+    height: 29vh;
+  }
 }
 
 @media only screen and (max-height: 552px) {
