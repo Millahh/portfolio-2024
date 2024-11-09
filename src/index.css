@@ -153,11 +153,6 @@ button:focus-visible {
   position:absolute;
 }
 
-.bootstrap{
-  top: 0;
-  left: 40%;
-}
-
 .desc-hide {
   display: none;
 } 
@@ -274,13 +269,68 @@ button:focus-visible {
   }
 }
 
-@media only screen and (max-height: 552px) {
+@media only screen and (min-width: 1400px) {
   .hard-skills{
     position: static;
-    /* height: 24rem; */
-    height: 70vh;
+    height: 50vh;
   }
-}
+  .hard-skills .Bootstrap{
+    top: 0;
+    left: 40%;
+  }
+  .hard-skills .AdminLTE{
+    top: 77%;
+    left: 17%;
+  }
+  .hard-skills .CSS{
+    top: 60%;
+    left: 35%;
+  }
+  .hard-skills .HTML{
+    top: 15%;
+    left: 17%;
+  }
+  .hard-skills .Figma{
+    top: 15%;
+    left: 70%;
+  }
+  .hard-skills .JS{
+    top: 35%;
+    left: 75%;
+  }
+  .hard-skills .Threejs{
+    top: 70%;
+    left: 50%;
+  }
+  .hard-skills .phpMyAdmin{
+    top: 25%;
+    left: 35%;
+  }
+  .hard-skills .Tailwind{
+    top: 56%;
+    left: 70%;
+  }
+  .hard-skills .Laravel{
+    top: 35%;
+    left: 5%;
+  }
+  .hard-skills .UIUX{
+    top: 44%;
+    left: 48%;
+  }
+  .hard-skills .React{
+    top: 55%;
+    left: 14%;
+  }
+  .hard-skills .PHP{
+    top: 77%;
+    left: 70%;
+  }
+  .hard-skills .pgAdmin{
+    bottom: 0;
+    left: 40%;
+  }
+} 
 
 @media only screen and (max-width: 900px) {
   .navbar a{

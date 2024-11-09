@@ -30,22 +30,21 @@ const Animation = () => {
         }
     }
     return(
-        <motion.div className="hard-skills max-[500px]:h-96 cursor-pointer border-4 border-white-100 align-middle max-xs:relative m-auto" animate="visible">
-            {/* <motion.p className=" top-0 md:left-44 max-md:left-40 min-[900px]:left-52 min-[1100px]:left-52 font-bold text-h3 max-[400px]:text-sm absolute" whileHover={{ scale: 1.3 }} variants={animation2}>Bootstrap</motion.p>  */}
-            <motion.p className="bootstrap max-[500px]:top-0 max-[500px]:left-44 font-bold text-h3 max-[500px]:text-sm absolute" whileHover={{ scale: 1.3 }} variants={animation2}>Bootstrap</motion.p> 
-            <motion.p className=" bottom-16 md:left-14 max-md:left-20 min-[900px]:left-20 text-h4 max-[400px]:text-sm absolute" whileHover={{ scale: 1.3 }} variants={animation1}>AdminLTE</motion.p>
-            <motion.p className=" bottom-32 max-md:bottom-40 md:left-40 max-md:left-48 min-[900px]:left-40 text-h4 max-[400px]:text-sm absolute" whileHover={{ scale: 1.3 }} variants={animation1}>CSS</motion.p>
-            <motion.p className=" top-16 md:left-20 max-md:left-20 min-[900px]:left-32 text-h4 max-[400px]:text-sm absolute" whileHover={{ scale: 1.3 }} variants={animation2}>HTML</motion.p>
-            <motion.p className=" top-16 md:left-80 max-md:left-64 min-[900px]:left-80 min-[1100px]:left-96 min-[1700px]:left-96 text-h4 max-[400px]:text-sm absolute" whileHover={{ scale: 1.3 }} variants={animation2}>Figma</motion.p>
-            <motion.p className=" top-36 md:left-80 max-md:left-72 min-[900px]:left-96 absolute text-h4 max-[400px]:text-sm text-primary font-semibold" whileHover={{ scale: 1.3 }} variants={animation2}>JavaScript</motion.p>
-            <motion.p className=" top-64 left-56 max-md:left-40 md:left-64 absolute min-[1700px]:left-80 text-h4 max-[400px]:text-sm" whileHover={{ scale: 1.3 }} variants={animation2}>Three.js</motion.p>
-            <motion.p className=" top-24 md:left-36 max-md:left-36 min-[900px]:left-44 min-[1200px]:left-48 absolute text-h4 max-[400px]:text-sm text-primary font-semibold" whileHover={{ scale: 1.3 }} variants={animation1}>phpMyAdmin</motion.p>
-            <motion.p className=" bottom-32 max-md:left-72 max-[900px]:left-80 left-96 absolute font-bold text-h3 max-[400px]:text-sm" whileHover={{ scale: 1.3 }} variants={animation2}>Tailwind</motion.p>
-            <motion.p className=" top-32 md:left-2 max-md:left-4 min-[900px]:left-10 absolute font-bold text-h3 max-[400px]:text-sm" whileHover={{ scale: 1.3 }} variants={animation1}>Laravel</motion.p>
-            <motion.p className=" bottom-48 md:left-52 max-md:left-28 min-[900px]:left-56 min-[1100px]:left-60 absolute text-h4 max-[400px]:text-sm" whileHover={{ scale: 1.3 }} variants={animation2}>UI/UX</motion.p>
-            <motion.p className=" top-52 md:left-12 max-md:left-8 min-[900px]:left-14 absolute text-h4 text-primary font-semibold max-[400px]:text-sm" whileHover={{ scale: 1.3 }} variants={animation2}>React</motion.p>
-            <motion.p className=" bottom-16 md:left-80 max-md:left-64 min-[900px]:left-96 min-[1100px]:bottom-14 min-[1700px]:left-96 absolute text-h4 max-[400px]:text-sm text-primary font-semibold" whileHover={{ scale: 1.3 }} variants={animation2}>PHP</motion.p>
-            <motion.p className=" bottom-0 md:left-44 max-md:left-44 min-[900px]:left-52 min-[1100px]:left-52 absolute font-bold text-h3 max-[400px]:text-sm" whileHover={{ scale: 1.3 }} variants={animation1}>pgAdmin</motion.p>
+        <motion.div className="hard-skills h-96 cursor-pointer align-middle max-xs:relative m-auto" animate="visible">
+            <motion.p className="Bootstrap top-0 md:left-44 max-md:left-40 left-52 font-bold text-h3 max-[500px]:text-sm absolute" whileHover={{ scale: 1.3 }} variants={animation2}>Bootstrap</motion.p> 
+            <motion.p className="AdminLTE bottom-16 md:left-14 max-md:left-20 min-[900px]:left-20 text-h4 max-[400px]:text-sm absolute" whileHover={{ scale: 1.3 }} variants={animation1}>AdminLTE</motion.p>
+            <motion.p className="CSS bottom-32 max-md:bottom-40 md:left-40 max-md:left-48 min-[900px]:left-40 text-h4 max-[400px]:text-sm absolute" whileHover={{ scale: 1.3 }} variants={animation1}>CSS</motion.p>
+            <motion.p className="HTML top-16 md:left-20 max-md:left-20 min-[900px]:left-32 text-h4 max-[400px]:text-sm absolute" whileHover={{ scale: 1.3 }} variants={animation2}>HTML</motion.p>
+            <motion.p className="Figma top-16 md:left-80 max-md:left-64 min-[900px]:left-80 min-[1100px]:left-96 min-[1700px]:left-96 text-h4 max-[400px]:text-sm absolute" whileHover={{ scale: 1.3 }} variants={animation2}>Figma</motion.p>
+            <motion.p className="JS top-36 md:left-80 max-md:left-72 min-[900px]:left-96 absolute text-h4 max-[400px]:text-sm text-primary font-semibold" whileHover={{ scale: 1.3 }} variants={animation2}>JavaScript</motion.p>
+            <motion.p className="Threejs top-64 left-56 max-md:left-40 md:left-64 absolute text-h4 max-[400px]:text-sm" whileHover={{ scale: 1.3 }} variants={animation2}>Three.js</motion.p>
+            <motion.p className="phpMyAdmin top-24 md:left-36 max-md:left-36 min-[900px]:left-44 min-[1200px]:left-48 absolute text-h4 max-[400px]:text-sm text-primary font-semibold" whileHover={{ scale: 1.3 }} variants={animation1}>phpMyAdmin</motion.p>
+            <motion.p className="Tailwind bottom-32 max-md:left-72 max-[900px]:left-80 left-96 absolute font-bold text-h3 max-[400px]:text-sm" whileHover={{ scale: 1.3 }} variants={animation2}>Tailwind</motion.p>
+            <motion.p className="Laravel top-32 md:left-2 max-md:left-4 min-[900px]:left-10 absolute font-bold text-h3 max-[400px]:text-sm" whileHover={{ scale: 1.3 }} variants={animation1}>Laravel</motion.p>
+            <motion.p className="UIUX bottom-48 md:left-52 max-md:left-28 min-[900px]:left-56 min-[1100px]:left-60 absolute text-h4 max-[400px]:text-sm" whileHover={{ scale: 1.3 }} variants={animation2}>UI/UX</motion.p>
+            <motion.p className="React top-52 md:left-12 max-md:left-8 min-[900px]:left-14 absolute text-h4 text-primary font-semibold max-[400px]:text-sm" whileHover={{ scale: 1.3 }} variants={animation2}>React</motion.p>
+            <motion.p className="PHP bottom-16 md:left-80 max-md:left-64 min-[900px]:left-96 min-[1100px]:bottom-14 min-[1700px]:left-96 absolute text-h4 max-[400px]:text-sm text-primary font-semibold" whileHover={{ scale: 1.3 }} variants={animation2}>PHP</motion.p>
+            <motion.p className="pgAdmin bottom-0 md:left-44 max-md:left-44 min-[900px]:left-52 min-[1100px]:left-52 absolute font-bold text-h3 max-[400px]:text-sm" whileHover={{ scale: 1.3 }} variants={animation1}>pgAdmin</motion.p>
         </motion.div>
     )
 }
