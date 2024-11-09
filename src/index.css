@@ -165,6 +165,11 @@ button:focus-visible {
   display: block;
 }
 
+.contact{
+  padding: 2%;
+  margin-top: 2%;
+}
+
 .funfacts{
   padding: 0 15vw;
 }
@@ -195,6 +200,10 @@ button:focus-visible {
   font-size:1.1vw;
 }
 
+.text-h6{
+  font-size:1vw;
+}
+
 .description{
   font-size: 1.35vw;
 }
@@ -209,6 +218,41 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .contact input{
+    height: 2.9vw;
+    padding: 0 1vw;
+    border-radius: 0.6vw;
+    margin-bottom: 0.7%;
+  }
+  .contact textarea{
+    height: 10vw;
+    padding: 1vw;
+    border-radius: 0.6vw;
+    margin-bottom: 0.7%;
+  }
+  .contact input::placeholder, .contact textarea::placeholder{
+    font-size: 0.8vw;
+  }
+  .contact button{
+    font-size: 1vw;
+    padding: 1vw 2vw;
+    border-radius: 0.6vw;
+  }
+  .contact .connect{
+    margin-top: 2%;
+  }
+  .contact .github, .contact .github img{
+    height: 3.8vh;
+  }
+  .contact .linkedin, .contact .linkedin img{
+    height: 3.5vh;
+  }
+  .contact .insta, .contact .insta img{
+    height: 3.3vh;
   }
 }
 

@@ -68,26 +68,27 @@ const Contact = () => {
       variants={variants}
       layoutScroll="false"
       className="absolute z-20 overflow-y-auto h-screen w-screen xs:pt-10 max-xs:pt-0">
-      <div className=' p-8 rounded-2xl'>
+      <div className='contact max-[1280px]:p-8 max-[1280px]:mt-0 rounded-2xl'>
         <form ref={formRef} onSubmit={handleSubmit} className=' space-y-2'>
-          <p className="text-white text-lg font-bold mb-2">I&apos;m looking forward to hearing from you!</p>
-          <div className=" flex flex-row space-x-10">
-            <div className=" basis-1/2">
+          <p className=" text-white max-[900px]:text-lg description font-bold mb-3">I&apos;m looking forward to hearing from you!</p>
+          <div className="2xl:inline-block 2xl:space-x-0 flex flex-row space-x-10 w-full">
+            <div className=" 2xl:basis-full basis-1/2">
               <label className=''>
-                  <p className='text-white text-xs mt-2 mb-1 font-semibold opacity-80'>Your Name</p>
+                  <p className='text-white max-[1280px]:text-xs text-h6 mt-2 mb-1 font-semibold opacity-80'>Your Name</p>
                   <input
+                      height={40}
                       type='text'
                       name='name'
                       value={form.name}
                       onChange={handleChange}
                       placeholder="What's your good name?"
-                      className=' w-full bg-tertiary bg-opacity-75 py-3 px-4 placeholder:text-secondary placeholder:text-sm text-white rounded-lg outline-none border-none font-medium'
+                      className=' w-full bg-tertiary bg-opacity-75 py-3 px-4 placeholder:text-secondary max-[1280px]:placeholder:text-sm text-white rounded-lg outline-none border-none font-medium'
                   />
               </label>
             </div>
-            <div className=" basis-1/2 ">
+            <div className=" 2xl:basis-full basis-1/2 ">
               <label className=''>
-                  <p className='text-white text-xs mt-2 mb-1 font-semibold  opacity-80'>Your email</p>
+                  <p className='text-white max-[1280px]:text-xs text-h6 mt-2 mb-1 font-semibold  opacity-80'>Your email</p>
                   <input
                   type='email'
                   name='email'
@@ -100,7 +101,7 @@ const Contact = () => {
             </div>
           </div>
           <label className=''>
-            <p className='text-white text-xs mt-2 mb-1 font-semibold  opacity-80'>Your Message</p>
+            <p className='text-white max-[1280px]:text-xs text-h6 mt-2 mb-1 font-semibold  opacity-80'>Your Message</p>
             <textarea
             rows={6}
             name='message'
@@ -114,12 +115,12 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
-        <div className=" w-fit mt-10 space-y-1">
-          <p className=" text-xs text-white my-auto font-bold">Let&apos;s connect!</p>
-          <div className="flex mb-1">
-            <a href="https://github.com/Millahh" target="_blank" className=" h-6 my-auto"><img src={Github} className=" h-6 my-auto"/></a>
-            <a href="https://linkedin.com/in/munirotul-millah" target="_blank" className=" h-[1.3rem] my-auto mr-1 ml-[0.1rem]"><img src={Linkedin} className=" h-[1.3rem] my-auto"/></a>
-            <a href="https://instagram.com/mmillah_" target="_blank" className=" h-5 my-auto"><img src={Insta} className=" h-5 my-auto"/></a>
+        <div className="connect w-fit mt-10 space-y-1">
+          <p className=" max-[1280px]:text-xs text-h6 text-white my-auto font-bold">Let&apos;s connect!</p>
+          <div className="flex mb-1 justify-between">
+            <a href="https://github.com/Millahh" target="_blank" className="github h-7 my-auto"><img src={Github} className=" h-7 my-auto"/></a>
+            <a href="https://linkedin.com/in/munirotul-millah" target="_blank" className="linkedin h-[1.5rem] my-auto mr-1 ml-[0.1rem]"><img src={Linkedin} className=" h-[1.5rem] my-auto"/></a>
+            <a href="https://instagram.com/mmillah_" target="_blank" className="insta h-6 my-auto"><img src={Insta} className=" h-6 my-auto"/></a>
           </div>
         </div>
       </div>
