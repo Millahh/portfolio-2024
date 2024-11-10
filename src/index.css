@@ -272,7 +272,8 @@ button:focus-visible {
 @media only screen and (min-width: 1400px) {
   .hard-skills{
     position: static;
-    height: 50vh;
+    height: 60vh;
+    width: 40vw;
   }
   .hard-skills .Bootstrap{
     top: 0;
@@ -312,7 +313,7 @@ button:focus-visible {
   }
   .hard-skills .Laravel{
     top: 35%;
-    left: 5%;
+    left: 7%;
   }
   .hard-skills .UIUX{
     top: 44%;
